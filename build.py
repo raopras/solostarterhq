@@ -24,7 +24,23 @@ OUT = sys.argv[1] if len(sys.argv) > 1 else "dist"
 HERE = os.path.dirname(os.path.abspath(__file__))
 S = json.load(open(os.path.join(HERE, "strings.json"), encoding="utf-8"))
 LANGS = list(S.keys())
-CURRENCIES = ["USD", "EUR", "GBP", "BRL", "MXN"]
+# Calculator currencies. Example amounts are set in US dollars and scaled with rough,
+# rounded rates; they are labelled as examples on the page, so exactness doesn't matter.
+EXAMPLES_USD = [16, 29, 49, 39, 12]
+FX = {  # code: (approx units per 1 USD, rounding step)
+    "USD": (1, 1), "GBP": (0.75, 1), "EUR": (0.86, 1), "CHF": (0.8, 1), "CAD": (1.38, 1), "AUD": (1.52, 1),
+    "BRL": (5.4, 5), "MXN": (18.5, 10), "COP": (4000, 1000), "CLP": (950, 500), "PEN": (3.7, 1), "INR": (88, 50),
+}
+CURRENCIES = list(FX)
+# Visitor region (from the browser's language setting) -> currency
+REGION_CURRENCY = {"GB": "GBP", "US": "USD", "CA": "CAD", "AU": "AUD", "IN": "INR", "BR": "BRL", "MX": "MXN",
+                   "CO": "COP", "CL": "CLP", "PE": "PEN", "CH": "CHF", "LI": "CHF",
+                   **{r: "EUR" for r in "IE ES DE AT FR IT PT NL BE LU FI GR SK SI EE LV LT MT CY HR".split()}}
+
+
+def examples(cur):
+    rate, step = FX[cur]
+    return [max(step, round(v * rate / step) * step) for v in EXAMPLES_USD]
 
 e = html.escape
 
@@ -179,7 +195,7 @@ def body(code, preview=False):
         for c in LANGS)
     rows = "".join(
         f'<div class="row"><label for="c{i}">{e(name)}</label><input id="c{i}" type="number" inputmode="decimal" min="0" step="1" value="{v}" aria-describedby="exnote"></div>'
-        for i, (name, v) in enumerate(zip(t["items"], t["examples"])))
+        for i, (name, v) in enumerate(zip(t["items"], examples(t["currency"]))))
     opts = "".join(f'<option{" selected" if c == t["currency"] else ""}>{c}</option>' for c in CURRENCIES)
     facts = "".join(f'<div class="fact"><dt>{e(k)}</dt><dd>{e(v)}</dd></div>' for k, v in t["plan_items"])
     steps = "".join(f"<li><h3>{e(a)}</h3><p>{e(b)}</p></li>" for a, b in t["steps"])
@@ -240,8 +256,14 @@ def body(code, preview=False):
 <script>
 (function(){{
   var L={json.dumps(t['htmllang'])}, KEEP={keep_tpl};
-  var ins=[].slice.call(document.querySelectorAll('#calc input')), cur=document.getElementById('cur');
-  function fmt(n){{try{{return new Intl.NumberFormat(L,{{style:'currency',currency:cur.value,maximumFractionDigits:0}}).format(n)}}catch(x){{return cur.value+' '+Math.round(n)}}}}
+  var FX={json.dumps(FX)}, BASE={json.dumps(EXAMPLES_USD)}, RC={json.dumps(REGION_CURRENCY)};
+  var ins=[].slice.call(document.querySelectorAll('#calc input')), cur=document.getElementById('cur'), edited=false, region='';
+  try{{var langs=(navigator.languages&&navigator.languages.length)?navigator.languages:[navigator.language];
+    for(var i=0;i<langs.length&&!region;i++){{var m=/^[a-z]{{2,3}}-([A-Z]{{2}})$/i.exec(langs[i]||'');if(m)region=m[1].toUpperCase();}}}}catch(x){{}}
+  var loc=region?L.split('-')[0]+'-'+region:L;
+  function ex(c){{var r=FX[c];return BASE.map(function(v){{return Math.max(r[1],Math.round(v*r[0]/r[1])*r[1])}})}}
+  function fill(){{if(edited)return;var v=ex(cur.value);ins.forEach(function(i,n){{i.value=v[n]}})}}
+  function fmt(n){{try{{return new Intl.NumberFormat(loc,{{style:'currency',currency:cur.value,maximumFractionDigits:0}}).format(n)}}catch(x){{return cur.value+' '+Math.round(n)}}}}
   function calc(){{
     var m=ins.reduce(function(a,i){{var v=parseFloat(i.value);return a+(isFinite(v)&&v>0?v:0)}},0);
     document.getElementById('tm').textContent=fmt(m);
@@ -250,7 +272,9 @@ def body(code, preview=False):
     var k=document.getElementById('keep');k.textContent=KEEP.replace('{{amount}}',fmt(m*12));
     k.classList.add('bump');setTimeout(function(){{k.classList.remove('bump')}},180);
   }}
-  ins.forEach(function(i){{i.addEventListener('input',calc)}});cur.addEventListener('change',calc);calc();
+  if(region&&RC[region]&&RC[region]!==cur.value){{cur.value=RC[region];fill();}}
+  ins.forEach(function(i){{i.addEventListener('input',function(){{edited=true;calc()}})}});
+  cur.addEventListener('change',function(){{fill();calc()}});calc();
 }})();
 </script>"""
 
