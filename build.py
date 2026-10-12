@@ -22,7 +22,7 @@ def url(code):
     return f"{BASE}/{S[code]['path']}"
 
 
-CSS = """
+CSS_BASE = """
 /* Layout: one centred column; the calculator is styled as a freelancer's invoice whose total is struck out to zero. */
 :root{
   --paper:#f5f7fb; --card:#ffffff; --ink:#141b2d; --muted:#566079; --line:#d9deea;
@@ -99,7 +99,20 @@ footer p{max-width:60em;margin:0 0 8px}
 @media (prefers-reduced-motion:no-preference){.keep{transition:transform .2s}.keep.bump{transform:scale(1.03)}}
 """
 
-FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500;700&display=swap">'
+def _face(fam, file, w):
+    return f"@font-face{{font-family:'{fam}';font-style:normal;font-weight:{w};font-display:swap;src:url(/fonts/{file}) format('woff2')}}"
+# Fonts are served from this site (no Google Fonts), so no visitor data goes to a third party.
+FONT_CSS = "".join([
+    _face("Atkinson Hyperlegible", "atkinson-hyperlegible-latin-400-normal.woff2", 400),
+    _face("Atkinson Hyperlegible", "atkinson-hyperlegible-latin-700-normal.woff2", 700),
+    _face("Bricolage Grotesque", "bricolage-grotesque-latin-700-normal.woff2", 700),
+    _face("Bricolage Grotesque", "bricolage-grotesque-latin-800-normal.woff2", 800),
+    _face("JetBrains Mono", "jetbrains-mono-latin-400-normal.woff2", 400),
+    _face("JetBrains Mono", "jetbrains-mono-latin-500-normal.woff2", 500),
+    _face("JetBrains Mono", "jetbrains-mono-latin-700-normal.woff2", 700),
+])
+CSS = FONT_CSS + CSS_BASE
+FONTS = '<link rel="preload" href="/fonts/bricolage-grotesque-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>'
 
 
 def head(code, preview=False):
@@ -222,23 +235,28 @@ def page(code):
 OWNER = {k: os.environ.get(k, "").strip() for k in ("OWNER_NAME", "OWNER_ADDRESS", "OWNER_EMAIL")}
 
 
+LEGAL = json.load(open(os.path.join(HERE, "legal.json"), encoding="utf-8"))
+
+
 def legal(code):
-    t = S[code]
-    addr = "<br>".join(e(x.strip()) for x in OWNER["OWNER_ADDRESS"].split("|"))
-    priv = "".join(f"<p>{e(x)}</p>" for x in t["privacy"])
+    t, L = S[code], LEGAL[code]
+    addr = ", ".join(x.strip() for x in OWNER["OWNER_ADDRESS"].split("|"))
+    def fill(x):
+        return e(x).replace("{NAME}", e(OWNER["OWNER_NAME"])).replace("{ADDRESS}", e(addr)).replace(
+            "{EMAIL}", f'<a href="mailto:{e(OWNER["OWNER_EMAIL"])}">{e(OWNER["OWNER_EMAIL"])}</a>')
+    secs = "".join(f"<h2>{e(h)}</h2>" + "".join(f"<p>{fill(p)}</p>" for p in ps) for h, ps in L["sections"])
     return f"""<!doctype html>
 <html lang="{t['htmllang']}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{e(t['legal_title'])}</title><meta name="robots" content="noindex, follow">
+<title>{e(L['legal_title'])}</title><meta name="description" content="{e(L['legal_h1'])}: SoloStarter HQ.">
+<meta name="robots" content="noindex, follow">
 <link rel="canonical" href="{url(code)}legal/"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
-{FONTS}<style>{CSS} main.legal{{max-width:42rem;padding-block:24px 48px}} main.legal h1{{font-size:2rem;margin-bottom:24px}} main.legal h2{{font-size:1.3rem;margin:28px 0 8px}} main.legal p{{color:var(--muted)}}</style>
+{FONTS}<style>{CSS} main.legal{{max-width:44rem;padding-block:24px 56px}} main.legal h1{{font-size:clamp(1.7rem,4vw,2.2rem);margin-bottom:8px}} main.legal h2{{font-size:1.25rem;margin:32px 0 8px}} main.legal p{{color:var(--muted);margin:0 0 10px}} main.legal a{{color:var(--accent)}} .upd{{font-size:.85rem}}</style>
 </head><body><div class="wrap">
 <header class="top"><a class="brand" href="/{t['path']}">SoloStarter<span>HQ</span></a></header>
-<main class="legal"><h1>{e(t['legal_h1'])}</h1>
-<h2>{e(t['legal_owner_h'])}</h2><p>{e(OWNER['OWNER_NAME'])}<br>{addr}</p>
-<h2>{e(t['legal_contact'])}</h2><p>{e(OWNER['OWNER_EMAIL'])}</p>
-<p>{e(t['independent'])}</p><p>{e(t['disclosure'])}</p>
-<h2>{e(t['privacy_h'])}</h2>{priv}
-<p><a href="/{t['path']}">{e(t['back'])}</a></p></main></div></body></html>
+<main class="legal"><h1>{e(L['legal_h1'])}</h1><p class="upd">{e(L['updated'])}</p>
+{secs}
+<p class="upd">{e(L['updated'])}</p>
+<p><a href="/{t['path']}">{e(L['back'])}</a></p></main></div></body></html>
 """
 
 
@@ -269,8 +287,7 @@ def main():
         g = os.path.join(OUT, "go", c)
         os.makedirs(g, exist_ok=True)
         open(os.path.join(g, "index.html"), "w", encoding="utf-8").write(redirect(c))
-    for f in os.listdir(os.path.join(HERE, "static")):
-        shutil.copy(os.path.join(HERE, "static", f), os.path.join(OUT, f))
+    shutil.copytree(os.path.join(HERE, "static"), OUT, dirs_exist_ok=True)
     # sitemap with hreflang alternates
     alts = "".join(f'<xhtml:link rel="alternate" hreflang="{S[c]["hreflang"]}" href="{url(c)}"/>' for c in LANGS)
     alts += f'<xhtml:link rel="alternate" hreflang="x-default" href="{url("en")}"/>'

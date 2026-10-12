@@ -19,7 +19,7 @@ jobs:
     env:
       # Live address. Every canonical, hreflang and sitemap URL is built from this.
       SITE_BASE: https://solostarterhq.com
-      OWNER_NAME: SoloStarterHQ
+      OWNER_NAME: Pras Rao
       OWNER_ADDRESS: 80A Ruskin Ave|Welling, London DA16 3QQ|United Kingdom
       OWNER_EMAIL: raoprasji@gmail.com
     steps:
