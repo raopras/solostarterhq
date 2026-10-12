@@ -376,13 +376,13 @@
     "title": "Freelance-Business für 0 € starten | SoloStarter HQ",
     "desc": "Website, E-Mail-Liste, Sales Funnels und Onlinekurs im dauerhaft kostenlosen Tarif. 2.000 Kontakte, unbegrenzte E-Mails, keine Kreditkarte.",
     "nav_cta": "Kostenlos starten",
-    "hero_h1": "Starte dein Freelance-Business mit <mark>0 €</mark> Toolkosten.",
-    "hero_sub": "Website, E-Mail-Liste, Sales Funnels und Checkout an einem Ort mit systeme.io, in einem Tarif, der kostenlos bleibt. Upgrade erst, wenn dein Business es trägt.",
+    "hero_h1": "Starten Sie Ihr Freelance-Business mit <mark>0 €</mark> Toolkosten.",
+    "hero_sub": "Website, E-Mail-Liste, Sales Funnels und Checkout an einem Ort mit systeme.io, in einem Tarif, der kostenlos bleibt. Upgraden Sie erst, wenn Ihr Business es trägt.",
     "cta": "Kostenloses systeme.io-Konto erstellen",
-    "cta_note": "Werbung · Affiliate-Link. Keine Kreditkarte, also nichts zu kündigen. Wir erhalten nur eine Provision, wenn du später einen kostenpflichtigen Tarif buchst.",
-    "calc_h2": "Deine monatliche Tool-Rechnung",
-    "calc_intro": "Wenn du für getrennte Tools zahlst, trag ein, was jedes davon kostet, und sieh, was ein kostenloser All-in-one-Tarif sparen könnte.",
-    "calc_example_note": "Die Beträge sind Beispiele. Trag deine eigenen ein.",
+    "cta_note": "Werbung · Affiliate-Link. Keine Kreditkarte, also nichts zu kündigen. Wir erhalten nur eine Provision, wenn Sie später einen kostenpflichtigen Tarif buchen.",
+    "calc_h2": "Ihre monatliche Tool-Rechnung",
+    "calc_intro": "Wenn Sie für getrennte Tools zahlen, tragen Sie ein, was jedes davon kostet, und sehen Sie, was ein kostenloser All-in-one-Tarif sparen könnte.",
+    "calc_example_note": "Die Beträge sind Beispiele. Tragen Sie Ihre eigenen ein.",
     "items": [
       "Website & Landingpages",
       "E-Mail-Marketing",
@@ -395,7 +395,7 @@
     "total_month": "Summe pro Monat",
     "total_year": "Summe pro Jahr",
     "free_plan_line": "Kostenloser All-in-one-Tarif",
-    "keep_line": "Du sparst {amount} im Jahr",
+    "keep_line": "Sie sparen {amount} im Jahr",
     "invoice_label": "RECHNUNG",
     "plan_h2": "Das ist im kostenlosen Tarif von systeme.io enthalten",
     "plan_items": [
@@ -437,7 +437,7 @@
     "steps": [
       [
         "Kostenloses Konto erstellen",
-        "Mit deiner E-Mail-Adresse registrieren. Keine Kreditkarte, kein Ablaufdatum."
+        "Mit Ihrer E-Mail-Adresse registrieren. Keine Kreditkarte, kein Ablaufdatum."
       ],
       [
         "Vorlage wählen",
@@ -452,11 +452,11 @@
     "faq": [
       [
         "Ist der kostenlose Tarif wirklich kostenlos?",
-        "Ja. Laut systeme.io läuft der kostenlose Tarif nie ab und braucht keine Kreditkarte. Du zahlst nur, wenn du upgradest."
+        "Ja. Laut systeme.io läuft der kostenlose Tarif nie ab und braucht keine Kreditkarte. Sie zahlen nur, wenn Sie upgraden."
       ],
       [
         "Welche Grenzen gibt es?",
-        "2.000 Kontakte, 3 Sales Funnels, 1 Onlinekurs, 1 E-Mail-Kampagne und 1 Automatisierungsregel. Der E-Mail-Versand ist unbegrenzt. Wenn du eine Grenze erreichst, entscheidest du selbst, ob du upgradest."
+        "2.000 Kontakte, 3 Sales Funnels, 1 Onlinekurs, 1 E-Mail-Kampagne und 1 Automatisierungsregel. Der E-Mail-Versand ist unbegrenzt. Wenn Sie eine Grenze erreichen, entscheiden Sie selbst, ob Sie upgraden."
       ],
       [
         "Gibt es systeme.io auf Deutsch?",
@@ -464,18 +464,18 @@
       ],
       [
         "Brauche ich technische Kenntnisse?",
-        "Nein. Du baust Seiten mit Vorlagen und einem Drag-and-drop-Editor. Ohne Code."
+        "Nein. Sie bauen Seiten mit Vorlagen und einem Drag-and-drop-Editor. Ohne Code."
       ],
       [
         "Wie verdient diese Website Geld?",
-        "Die Buttons sind Affiliate-Links. Wenn du irgendwann einen kostenpflichtigen Tarif buchst, zahlt uns systeme.io eine Provision. Für dich entstehen keine Mehrkosten."
+        "Die Buttons sind Affiliate-Links. Wenn Sie irgendwann einen kostenpflichtigen Tarif buchen, zahlt uns systeme.io eine Provision. Für Sie entstehen keine Mehrkosten."
       ]
     ],
-    "cta2_h2": "Dein erster Kunden-Funnel kann heute online sein.",
-    "cta2_body": "Starte im kostenlosen Tarif und behalte dein Geld für das, was zählt.",
-    "disclosure": "Hinweis (Werbung/Affiliate-Links): Alle Buttons „Kostenlos starten“ und „Kostenloses systeme.io-Konto erstellen“ sind Affiliate-Links zu systeme.io. Buchst du nach einer Registrierung über einen dieser Links einen kostenpflichtigen Tarif, zahlt uns systeme.io eine Provision. Dein Preis bleibt gleich.",
+    "cta2_h2": "Ihr erster Kunden-Funnel kann heute online sein.",
+    "cta2_body": "Starten Sie im kostenlosen Tarif und behalten Sie Ihr Geld für das, was zählt.",
+    "disclosure": "Hinweis (Werbung/Affiliate-Links): Alle Buttons „Kostenlos starten“ und „Kostenloses systeme.io-Konto erstellen“ sind Affiliate-Links zu systeme.io. Buchen Sie nach einer Registrierung über einen dieser Links einen kostenpflichtigen Tarif, zahlt uns systeme.io eine Provision. Ihr Preis bleibt gleich.",
     "independent": "SoloStarter HQ ist eine unabhängige Website. Sie wird nicht von systeme.io betrieben, gesponsert oder empfohlen.",
-    "checked": "Tarifangaben im Oktober 2026 auf systeme.io geprüft. Aktuelle Grenzen und Preise bitte immer auf der Preisseite von systeme.io prüfen.",
+    "checked": "Tarifangaben im Oktober 2026 auf systeme.io geprüft. Bitte prüfen Sie aktuelle Grenzen und Preise immer auf der Preisseite von systeme.io.",
     "lang_label": "Sprache",
     "audience": "Für Designer, Texter, Coaches, virtuelle Assistenzen, Entwickler und Berater."
   }
