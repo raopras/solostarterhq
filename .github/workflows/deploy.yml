@@ -17,8 +17,8 @@ jobs:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     env:
-      # Change SITE_BASE to https://solostarterhq.com once the domain is connected.
-      SITE_BASE: https://raopras.github.io/solostarterhq
+      # Live address. Every canonical, hreflang and sitemap URL is built from this.
+      SITE_BASE: https://solostarterhq.com
       OWNER_NAME: SoloStarterHQ
       OWNER_ADDRESS: 80A Ruskin Ave|Welling, London DA16 3QQ|United Kingdom
       OWNER_EMAIL: raoprasji@gmail.com
