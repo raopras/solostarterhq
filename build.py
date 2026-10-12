@@ -8,7 +8,18 @@ import json, html, os, shutil, sys
 BASE = os.environ.get("SITE_BASE", "https://solostarterhq.com").rstrip("/")
 from urllib.parse import urlparse
 PREFIX = urlparse(BASE).path.rstrip("/")  # e.g. "/solostarterhq" on a GitHub project site
-AFF = "https://systeme.io/?sa=sa0283620426244c2d54b43911545c547546a995b6"
+AFF_ID = "sa0283620426244c2d54b43911545c547546a995b6"
+# Each language sends visitors to systeme.io's sign-up page in the same language.
+# systeme.io credits the affiliate ID on any of its pages (?sa=...).
+SYSTEME_LANG = {"en": "", "es": "es/", "pt-br": "pt/", "de": "de/"}
+
+
+def aff(code):
+    return f"https://systeme.io/{SYSTEME_LANG[code]}register?sa={AFF_ID}"
+
+
+def direct(code):
+    return f"https://systeme.io/{SYSTEME_LANG[code]}"
 OUT = sys.argv[1] if len(sys.argv) > 1 else "dist"
 HERE = os.path.dirname(os.path.abspath(__file__))
 S = json.load(open(os.path.join(HERE, "strings.json"), encoding="utf-8"))
@@ -160,7 +171,7 @@ def head(code, preview=False):
 def body(code, preview=False):
     t = S[code]
     root = "#" if preview else "/"
-    go = AFF if preview else f"/go/{code}/"
+    go = aff(code) if preview else f"/go/{code}/"
     rel = 'rel="sponsored nofollow noopener"'
     cur_attr = ' aria-current="page"'
     langs = "".join(
@@ -260,7 +271,6 @@ NAME_LINE = {"en": "{NAME}, trading as SoloStarterHQ (sole trader)",
              "es": "{NAME}, que opera como SoloStarterHQ (empresario individual)",
              "pt-br": "{NAME}, atuando como SoloStarterHQ (empresário individual)",
              "de": "{NAME}, handelnd unter SoloStarterHQ (Einzelunternehmer)"}
-DIRECT = "https://systeme.io/"
 
 
 def footer_links(code, preview=False):
@@ -283,7 +293,7 @@ def legal(code, kind):
         x = e(x.replace("{NAME_LINE}", NAME_LINE[code]))
         return (x.replace("{NAME}", e(OWNER["OWNER_NAME"])).replace("{ADDRESS}", e(addr))
                  .replace("{EMAIL}", f'<a href="mailto:{e(OWNER["OWNER_EMAIL"])}">{e(OWNER["OWNER_EMAIL"])}</a>')
-                 .replace("{DIRECT}", f'<a href="{DIRECT}" rel="nofollow noopener">systeme.io</a>'))
+                 .replace("{DIRECT}", f'<a href="{direct(code)}" rel="nofollow noopener">{direct(code).replace("https://", "")}</a>'))
     secs = "".join(f"<h2>{e(h)}</h2>" + "".join(f"<p>{fill(p)}</p>" for p in ps) for h, ps in P["sections"])
     return f"""<!doctype html>
 <html lang="{t['htmllang']}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -306,11 +316,11 @@ def redirect(code):
     return f"""<!doctype html>
 <html lang="{S[code]['htmllang']}"><head><meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
-<meta http-equiv="refresh" content="0; url={AFF}">
+<meta http-equiv="refresh" content="0; url={aff(code)}">
 <title>SoloStarter HQ</title>
 <link rel="canonical" href="{url(code)}">
-<script>location.replace({json.dumps(AFF)});</script>
-</head><body><p><a href="{AFF}" rel="sponsored nofollow">Continue</a></p></body></html>
+<script>location.replace({json.dumps(aff(code))});</script>
+</head><body><p><a href="{aff(code)}" rel="sponsored nofollow">Continue</a></p></body></html>
 """
 
 
