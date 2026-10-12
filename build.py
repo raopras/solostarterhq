@@ -257,13 +257,13 @@ def body(code, preview=False):
 (function(){{
   var L={json.dumps(t['htmllang'])}, KEEP={keep_tpl};
   var FX={json.dumps(FX)}, BASE={json.dumps(EXAMPLES_USD)}, RC={json.dumps(REGION_CURRENCY)};
-  var ins=[].slice.call(document.querySelectorAll('#calc input')), cur=document.getElementById('cur'), edited=false, region='';
+  var ins=[].slice.call(document.querySelectorAll('#calc input')), cur=document.getElementById('cur'), prev=cur.value, region='';
   try{{var langs=(navigator.languages&&navigator.languages.length)?navigator.languages:[navigator.language];
     for(var i=0;i<langs.length&&!region;i++){{var m=/^[a-z]{{2,3}}-([A-Z]{{2}})$/i.exec(langs[i]||'');if(m)region=m[1].toUpperCase();}}}}catch(x){{}}
   var loc=region?L.split('-')[0]+'-'+region:L;
-  function ex(c){{var r=FX[c];return BASE.map(function(v){{return Math.max(r[1],Math.round(v*r[0]/r[1])*r[1])}})}}
-  function fill(){{if(edited)return;var v=ex(cur.value);ins.forEach(function(i,n){{i.value=v[n]}})}}
-  function fmt(n){{try{{return new Intl.NumberFormat(loc,{{style:'currency',currency:cur.value,maximumFractionDigits:0}}).format(n)}}catch(x){{return cur.value+' '+Math.round(n)}}}}
+  function convert(from,to){{var a=FX[from],b=FX[to];ins.forEach(function(i){{var v=parseFloat(i.value);if(!isFinite(v)||v<=0)return;
+    i.value=Math.max(b[1],Math.round(v*b[0]/a[0]/b[1])*b[1])}});prev=to}}
+  function fmt(n){{try{{return new Intl.NumberFormat(loc,{{style:'currency',currency:cur.value,currencyDisplay:'narrowSymbol',maximumFractionDigits:0}}).format(n)}}catch(x){{return cur.value+' '+Math.round(n)}}}}
   function calc(){{
     var m=ins.reduce(function(a,i){{var v=parseFloat(i.value);return a+(isFinite(v)&&v>0?v:0)}},0);
     document.getElementById('tm').textContent=fmt(m);
@@ -272,9 +272,9 @@ def body(code, preview=False):
     var k=document.getElementById('keep');k.textContent=KEEP.replace('{{amount}}',fmt(m*12));
     k.classList.add('bump');setTimeout(function(){{k.classList.remove('bump')}},180);
   }}
-  if(region&&RC[region]&&RC[region]!==cur.value){{cur.value=RC[region];fill();}}
-  ins.forEach(function(i){{i.addEventListener('input',function(){{edited=true;calc()}})}});
-  cur.addEventListener('change',function(){{fill();calc()}});calc();
+  if(region&&RC[region]&&RC[region]!==cur.value){{cur.value=RC[region];convert(prev,cur.value);}}
+  ins.forEach(function(i){{i.addEventListener('input',calc)}});
+  cur.addEventListener('change',function(){{convert(prev,cur.value);calc()}});calc();
 }})();
 </script>"""
 
