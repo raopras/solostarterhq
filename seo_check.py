@@ -26,7 +26,9 @@ for code, t in S.items():
         try: json.loads(block)
         except Exception: errors.append(f"{code}: invalid JSON-LD")
     need('rel="sponsored nofollow noopener"' in s, "affiliate links missing rel=sponsored")
-    need(os.path.exists(os.path.join(OUT, t["path"], "legal", "index.html")), "legal page missing")
+    for slug in ("legal", "privacy", "how-we-make-money"):
+        need(os.path.exists(os.path.join(OUT, t["path"], slug, "index.html")), f"{slug} page missing")
+    need('class="adbar"' in s, "ad label missing at top of page")
     need(os.path.exists(os.path.join(OUT, "go", code, "index.html")), "redirect missing")
 for f in ("sitemap.xml", "robots.txt", "404.html", "og.png", "favicon.svg"):
     if not os.path.exists(os.path.join(OUT, f)):

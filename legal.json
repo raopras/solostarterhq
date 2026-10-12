@@ -1,272 +1,862 @@
 {
   "en": {
-    "legal_link": "Legal notice, disclaimer & privacy",
-    "legal_title": "Legal Notice and Privacy | SoloStarter HQ",
-    "legal_h1": "Legal notice, disclaimer and privacy",
-    "updated": "Last updated: 12 October 2026",
+    "banner": "Ad: this page promotes systeme.io through affiliate links.",
+    "banner_link": "How we make money",
+    "footer_links": [
+      "Legal notice & terms",
+      "Privacy policy",
+      "How we make money"
+    ],
     "back": "Back to the home page",
-    "sections": [
-      [
-        "About this site",
-        [
-          "SoloStarter HQ (solostarterhq.com) is an independent affiliate marketing website. Its purpose is to promote the free plan of systeme.io, an online business platform, to freelancers.",
-          "We earn money as a systeme.io affiliate. If you create a systeme.io account through a link on this site and later buy a paid plan, systeme.io pays us a commission. You pay the same price either way.",
-          "SoloStarter HQ is not systeme.io. It is not run, sponsored or endorsed by systeme.io or by ITACWT Limited, which operates systeme.io. systeme.io is a trade mark of its owner."
+    "version": "Version 2.0, 12 October 2026",
+    "changes": "What changed: terms, privacy and the affiliate disclosure now have separate pages, with more detail on your rights and on how commission works.",
+    "pages": {
+      "legal": {
+        "title": "Legal Notice and Terms | SoloStarter HQ",
+        "h1": "Legal notice and terms of use",
+        "sections": [
+          [
+            "1. Who we are",
+            [
+              "{NAME_LINE}",
+              "Postal address: {ADDRESS}",
+              "Email: {EMAIL}"
+            ]
+          ],
+          [
+            "2. What this site is",
+            [
+              "SoloStarter HQ (solostarterhq.com) is an independent information website. It is a form of advertising: it promotes the free plan of systeme.io to freelancers through affiliate links, and we earn a commission if visitors who sign up later buy a paid plan. Our page How we make money explains this in full.",
+              "We do not sell anything and we do not enter into any contract with you. If you open a systeme.io account or buy a plan, your contract is with systeme.io, operated by ITACWT Limited (Ireland), under its own terms and privacy policy. Questions or complaints about your account, payments or the service go to systeme.io.",
+              "SoloStarter HQ is not run, sponsored or endorsed by systeme.io or ITACWT Limited."
+            ]
+          ],
+          [
+            "3. Using this site",
+            [
+              "You can use this site free of charge. By using it, you agree to these terms. If you do not agree, please do not use the site.",
+              "Please do not misuse the site: do not try to hack, overload or disrupt it, and do not republish its content as your own."
+            ]
+          ],
+          [
+            "4. Information only, not advice",
+            [
+              "Everything on this site is general information. It is not financial, legal, tax or business advice, and it does not take your circumstances into account. Decide for yourself whether a product suits you.",
+              "We check plan details on systeme.io's website before we publish them, but systeme.io can change its plans, limits, prices and terms at any time after that. Always check the current details on systeme.io's pricing page before you sign up or pay.",
+              "The figures in the cost calculator are examples, not real prices. Any saving depends on the tools and prices you enter. We do not promise any income, business results or savings."
+            ]
+          ],
+          [
+            "5. Links to other websites",
+            [
+              "This site links to systeme.io and may link to other websites. We do not control those websites and are not responsible for their content, availability or practices. A link does not mean we endorse everything on the linked site.",
+              "If you believe a link leads to unlawful content, tell us and we will review it and remove it where appropriate."
+            ]
+          ],
+          [
+            "6. Intellectual property",
+            [
+              "The text, design, calculator and code of this site are © 2026 Pras Rao. All rights reserved. You may share links to our pages, but you may not reproduce our content without permission.",
+              "systeme.io is a trade mark of its owner. We use the name only to identify the product we write about. The fonts used on this site are licensed under the SIL Open Font License."
+            ]
+          ],
+          [
+            "7. Our liability",
+            [
+              "We take reasonable care to keep this site accurate, but we provide it as it is, without any warranty that it is complete, up to date, available or free from errors.",
+              "As far as the law allows, we are not liable for any loss or damage arising from your use of this site, your reliance on its content, or your use of websites it links to, including systeme.io. We provide this site for information only, so we are not liable to business users for loss of profit, revenue, business opportunity or data.",
+              "Nothing in these terms excludes or limits our liability for death or personal injury caused by our negligence, for fraud or fraudulent misrepresentation, or for any other liability that cannot be excluded or limited by law. Your statutory rights as a consumer are not affected."
+            ]
+          ],
+          [
+            "8. Changes to these terms",
+            [
+              "We may update these terms from time to time. The version number and date at the top show the current version, with a short summary of what changed."
+            ]
+          ],
+          [
+            "9. Law and disputes",
+            [
+              "These terms are governed by the law of England and Wales, and the courts of England and Wales have jurisdiction. If you are a consumer living in Scotland or Northern Ireland, you can also bring proceedings in your local courts. If you are a consumer living elsewhere, you keep the protection of the mandatory laws of your country and can bring proceedings where the law allows."
+            ]
+          ],
+          [
+            "10. Contact",
+            [
+              "For any question about this site or these terms, email {EMAIL} or write to us at the postal address above."
+            ]
+          ]
         ]
-      ],
-      [
-        "Who runs this site",
-        [
-          "{NAME}, trading as SoloStarterHQ (sole trader)",
-          "Postal address: {ADDRESS}",
-          "Email: {EMAIL}"
+      },
+      "privacy": {
+        "title": "Privacy Policy | SoloStarter HQ",
+        "h1": "Privacy policy",
+        "sections": [
+          [
+            "1. Who is responsible",
+            [
+              "The data controller for this website is {NAME_LINE}, {ADDRESS}. Email: {EMAIL}. We are a small sole trader and have not appointed a data protection officer; please send all privacy questions to this email address."
+            ]
+          ],
+          [
+            "2. The short version",
+            [
+              "This site has no cookies, no contact forms, no accounts, no advertising trackers and no social media plug-ins. Its fonts are stored on the site itself. We never sell personal data or use it to build advertising profiles.",
+              "Three things do involve personal data, and each is explained below: our hosting provider's server logs, our cookie-free visit statistics, and the commission records we receive from systeme.io."
+            ]
+          ],
+          [
+            "3. Hosting and server logs",
+            [
+              "What: when you visit, our hosting provider, GitHub Pages (GitHub, Inc., USA), logs your IP address and technical details of each request, such as the page, date and time, and browser type.",
+              "Why and legal basis: to deliver the pages and protect them against attacks. This is our legitimate interest in running a secure website (Article 6(1)(f) UK GDPR and EU GDPR; Article 7(IX) LGPD).",
+              "How long: GitHub keeps these logs for security purposes for the period set in its own privacy statement. We do not have access to them."
+            ]
+          ],
+          [
+            "4. Visit statistics",
+            [
+              "What: we use Umami Cloud (Umami Software, Inc.) to count page visits and clicks on the sign-up buttons, for example how many people clicked a button on the Spanish page. Umami does not use cookies, does not store identifiers on your device and does not follow you across other websites. To count a visit, your browser sends Umami your IP address and browser details, which Umami says it anonymises. We only see anonymous totals.",
+              "Why and legal basis: to understand which pages and languages help visitors. This is our legitimate interest (Article 6(1)(f) UK GDPR and EU GDPR; Article 7(IX) LGPD).",
+              "How long: the statistics are anonymous and kept while we run the site. Umami stores them in its EU region; some of its service providers are in the USA.",
+              "Your choice: if your browser sends a Do Not Track signal, no statistics are recorded."
+            ]
+          ],
+          [
+            "5. Affiliate links and commission records",
+            [
+              "What: our sign-up buttons send you to systeme.io with our affiliate code in the link, so that systeme.io can credit us. From then on, systeme.io (ITACWT Limited, Ireland) is the controller of the data you give it, under its own privacy policy. To pay commission, systeme.io may show us limited details of accounts created through our link, such as the sign-up date and plan.",
+              "Why and legal basis: to check that commissions are correct (our legitimate interest) and to keep accounts for tax (a legal obligation, Article 6(1)(c) UK GDPR and EU GDPR; Article 7(II) LGPD).",
+              "How long: up to 6 years after the end of the tax year concerned. We never use these details to contact or market to anyone."
+            ]
+          ],
+          [
+            "6. Emails you send us",
+            [
+              "If you email us, we use your email address and message only to reply. Legal basis: our legitimate interest in answering you. We delete the correspondence after 2 years unless we need it for a legal claim."
+            ]
+          ],
+          [
+            "7. Who receives data",
+            [
+              "Only the service providers named above: GitHub (hosting), Umami (statistics) and systeme.io (affiliate tracking, as a separate controller). We do not sell, rent or share personal data with anyone else, unless the law requires it."
+            ]
+          ],
+          [
+            "8. International transfers",
+            [
+              "GitHub is in the USA and is certified under the EU-US Data Privacy Framework and its UK extension. Umami stores statistics in the EU and uses some service providers in the USA under its data processing terms. These safeguards protect data transferred outside the UK, the European Economic Area and Brazil."
+            ]
+          ],
+          [
+            "9. Your rights",
+            [
+              "You can ask us for confirmation of whether we hold your personal data, a copy of it, correction, deletion, restriction of its use, or a portable copy. Under the LGPD you can also ask for information about who we share it with and for anonymisation.",
+              "Right to object: you can object at any time to any use of your data based on our legitimate interests. We will then stop, unless we have compelling legitimate grounds or need the data for a legal claim.",
+              "To use any of these rights, email {EMAIL}. We will reply within one month (within 15 days for LGPD requests). It is free of charge.",
+              "You can also complain to a data protection authority: in the UK the Information Commissioner's Office (ico.org.uk), in the EU the authority where you live, and in Brazil the Autoridade Nacional de Proteção de Dados (gov.br/anpd)."
+            ]
+          ],
+          [
+            "10. Other points",
+            [
+              "Cookies: this site sets none, so it has no cookie banner. Automated decisions: we do not make any decisions about you by automated means. Sensitive data: we do not collect any. Children: this site is not aimed at children, and we do not knowingly collect data about them.",
+              "Security: every page is served only over an encrypted HTTPS connection."
+            ]
+          ],
+          [
+            "11. Changes to this policy",
+            [
+              "We will update this policy if what we do with data changes. The version number and date at the top show the current version, with a short summary of what changed."
+            ]
+          ]
         ]
-      ],
-      [
-        "Information only",
-        [
-          "Everything on this site is general information. It is not financial, legal, tax or business advice.",
-          "Plan details come from systeme.io's own website and were checked in October 2026. systeme.io can change its plans, limits and prices at any time, so check its pricing page before you decide.",
-          "The figures in the calculator are examples, not real prices. Any saving depends on the tools and prices you enter.",
-          "We do not promise any income, results or savings."
+      },
+      "earn": {
+        "title": "How We Make Money | SoloStarter HQ",
+        "h1": "How we make money",
+        "sections": [
+          [
+            "This site is advertising",
+            [
+              "SoloStarter HQ exists to promote the free plan of systeme.io. Every sign-up button on this site is an affiliate link, so we label each page as an ad at the top and beside the buttons."
+            ]
+          ],
+          [
+            "How the commission works",
+            [
+              "Each sign-up button carries our affiliate code. When someone creates a free systeme.io account through it, systeme.io links that account to us.",
+              "We earn nothing from free accounts. If the account holder later buys a paid plan, systeme.io pays us a share of the price, currently 60%, for as long as they stay a paying customer. systeme.io sets these terms and can change them.",
+              "You pay exactly the same price as you would going to systeme.io directly. The commission comes out of systeme.io's revenue, not your pocket."
+            ]
+          ],
+          [
+            "Prefer not to use our link?",
+            [
+              "That is completely fine. You can go straight to systeme.io at {DIRECT}, and we will earn nothing."
+            ]
+          ],
+          [
+            "How we keep it honest",
+            [
+              "systeme.io does not pay us to write anything, has not reviewed this site and does not approve what we say. The commission does not change the facts we publish: we show the free plan's limits as well as its strengths, and we check plan details on systeme.io's own pages before publishing them.",
+              "We only promote systeme.io. If you think another product would suit you better, use it."
+            ]
+          ],
+          [
+            "Spotted a mistake?",
+            [
+              "If a link is broken, a price is out of date or anything here looks wrong, please email {EMAIL} and we will correct it."
+            ]
+          ]
         ]
-      ],
-      [
-        "Links to other websites",
-        [
-          "Sign-up links take you to systeme.io's website. Your account, any purchase and your use of systeme.io are between you and systeme.io, under its own terms and privacy policy.",
-          "We are not responsible for the content of other websites."
-        ]
-      ],
-      [
-        "Our liability",
-        [
-          "We work to keep this site accurate, but we provide it as it is, without any guarantee that it is complete, up to date or free from errors.",
-          "As far as the law allows, we are not liable for any loss arising from your use of this site or of websites it links to.",
-          "Nothing on this page limits liability for death or personal injury caused by negligence, for fraud, or for anything else that the law does not allow us to limit. Your statutory rights as a consumer are not affected."
-        ]
-      ],
-      [
-        "Privacy",
-        [
-          "Who is responsible: {NAME} (SoloStarterHQ), at the address above, is the data controller for this website. Contact: {EMAIL}.",
-          "What this site collects: it has no cookies, contact forms, accounts or tracking pixels, and its fonts are stored on the site itself.",
-          "Visit statistics: we use Umami Cloud (Umami Software, Inc., USA) to count page visits and clicks on the sign-up buttons. Umami uses no cookies, does not follow you across other websites, and we only see anonymous totals, such as how many people clicked a button on the Spanish page. To count a visit, your browser sends Umami your IP address and browser details, which Umami says it anonymises; Umami stores the statistics in its EU region, and some of its service providers are in the USA. We rely on our legitimate interest in knowing which pages help visitors. If your browser sends a Do Not Track signal, no statistics are recorded.",
-          "Hosting: the site is hosted on GitHub Pages by GitHub, Inc. (USA). When you visit, GitHub logs your IP address and technical details of the request to deliver the pages and keep them secure. We rely on our legitimate interest in running a secure website. GitHub is certified under the EU-US Data Privacy Framework and its UK extension; see GitHub's privacy statement for details.",
-          "Affiliate links: when you click a sign-up button, you go to systeme.io with our affiliate code in the link, so that systeme.io can credit us. From then on, systeme.io (ITACWT Limited, Ireland) decides what data it collects, under its own privacy policy. To pay commissions, systeme.io may show us limited details of accounts created through our link. We use these only to check commissions and keep tax records, and we keep them for up to 6 years.",
-          "Your rights: under UK and EU data protection law, and Brazil's LGPD, you can ask us to give you a copy of your personal data, correct it or delete it, or to restrict or stop how we use it. Email us to do so. You can also complain to the UK Information Commissioner's Office (ico.org.uk) or to the data protection authority where you live."
-        ]
-      ],
-      [
-        "Changes and applicable law",
-        [
-          "We may update this page. The date below shows the current version.",
-          "This website is run from England, and the law of England and Wales applies. If you are a consumer, you keep the protection of the mandatory laws of the country where you live."
-        ]
-      ]
-    ]
+      }
+    }
   },
   "es": {
-    "legal_link": "Aviso legal, condiciones y privacidad",
-    "legal_title": "Aviso legal y privacidad | SoloStarter HQ",
-    "legal_h1": "Aviso legal, condiciones de uso y privacidad",
-    "updated": "Última actualización: 12 de octubre de 2026",
+    "banner": "Publicidad: esta página promociona systeme.io mediante enlaces de afiliado.",
+    "banner_link": "Cómo ganamos dinero",
+    "footer_links": [
+      "Aviso legal y condiciones",
+      "Política de privacidad",
+      "Cómo ganamos dinero"
+    ],
     "back": "Volver a la página principal",
-    "sections": [
-      [
-        "Sobre este sitio",
-        [
-          "SoloStarter HQ (solostarterhq.com) es una web independiente de marketing de afiliación. Su finalidad es dar a conocer el plan gratuito de systeme.io, una plataforma para negocios online, entre freelancers.",
-          "Ganamos dinero como afiliados de systeme.io. Si creas una cuenta en systeme.io a través de un enlace de esta web y más adelante contratas un plan de pago, systeme.io nos paga una comisión. Tú pagas el mismo precio.",
-          "SoloStarter HQ no es systeme.io. No está gestionada, patrocinada ni avalada por systeme.io ni por ITACWT Limited, la empresa que opera systeme.io. systeme.io es una marca de su titular."
+    "version": "Versión 2.0, 12 de octubre de 2026",
+    "changes": "Qué ha cambiado: las condiciones, la privacidad y el aviso de afiliación tienen ahora páginas separadas, con más detalle sobre tus derechos y sobre cómo funcionan las comisiones.",
+    "pages": {
+      "legal": {
+        "title": "Aviso legal y condiciones | SoloStarter HQ",
+        "h1": "Aviso legal y condiciones de uso",
+        "sections": [
+          [
+            "1. Datos del titular",
+            [
+              "{NAME_LINE}",
+              "Domicilio: {ADDRESS}",
+              "Email: {EMAIL}",
+              "El titular es un empresario individual establecido en el Reino Unido y no está inscrito en ningún registro mercantil español."
+            ]
+          ],
+          [
+            "2. Qué es esta web",
+            [
+              "SoloStarter HQ (solostarterhq.com) es una web independiente de información. Es una forma de publicidad: da a conocer el plan gratuito de systeme.io entre freelancers mediante enlaces de afiliado, y ganamos una comisión si quienes se registran contratan después un plan de pago. Nuestra página Cómo ganamos dinero lo explica en detalle.",
+              "No vendemos nada ni celebramos ningún contrato contigo. Si abres una cuenta en systeme.io o contratas un plan, tu contrato es con systeme.io, operada por ITACWT Limited (Irlanda), según sus propias condiciones y su política de privacidad. Las dudas o reclamaciones sobre tu cuenta, los pagos o el servicio deben dirigirse a systeme.io.",
+              "SoloStarter HQ no está gestionada, patrocinada ni avalada por systeme.io ni por ITACWT Limited."
+            ]
+          ],
+          [
+            "3. Uso de esta web",
+            [
+              "Puedes usar esta web gratis. Al usarla, aceptas estas condiciones. Si no estás de acuerdo, no la uses.",
+              "No hagas un uso indebido de la web: no intentes atacarla, sobrecargarla o interrumpirla, ni publiques su contenido como si fuera tuyo."
+            ]
+          ],
+          [
+            "4. Solo información, no asesoramiento",
+            [
+              "Todo el contenido de esta web es información general. No es asesoramiento financiero, legal, fiscal ni empresarial, y no tiene en cuenta tu situación. Decide por ti mismo si un producto te conviene.",
+              "Comprobamos los datos de los planes en la web de systeme.io antes de publicarlos, pero systeme.io puede cambiar sus planes, límites, precios y condiciones en cualquier momento. Consulta siempre los datos actuales en la página de precios de systeme.io antes de registrarte o pagar.",
+              "Las cifras de la calculadora son ejemplos, no precios reales. El ahorro depende de las herramientas y los precios que introduzcas. No prometemos ingresos, resultados empresariales ni ahorros."
+            ]
+          ],
+          [
+            "5. Enlaces a otras webs",
+            [
+              "Esta web enlaza con systeme.io y puede enlazar con otras webs. No las controlamos y no somos responsables de su contenido, disponibilidad o prácticas. Un enlace no significa que respaldemos todo lo que aparece en la web enlazada.",
+              "Si crees que un enlace lleva a contenido ilícito, avísanos: lo revisaremos y lo retiraremos cuando proceda."
+            ]
+          ],
+          [
+            "6. Propiedad intelectual",
+            [
+              "Los textos, el diseño, la calculadora y el código de esta web son © 2026 Pras Rao. Todos los derechos reservados. Puedes compartir enlaces a nuestras páginas, pero no reproducir su contenido sin permiso.",
+              "systeme.io es una marca de su titular. Usamos el nombre solo para identificar el producto del que hablamos. Las fuentes tipográficas de esta web tienen licencia SIL Open Font License."
+            ]
+          ],
+          [
+            "7. Responsabilidad",
+            [
+              "Ponemos un cuidado razonable en que esta web sea exacta, pero se ofrece tal cual, sin garantía de que esté completa, actualizada, disponible o libre de errores.",
+              "En la medida en que la ley lo permita, no somos responsables de las pérdidas o daños derivados del uso de esta web, de la confianza en su contenido ni del uso de las webs a las que enlaza, incluida systeme.io. Como esta web es solo informativa, no respondemos ante usuarios profesionales por lucro cesante, pérdida de ingresos, de oportunidades de negocio o de datos.",
+              "Nada de lo indicado en estas condiciones excluye ni limita nuestra responsabilidad por muerte o lesiones causadas por negligencia, por dolo o fraude, ni cualquier otra responsabilidad que la ley no permita excluir o limitar. Tus derechos legales como consumidor no se ven afectados."
+            ]
+          ],
+          [
+            "8. Cambios en estas condiciones",
+            [
+              "Podemos actualizar estas condiciones. La versión y la fecha que aparecen arriba indican la versión vigente, con un breve resumen de los cambios."
+            ]
+          ],
+          [
+            "9. Ley aplicable y litigios",
+            [
+              "Estas condiciones se rigen por la ley de Inglaterra y Gales, y los tribunales de Inglaterra y Gales son competentes. Si eres consumidor, conservas la protección de las leyes imperativas de tu país de residencia y puedes acudir a los tribunales que la ley te permita, incluidos los de tu domicilio."
+            ]
+          ],
+          [
+            "10. Contacto",
+            [
+              "Para cualquier pregunta sobre esta web o estas condiciones, escribe a {EMAIL} o a la dirección postal indicada arriba."
+            ]
+          ]
         ]
-      ],
-      [
-        "Titular del sitio",
-        [
-          "{NAME}, que opera como SoloStarterHQ (empresario individual)",
-          "Dirección postal: {ADDRESS}",
-          "Email: {EMAIL}"
+      },
+      "privacy": {
+        "title": "Política de privacidad | SoloStarter HQ",
+        "h1": "Política de privacidad",
+        "sections": [
+          [
+            "1. Responsable del tratamiento",
+            [
+              "El responsable del tratamiento de esta web es {NAME_LINE}, {ADDRESS}. Email: {EMAIL}. Somos un pequeño empresario individual y no hemos designado delegado de protección de datos; envía cualquier consulta sobre privacidad a este email."
+            ]
+          ],
+          [
+            "2. En resumen",
+            [
+              "Esta web no usa cookies, formularios de contacto, cuentas de usuario, rastreadores publicitarios ni complementos de redes sociales. Sus fuentes tipográficas están alojadas en la propia web. Nunca vendemos datos personales ni los usamos para crear perfiles publicitarios.",
+              "Solo tres cosas implican datos personales, y se explican a continuación: los registros del servidor de nuestro proveedor de alojamiento, nuestras estadísticas de visitas sin cookies y los registros de comisiones que recibimos de systeme.io."
+            ]
+          ],
+          [
+            "3. Alojamiento y registros del servidor",
+            [
+              "Qué: cuando visitas la web, nuestro proveedor de alojamiento, GitHub Pages (GitHub, Inc., EE. UU.), registra tu dirección IP y datos técnicos de cada solicitud, como la página, la fecha y hora y el tipo de navegador.",
+              "Finalidad y base legal: servir las páginas y protegerlas frente a ataques. Es nuestro interés legítimo en mantener una web segura (artículo 6.1.f del RGPD).",
+              "Plazo: GitHub conserva estos registros por motivos de seguridad durante el plazo que fija su propia declaración de privacidad. Nosotros no tenemos acceso a ellos."
+            ]
+          ],
+          [
+            "4. Estadísticas de visitas",
+            [
+              "Qué: usamos Umami Cloud (Umami Software, Inc.) para contar las visitas y los clics en los botones de registro, por ejemplo cuántas personas pulsaron un botón en la página en español. Umami no usa cookies, no guarda identificadores en tu dispositivo y no te sigue por otras webs. Para contar una visita, tu navegador envía a Umami tu dirección IP y datos del navegador, que Umami afirma anonimizar. Nosotros solo vemos totales anónimos.",
+              "Finalidad y base legal: saber qué páginas e idiomas son útiles para los visitantes. Es nuestro interés legítimo (artículo 6.1.f del RGPD).",
+              "Plazo: las estadísticas son anónimas y se conservan mientras mantengamos la web. Umami las guarda en su región de la UE; algunos de sus proveedores están en EE. UU.",
+              "Tu elección: si tu navegador envía la señal «Do Not Track», no se registra ninguna estadística."
+            ]
+          ],
+          [
+            "5. Enlaces de afiliado y registros de comisiones",
+            [
+              "Qué: nuestros botones de registro te llevan a systeme.io con nuestro código de afiliado en el enlace, para que systeme.io nos asigne la comisión. A partir de ahí, systeme.io (ITACWT Limited, Irlanda) es responsable de los datos que le facilites, según su propia política de privacidad. Para pagar comisiones, systeme.io puede mostrarnos datos limitados de las cuentas creadas con nuestro enlace, como la fecha de alta y el plan.",
+              "Finalidad y base legal: comprobar que las comisiones son correctas (interés legítimo) y llevar la contabilidad fiscal (obligación legal, artículo 6.1.c del RGPD).",
+              "Plazo: hasta 6 años después del final del ejercicio fiscal correspondiente. Nunca usamos estos datos para contactar con nadie ni para enviar publicidad."
+            ]
+          ],
+          [
+            "6. Emails que nos envías",
+            [
+              "Si nos escribes, usamos tu dirección de email y tu mensaje solo para responderte. Base legal: nuestro interés legítimo en contestarte. Borramos la correspondencia a los 2 años, salvo que la necesitemos para una reclamación legal."
+            ]
+          ],
+          [
+            "7. Destinatarios",
+            [
+              "Solo los proveedores indicados arriba: GitHub (alojamiento), Umami (estadísticas) y systeme.io (seguimiento de afiliación, como responsable independiente). No vendemos, alquilamos ni cedemos datos personales a nadie más, salvo obligación legal."
+            ]
+          ],
+          [
+            "8. Transferencias internacionales",
+            [
+              "GitHub está en EE. UU. y está certificada en el Marco de Privacidad de Datos UE-EE. UU. Umami guarda las estadísticas en la UE y usa algunos proveedores en EE. UU. conforme a sus condiciones de tratamiento de datos. Estas garantías protegen los datos que salen del Espacio Económico Europeo."
+            ]
+          ],
+          [
+            "9. Tus derechos",
+            [
+              "Puedes pedirnos acceso a tus datos personales, su rectificación o supresión, la limitación de su tratamiento o su portabilidad.",
+              "Derecho de oposición: puedes oponerte en cualquier momento a cualquier tratamiento basado en nuestro interés legítimo. Dejaremos de tratarlos, salvo que existan motivos legítimos imperiosos o los necesitemos para una reclamación legal.",
+              "Para ejercer cualquiera de estos derechos, escribe a {EMAIL}. Te responderemos en el plazo de un mes, sin coste.",
+              "También puedes presentar una reclamación ante la Agencia Española de Protección de Datos (aepd.es) o ante la autoridad de protección de datos de tu país."
+            ]
+          ],
+          [
+            "10. Otros puntos",
+            [
+              "Cookies: esta web no instala ninguna, por eso no tiene banner de cookies. Decisiones automatizadas: no tomamos decisiones sobre ti por medios automatizados. Datos sensibles: no recogemos ninguno. Menores: esta web no está dirigida a menores y no recogemos conscientemente datos sobre ellos.",
+              "Seguridad: todas las páginas se sirven solo mediante una conexión cifrada HTTPS."
+            ]
+          ],
+          [
+            "11. Cambios en esta política",
+            [
+              "Actualizaremos esta política si cambia lo que hacemos con los datos. La versión y la fecha que aparecen arriba indican la versión vigente, con un breve resumen de los cambios."
+            ]
+          ]
         ]
-      ],
-      [
-        "Solo información",
-        [
-          "Todo el contenido de esta web es información general. No es asesoramiento financiero, legal, fiscal ni empresarial.",
-          "Los datos de los planes proceden de la web de systeme.io y se revisaron en octubre de 2026. systeme.io puede cambiar sus planes, límites y precios en cualquier momento, así que consulta su página de precios antes de decidir.",
-          "Las cifras de la calculadora son ejemplos, no precios reales. El ahorro depende de las herramientas y los precios que introduzcas.",
-          "No prometemos ingresos, resultados ni ahorros."
+      },
+      "earn": {
+        "title": "Cómo ganamos dinero | SoloStarter HQ",
+        "h1": "Cómo ganamos dinero",
+        "sections": [
+          [
+            "Esta web es publicidad",
+            [
+              "SoloStarter HQ existe para dar a conocer el plan gratuito de systeme.io. Todos los botones de registro de esta web son enlaces de afiliado, por eso marcamos cada página como publicidad en la parte superior y junto a los botones."
+            ]
+          ],
+          [
+            "Cómo funciona la comisión",
+            [
+              "Cada botón de registro lleva nuestro código de afiliado. Cuando alguien crea una cuenta gratuita en systeme.io a través de él, systeme.io vincula esa cuenta con nosotros.",
+              "No ganamos nada con las cuentas gratuitas. Si el titular de la cuenta contrata después un plan de pago, systeme.io nos paga una parte del precio, actualmente el 60 %, mientras siga siendo cliente de pago. systeme.io fija estas condiciones y puede cambiarlas.",
+              "Pagas exactamente el mismo precio que si fueras directamente a systeme.io. La comisión sale de los ingresos de systeme.io, no de tu bolsillo."
+            ]
+          ],
+          [
+            "¿Prefieres no usar nuestro enlace?",
+            [
+              "No hay ningún problema. Puedes ir directamente a systeme.io en {DIRECT} y no ganaremos nada."
+            ]
+          ],
+          [
+            "Cómo garantizamos la honestidad",
+            [
+              "systeme.io no nos paga por escribir nada, no ha revisado esta web y no aprueba lo que decimos. La comisión no cambia los datos que publicamos: mostramos los límites del plan gratuito además de sus ventajas, y comprobamos los datos de los planes en las páginas de systeme.io antes de publicarlos.",
+              "Solo promocionamos systeme.io. Si crees que otro producto te conviene más, úsalo."
+            ]
+          ],
+          [
+            "¿Has visto un error?",
+            [
+              "Si un enlace no funciona, un precio está desactualizado o algo parece incorrecto, escríbenos a {EMAIL} y lo corregiremos."
+            ]
+          ]
         ]
-      ],
-      [
-        "Enlaces a otras webs",
-        [
-          "Los enlaces de registro te llevan a la web de systeme.io. Tu cuenta, cualquier compra y el uso que hagas de systeme.io son una relación entre tú y systeme.io, según sus propias condiciones y su política de privacidad.",
-          "No somos responsables del contenido de otras webs."
-        ]
-      ],
-      [
-        "Responsabilidad",
-        [
-          "Procuramos que esta web sea exacta, pero se ofrece tal cual, sin garantía de que esté completa, actualizada o libre de errores.",
-          "En la medida en que la ley lo permita, no somos responsables de las pérdidas derivadas del uso de esta web o de las webs a las que enlaza.",
-          "Nada de lo indicado en esta página limita la responsabilidad por muerte o lesiones causadas por negligencia, por fraude ni por cualquier otro supuesto que la ley no permita limitar. Tus derechos legales como consumidor no se ven afectados."
-        ]
-      ],
-      [
-        "Privacidad",
-        [
-          "Responsable del tratamiento: {NAME} (SoloStarterHQ), en la dirección indicada arriba. Contacto: {EMAIL}.",
-          "Qué datos recoge esta web: no usa cookies, formularios, cuentas ni píxeles de seguimiento, y las fuentes tipográficas están alojadas en la propia web.",
-          "Estadísticas de visitas: usamos Umami Cloud (Umami Software, Inc., EE. UU.) para contar las visitas y los clics en los botones de registro. Umami no usa cookies ni te sigue por otras webs, y solo vemos totales anónimos, por ejemplo cuántas personas pulsaron un botón en la página en español. Para contar una visita, tu navegador envía a Umami tu dirección IP y datos del navegador, que Umami afirma anonimizar; Umami guarda las estadísticas en su región de la UE, y algunos de sus proveedores están en EE. UU. La base legal es nuestro interés legítimo en saber qué páginas son útiles. Si tu navegador envía la señal «Do Not Track», no se registra ninguna estadística.",
-          "Alojamiento: la web está alojada en GitHub Pages, de GitHub, Inc. (EE. UU.). Cuando la visitas, GitHub registra tu dirección IP y datos técnicos de la solicitud para servir las páginas y mantenerlas seguras. La base legal es nuestro interés legítimo en mantener una web segura. GitHub está certificada en el Marco de Privacidad de Datos UE-EE. UU.; consulta su declaración de privacidad para más detalles.",
-          "Enlaces de afiliado: al pulsar un botón de registro vas a systeme.io con nuestro código de afiliado en el enlace, para que systeme.io pueda asignarnos la comisión. A partir de ahí, systeme.io (ITACWT Limited, Irlanda) decide qué datos recoge, según su propia política de privacidad. Para pagar comisiones, systeme.io puede mostrarnos datos limitados de las cuentas creadas con nuestro enlace. Los usamos solo para comprobar comisiones y llevar los registros fiscales, y los conservamos hasta 6 años.",
-          "Tus derechos: según el RGPD, puedes pedirnos acceso a tus datos personales, su rectificación o supresión, o la limitación u oposición a su tratamiento. Escríbenos por email para ejercerlos. También puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es) o ante la autoridad de protección de datos de tu país."
-        ]
-      ],
-      [
-        "Cambios y ley aplicable",
-        [
-          "Podemos actualizar esta página. La fecha de abajo indica la versión vigente.",
-          "Esta web se gestiona desde Inglaterra y se rige por la ley de Inglaterra y Gales. Si eres consumidor, conservas la protección de las leyes imperativas de tu país de residencia."
-        ]
-      ]
-    ]
+      }
+    }
   },
   "pt-br": {
-    "legal_link": "Aviso legal, termos e privacidade",
-    "legal_title": "Aviso legal e privacidade | SoloStarter HQ",
-    "legal_h1": "Aviso legal, termos de uso e privacidade",
-    "updated": "Última atualização: 12 de outubro de 2026",
+    "banner": "Publicidade: esta página divulga a systeme.io com links de afiliado.",
+    "banner_link": "Como ganhamos dinheiro",
+    "footer_links": [
+      "Aviso legal e termos",
+      "Política de privacidade",
+      "Como ganhamos dinheiro"
+    ],
     "back": "Voltar para a página inicial",
-    "sections": [
-      [
-        "Sobre este site",
-        [
-          "SoloStarter HQ (solostarterhq.com) é um site independente de marketing de afiliados. O objetivo é apresentar a freelancers o plano grátis da systeme.io, uma plataforma para negócios online.",
-          "Ganhamos dinheiro como afiliados da systeme.io. Se você criar uma conta na systeme.io por um link deste site e depois contratar um plano pago, a systeme.io nos paga uma comissão. Você paga o mesmo preço.",
-          "SoloStarter HQ não é a systeme.io. Não é administrado, patrocinado nem endossado pela systeme.io nem pela ITACWT Limited, empresa que opera a systeme.io. systeme.io é uma marca do seu titular."
+    "version": "Versão 2.0, 12 de outubro de 2026",
+    "changes": "O que mudou: os termos, a privacidade e o aviso de afiliado agora têm páginas separadas, com mais detalhes sobre seus direitos e sobre como funcionam as comissões.",
+    "pages": {
+      "legal": {
+        "title": "Aviso legal e termos | SoloStarter HQ",
+        "h1": "Aviso legal e termos de uso",
+        "sections": [
+          [
+            "1. Quem somos",
+            [
+              "{NAME_LINE}",
+              "Endereço postal: {ADDRESS}",
+              "E-mail: {EMAIL}",
+              "O responsável é um empresário individual estabelecido no Reino Unido e não possui CNPJ."
+            ]
+          ],
+          [
+            "2. O que é este site",
+            [
+              "SoloStarter HQ (solostarterhq.com) é um site independente de informação. Ele é uma forma de publicidade: divulga o plano grátis da systeme.io para freelancers por meio de links de afiliado, e recebemos uma comissão se quem se cadastrar contratar depois um plano pago. Nossa página Como ganhamos dinheiro explica tudo em detalhes.",
+              "Não vendemos nada e não celebramos nenhum contrato com você. Se você abrir uma conta na systeme.io ou contratar um plano, seu contrato é com a systeme.io, operada pela ITACWT Limited (Irlanda), conforme os termos e a política de privacidade dela. Dúvidas ou reclamações sobre sua conta, pagamentos ou o serviço devem ser enviadas à systeme.io.",
+              "SoloStarter HQ não é administrado, patrocinado nem endossado pela systeme.io nem pela ITACWT Limited."
+            ]
+          ],
+          [
+            "3. Uso deste site",
+            [
+              "Você pode usar este site gratuitamente. Ao usá-lo, você aceita estes termos. Se não concordar, não use o site.",
+              "Não faça uso indevido do site: não tente invadi-lo, sobrecarregá-lo ou interrompê-lo, nem publique o conteúdo dele como se fosse seu."
+            ]
+          ],
+          [
+            "4. Apenas informação, não aconselhamento",
+            [
+              "Todo o conteúdo deste site é informação geral. Não é aconselhamento financeiro, jurídico, tributário ou empresarial e não leva em conta a sua situação. Decida por conta própria se um produto é adequado para você.",
+              "Conferimos os dados dos planos no site da systeme.io antes de publicá-los, mas a systeme.io pode mudar planos, limites, preços e condições a qualquer momento. Confira sempre os dados atuais na página de preços da systeme.io antes de se cadastrar ou pagar.",
+              "Os valores da calculadora são exemplos, não preços reais. A economia depende das ferramentas e dos preços que você digitar. Não prometemos renda, resultados nos negócios nem economia."
+            ]
+          ],
+          [
+            "5. Links para outros sites",
+            [
+              "Este site aponta para a systeme.io e pode apontar para outros sites. Não controlamos esses sites e não somos responsáveis pelo conteúdo, pela disponibilidade ou pelas práticas deles. Um link não significa que endossamos tudo o que está no site de destino.",
+              "Se você acredita que um link leva a conteúdo ilícito, avise-nos: vamos analisá-lo e removê-lo quando for o caso."
+            ]
+          ],
+          [
+            "6. Propriedade intelectual",
+            [
+              "Os textos, o design, a calculadora e o código deste site são © 2026 Pras Rao. Todos os direitos reservados. Você pode compartilhar links para nossas páginas, mas não pode reproduzir o conteúdo sem autorização.",
+              "systeme.io é uma marca do seu titular. Usamos o nome apenas para identificar o produto de que falamos. As fontes usadas neste site são licenciadas sob a SIL Open Font License."
+            ]
+          ],
+          [
+            "7. Responsabilidade",
+            [
+              "Tomamos cuidado razoável para manter este site correto, mas ele é oferecido no estado em que se encontra, sem garantia de que esteja completo, atualizado, disponível ou livre de erros.",
+              "Na medida permitida por lei, não somos responsáveis por perdas ou danos decorrentes do uso deste site, da confiança em seu conteúdo ou do uso dos sites para os quais ele aponta, incluindo a systeme.io. Como este site é apenas informativo, não respondemos a usuários profissionais por lucros cessantes, perda de receita, de oportunidades de negócio ou de dados.",
+              "Nada nestes termos exclui ou limita nossa responsabilidade por morte ou lesão causada por negligência, por fraude ou por qualquer outra responsabilidade que a lei não permita excluir ou limitar. Seus direitos como consumidor, inclusive os previstos no Código de Defesa do Consumidor, não são afetados."
+            ]
+          ],
+          [
+            "8. Alterações nestes termos",
+            [
+              "Podemos atualizar estes termos. A versão e a data no topo mostram a versão em vigor, com um breve resumo das mudanças."
+            ]
+          ],
+          [
+            "9. Lei aplicável e conflitos",
+            [
+              "Estes termos são regidos pela lei da Inglaterra e do País de Gales, e os tribunais da Inglaterra e do País de Gales são competentes. Se você é consumidor, continua protegido pelas normas obrigatórias do país onde mora e pode recorrer aos tribunais que a lei permitir, incluindo os do seu domicílio."
+            ]
+          ],
+          [
+            "10. Contato",
+            [
+              "Para qualquer dúvida sobre este site ou estes termos, escreva para {EMAIL} ou para o endereço postal acima."
+            ]
+          ]
         ]
-      ],
-      [
-        "Responsável pelo site",
-        [
-          "{NAME}, atuando como SoloStarterHQ (empresário individual)",
-          "Endereço postal: {ADDRESS}",
-          "E-mail: {EMAIL}"
+      },
+      "privacy": {
+        "title": "Política de privacidade | SoloStarter HQ",
+        "h1": "Política de privacidade",
+        "sections": [
+          [
+            "1. Controlador e canal de contato",
+            [
+              "O controlador dos dados deste site é {NAME_LINE}, {ADDRESS}. E-mail: {EMAIL}. Este e-mail é o canal de comunicação com os titulares de dados, e Pras Rao atua como encarregado pelo tratamento de dados pessoais."
+            ]
+          ],
+          [
+            "2. Resumo",
+            [
+              "Este site não usa cookies, formulários de contato, contas de usuário, rastreadores de publicidade nem plug-ins de redes sociais. As fontes ficam hospedadas no próprio site. Nunca vendemos dados pessoais nem os usamos para criar perfis de publicidade.",
+              "Só três coisas envolvem dados pessoais, e cada uma é explicada abaixo: os registros do servidor do nosso provedor de hospedagem, nossas estatísticas de visitas sem cookies e os registros de comissão que recebemos da systeme.io."
+            ]
+          ],
+          [
+            "3. Hospedagem e registros do servidor",
+            [
+              "O quê: quando você visita o site, nosso provedor de hospedagem, o GitHub Pages (GitHub, Inc., EUA), registra seu endereço IP e dados técnicos de cada solicitação, como a página, a data e hora e o tipo de navegador.",
+              "Finalidade e base legal: entregar as páginas e protegê-las contra ataques. É o nosso legítimo interesse em manter um site seguro (art. 7º, IX, da LGPD).",
+              "Prazo: a GitHub guarda esses registros por motivos de segurança pelo prazo definido na declaração de privacidade dela. Nós não temos acesso a eles."
+            ]
+          ],
+          [
+            "4. Estatísticas de visitas",
+            [
+              "O quê: usamos o Umami Cloud (Umami Software, Inc.) para contar visitas e cliques nos botões de cadastro, por exemplo quantas pessoas clicaram em um botão na página em português. O Umami não usa cookies, não guarda identificadores no seu dispositivo e não acompanha você em outros sites. Para contar uma visita, seu navegador envia ao Umami seu endereço IP e dados do navegador, que o Umami afirma anonimizar. Nós só vemos totais anônimos.",
+              "Finalidade e base legal: entender quais páginas e idiomas ajudam os visitantes. É o nosso legítimo interesse (art. 7º, IX, da LGPD).",
+              "Prazo: as estatísticas são anônimas e ficam guardadas enquanto mantivermos o site. O Umami as guarda na região da UE; alguns dos seus fornecedores ficam nos EUA.",
+              "Sua escolha: se o seu navegador enviar o sinal \"Do Not Track\", nenhuma estatística é registrada."
+            ]
+          ],
+          [
+            "5. Links de afiliado e registros de comissão",
+            [
+              "O quê: nossos botões de cadastro levam você à systeme.io com nosso código de afiliado no link, para que a systeme.io nos credite. A partir daí, a systeme.io (ITACWT Limited, Irlanda) é a controladora dos dados que você fornecer a ela, conforme a política de privacidade dela. Para pagar comissões, a systeme.io pode nos mostrar dados limitados das contas criadas pelo nosso link, como a data de cadastro e o plano.",
+              "Finalidade e base legal: conferir se as comissões estão corretas (legítimo interesse) e manter a contabilidade fiscal (cumprimento de obrigação legal, art. 7º, II, da LGPD).",
+              "Prazo: até 6 anos após o fim do ano fiscal correspondente. Nunca usamos esses dados para contatar ninguém nem para enviar publicidade."
+            ]
+          ],
+          [
+            "6. E-mails que você nos envia",
+            [
+              "Se você nos escrever, usamos seu e-mail e sua mensagem apenas para responder. Base legal: nosso legítimo interesse em responder você. Apagamos a correspondência após 2 anos, salvo se precisarmos dela para uma demanda judicial."
+            ]
+          ],
+          [
+            "7. Com quem os dados são compartilhados",
+            [
+              "Apenas com os fornecedores citados acima: GitHub (hospedagem), Umami (estatísticas) e systeme.io (rastreamento de afiliados, como controladora independente). Não vendemos, alugamos nem compartilhamos dados pessoais com mais ninguém, salvo obrigação legal."
+            ]
+          ],
+          [
+            "8. Transferência internacional",
+            [
+              "A GitHub fica nos EUA e é certificada no EU-US Data Privacy Framework. O Umami guarda as estatísticas na UE e usa alguns fornecedores nos EUA conforme seus termos de tratamento de dados. Essas garantias protegem os dados transferidos para fora do Brasil, conforme o art. 33 da LGPD."
+            ]
+          ],
+          [
+            "9. Seus direitos",
+            [
+              "Pelo art. 18 da LGPD, você pode pedir: confirmação de que tratamos seus dados, acesso, correção, anonimização, bloqueio ou eliminação de dados desnecessários, portabilidade, informação sobre com quem compartilhamos seus dados e eliminação de dados tratados com base em consentimento.",
+              "Direito de oposição: você pode se opor a qualquer tratamento baseado no nosso legítimo interesse. Nesse caso, vamos interromper o tratamento, salvo se houver motivo legítimo que o justifique ou se precisarmos dos dados para uma demanda judicial.",
+              "Para exercer qualquer desses direitos, escreva para {EMAIL}. Respondemos em até 15 dias, sem custo.",
+              "Você também pode apresentar reclamação à Autoridade Nacional de Proteção de Dados (gov.br/anpd)."
+            ]
+          ],
+          [
+            "10. Outros pontos",
+            [
+              "Cookies: este site não usa nenhum, por isso não exibe aviso de cookies. Decisões automatizadas: não tomamos decisões sobre você de forma automatizada. Dados sensíveis: não coletamos nenhum. Crianças e adolescentes: este site não é voltado a eles, e não coletamos dados deles de forma consciente.",
+              "Segurança: todas as páginas são servidas apenas por conexão criptografada HTTPS."
+            ]
+          ],
+          [
+            "11. Alterações nesta política",
+            [
+              "Vamos atualizar esta política se mudar o que fazemos com os dados. A versão e a data no topo mostram a versão em vigor, com um breve resumo das mudanças."
+            ]
+          ]
         ]
-      ],
-      [
-        "Apenas informação",
-        [
-          "Todo o conteúdo deste site é informação geral. Não é aconselhamento financeiro, jurídico, tributário ou empresarial.",
-          "Os dados dos planos vêm do site da systeme.io e foram conferidos em outubro de 2026. A systeme.io pode mudar planos, limites e preços a qualquer momento, então confira a página de preços dela antes de decidir.",
-          "Os valores da calculadora são exemplos, não preços reais. A economia depende das ferramentas e dos preços que você digitar.",
-          "Não prometemos renda, resultados nem economia."
+      },
+      "earn": {
+        "title": "Como ganhamos dinheiro | SoloStarter HQ",
+        "h1": "Como ganhamos dinheiro",
+        "sections": [
+          [
+            "Este site é publicidade",
+            [
+              "SoloStarter HQ existe para divulgar o plano grátis da systeme.io. Todos os botões de cadastro deste site são links de afiliado, por isso identificamos cada página como publicidade no topo e ao lado dos botões."
+            ]
+          ],
+          [
+            "Como funciona a comissão",
+            [
+              "Cada botão de cadastro leva o nosso código de afiliado. Quando alguém cria uma conta grátis na systeme.io por ele, a systeme.io vincula essa conta a nós.",
+              "Não ganhamos nada com contas grátis. Se o titular da conta contratar depois um plano pago, a systeme.io nos paga uma parte do preço, atualmente 60%, enquanto ele continuar sendo cliente pagante. A systeme.io define essas condições e pode mudá-las.",
+              "Você paga exatamente o mesmo preço que pagaria indo direto à systeme.io. A comissão sai da receita da systeme.io, não do seu bolso."
+            ]
+          ],
+          [
+            "Prefere não usar nosso link?",
+            [
+              "Tudo bem. Você pode ir direto à systeme.io em {DIRECT}, e não ganharemos nada."
+            ]
+          ],
+          [
+            "Como mantemos a honestidade",
+            [
+              "A systeme.io não nos paga para escrever nada, não revisou este site e não aprova o que dizemos. A comissão não muda os dados que publicamos: mostramos os limites do plano grátis além das vantagens, e conferimos os dados dos planos nas páginas da própria systeme.io antes de publicá-los.",
+              "Só divulgamos a systeme.io. Se você acha que outro produto é melhor para você, use-o."
+            ]
+          ],
+          [
+            "Encontrou um erro?",
+            [
+              "Se um link não funcionar, um preço estiver desatualizado ou algo parecer errado, escreva para {EMAIL} e vamos corrigir."
+            ]
+          ]
         ]
-      ],
-      [
-        "Links para outros sites",
-        [
-          "Os links de cadastro levam você ao site da systeme.io. Sua conta, qualquer compra e o uso que você fizer da systeme.io são uma relação entre você e a systeme.io, conforme os termos e a política de privacidade dela.",
-          "Não somos responsáveis pelo conteúdo de outros sites."
-        ]
-      ],
-      [
-        "Responsabilidade",
-        [
-          "Procuramos manter este site correto, mas ele é oferecido no estado em que se encontra, sem garantia de que esteja completo, atualizado ou livre de erros.",
-          "Na medida permitida por lei, não somos responsáveis por prejuízos decorrentes do uso deste site ou dos sites para os quais ele aponta.",
-          "Nada nesta página limita a responsabilidade por morte ou lesão causada por negligência, por fraude ou por qualquer outra situação que a lei não permita limitar. Seus direitos legais como consumidor não são afetados."
-        ]
-      ],
-      [
-        "Privacidade",
-        [
-          "Controlador dos dados: {NAME} (SoloStarterHQ), no endereço acima. Contato: {EMAIL}.",
-          "O que este site coleta: ele não usa cookies, formulários, contas nem pixels de rastreamento, e as fontes ficam hospedadas no próprio site.",
-          "Estatísticas de visitas: usamos o Umami Cloud (Umami Software, Inc., EUA) para contar visitas e cliques nos botões de cadastro. O Umami não usa cookies nem acompanha você em outros sites, e só vemos totais anônimos, como quantas pessoas clicaram em um botão na página em português. Para contar uma visita, seu navegador envia ao Umami seu endereço IP e dados do navegador, que o Umami afirma anonimizar; o Umami guarda as estatísticas na região da UE, e alguns dos seus fornecedores ficam nos EUA. A base legal é o nosso legítimo interesse em saber quais páginas ajudam os visitantes. Se o seu navegador enviar o sinal \"Do Not Track\", nenhuma estatística é registrada.",
-          "Hospedagem: o site é hospedado no GitHub Pages, da GitHub, Inc. (EUA). Quando você o visita, a GitHub registra seu endereço IP e dados técnicos da solicitação para entregar as páginas e mantê-las seguras. A base legal é o nosso legítimo interesse em manter um site seguro. A GitHub é certificada no EU-US Data Privacy Framework; veja a declaração de privacidade da GitHub para mais detalhes.",
-          "Links de afiliado: ao clicar em um botão de cadastro, você vai para a systeme.io com o nosso código de afiliado no link, para que a systeme.io possa nos creditar. A partir daí, a systeme.io (ITACWT Limited, Irlanda) decide quais dados coleta, conforme a política de privacidade dela. Para pagar comissões, a systeme.io pode nos mostrar dados limitados das contas criadas pelo nosso link. Usamos esses dados só para conferir comissões e manter registros fiscais, e os guardamos por até 6 anos.",
-          "Seus direitos: pela Lei Geral de Proteção de Dados (LGPD), você pode pedir confirmação e acesso aos seus dados pessoais, correção, eliminação, ou se opor ao tratamento. Escreva para o nosso e-mail. Você também pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD)."
-        ]
-      ],
-      [
-        "Alterações e lei aplicável",
-        [
-          "Podemos atualizar esta página. A data abaixo mostra a versão em vigor.",
-          "Este site é administrado a partir da Inglaterra e é regido pela lei da Inglaterra e do País de Gales. Se você é consumidor, continua protegido pelas normas obrigatórias do país onde mora."
-        ]
-      ]
-    ]
+      }
+    }
   },
   "de": {
-    "legal_link": "Impressum, Haftungsausschluss & Datenschutz",
-    "legal_title": "Impressum und Datenschutz | SoloStarter HQ",
-    "legal_h1": "Impressum, Haftungsausschluss und Datenschutz",
-    "updated": "Stand: 12. Oktober 2026",
+    "banner": "Werbung: Diese Seite bewirbt systeme.io mit Affiliate-Links.",
+    "banner_link": "So verdienen wir Geld",
+    "footer_links": [
+      "Impressum & Nutzungsbedingungen",
+      "Datenschutzerklärung",
+      "So verdienen wir Geld"
+    ],
     "back": "Zurück zur Startseite",
-    "sections": [
-      [
-        "Über diese Website",
-        [
-          "SoloStarter HQ (solostarterhq.com) ist eine unabhängige Affiliate-Marketing-Website. Sie stellt Freelancern den kostenlosen Tarif von systeme.io vor, einer Plattform für Online-Business.",
-          "Wir verdienen Geld als Affiliate-Partner von systeme.io. Wenn du über einen Link auf dieser Website ein systeme.io-Konto erstellst und später einen kostenpflichtigen Tarif buchst, zahlt uns systeme.io eine Provision. Dein Preis bleibt gleich.",
-          "SoloStarter HQ ist nicht systeme.io. Die Website wird nicht von systeme.io oder von der ITACWT Limited, die systeme.io betreibt, betrieben, gesponsert oder empfohlen. systeme.io ist eine Marke ihres Inhabers."
+    "version": "Version 2.0, 12. Oktober 2026",
+    "changes": "Was sich geändert hat: Nutzungsbedingungen, Datenschutz und Werbehinweis stehen jetzt auf eigenen Seiten, mit mehr Details zu deinen Rechten und zur Provision.",
+    "pages": {
+      "legal": {
+        "title": "Impressum und Nutzungsbedingungen | SoloStarter HQ",
+        "h1": "Impressum und Nutzungsbedingungen",
+        "sections": [
+          [
+            "1. Angaben gemäß § 5 DDG",
+            [
+              "{NAME_LINE}",
+              "Anschrift: {ADDRESS}",
+              "E-Mail: {EMAIL}",
+              "Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV: Pras Rao, Anschrift wie oben.",
+              "Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+            ]
+          ],
+          [
+            "2. Was diese Website ist",
+            [
+              "SoloStarter HQ (solostarterhq.com) ist eine unabhängige Informationswebsite. Sie ist Werbung: Sie stellt Freelancern den kostenlosen Tarif von systeme.io über Affiliate-Links vor, und wir erhalten eine Provision, wenn sich Besucher registrieren und später einen kostenpflichtigen Tarif buchen. Unsere Seite „So verdienen wir Geld“ erklärt das ausführlich.",
+              "Wir verkaufen nichts und schließen keinen Vertrag mit dir. Wenn du ein systeme.io-Konto eröffnest oder einen Tarif buchst, kommt dein Vertrag mit systeme.io zustande, betrieben von der ITACWT Limited (Irland), zu deren eigenen Bedingungen und Datenschutzbestimmungen. Fragen oder Beschwerden zu Konto, Zahlungen oder Dienst richte bitte an systeme.io.",
+              "SoloStarter HQ wird nicht von systeme.io oder der ITACWT Limited betrieben, gesponsert oder empfohlen."
+            ]
+          ],
+          [
+            "3. Nutzung dieser Website",
+            [
+              "Die Nutzung dieser Website ist kostenlos. Mit der Nutzung akzeptierst du diese Bedingungen. Wenn du nicht einverstanden bist, nutze die Website bitte nicht.",
+              "Bitte missbrauche die Website nicht: Versuche nicht, sie anzugreifen, zu überlasten oder zu stören, und veröffentliche ihre Inhalte nicht als deine eigenen."
+            ]
+          ],
+          [
+            "4. Haftung für Inhalte",
+            [
+              "Alle Inhalte dieser Website sind allgemeine Informationen. Sie sind keine Finanz-, Rechts-, Steuer- oder Unternehmensberatung und berücksichtigen nicht deine persönliche Situation. Entscheide selbst, ob ein Produkt zu dir passt.",
+              "Wir prüfen Tarifangaben vor der Veröffentlichung auf der Website von systeme.io. systeme.io kann Tarife, Grenzen, Preise und Bedingungen jedoch jederzeit ändern. Prüfe deshalb vor der Registrierung oder Zahlung immer die aktuellen Angaben auf der Preisseite von systeme.io.",
+              "Die Beträge im Kostenrechner sind Beispiele, keine echten Preise. Eine Ersparnis hängt von den Tools und Preisen ab, die du einträgst. Wir versprechen keine Einnahmen, Geschäftserfolge oder Ersparnisse."
+            ]
+          ],
+          [
+            "5. Haftung für Links",
+            [
+              "Diese Website verlinkt auf systeme.io und gegebenenfalls auf weitere Websites. Auf deren Inhalte haben wir keinen Einfluss; dafür ist stets der jeweilige Anbieter oder Betreiber verantwortlich. Zum Zeitpunkt der Verlinkung waren keine Rechtsverstöße erkennbar.",
+              "Wenn uns Rechtsverletzungen bekannt werden, entfernen wir die betreffenden Links umgehend. Bitte gib uns dann Bescheid."
+            ]
+          ],
+          [
+            "6. Urheberrecht",
+            [
+              "Texte, Gestaltung, Rechner und Code dieser Website sind © 2026 Pras Rao. Alle Rechte vorbehalten. Du darfst Links zu unseren Seiten teilen, aber Inhalte nicht ohne Erlaubnis vervielfältigen.",
+              "systeme.io ist eine Marke ihres Inhabers. Wir verwenden den Namen nur, um das Produkt zu bezeichnen, über das wir schreiben. Die verwendeten Schriften stehen unter der SIL Open Font License."
+            ]
+          ],
+          [
+            "7. Haftungsbeschränkung",
+            [
+              "Wir erstellen die Inhalte mit angemessener Sorgfalt, übernehmen aber keine Gewähr für Vollständigkeit, Aktualität, Verfügbarkeit oder Fehlerfreiheit.",
+              "Soweit gesetzlich zulässig, haften wir nicht für Schäden, die aus der Nutzung dieser Website, dem Vertrauen auf ihre Inhalte oder der Nutzung verlinkter Websites einschließlich systeme.io entstehen.",
+              "Unberührt bleibt die Haftung für Vorsatz und grobe Fahrlässigkeit, für Schäden aus der Verletzung von Leben, Körper oder Gesundheit, nach dem Produkthaftungsgesetz sowie in allen anderen Fällen, in denen die Haftung gesetzlich nicht ausgeschlossen oder beschränkt werden kann. Deine gesetzlichen Rechte als Verbraucher bleiben unberührt."
+            ]
+          ],
+          [
+            "8. Änderungen dieser Bedingungen",
+            [
+              "Wir können diese Bedingungen aktualisieren. Versionsnummer und Datum oben zeigen die aktuelle Fassung, zusammen mit einer kurzen Zusammenfassung der Änderungen."
+            ]
+          ],
+          [
+            "9. Anwendbares Recht und Gerichtsstand",
+            [
+              "Es gilt das Recht von England und Wales; zuständig sind die Gerichte von England und Wales. Als Verbraucher behältst du den Schutz der zwingenden Vorschriften des Landes, in dem du lebst, und kannst die Gerichte anrufen, die das Gesetz dir eröffnet, einschließlich der Gerichte an deinem Wohnsitz."
+            ]
+          ],
+          [
+            "10. Kontakt",
+            [
+              "Bei Fragen zu dieser Website oder diesen Bedingungen schreib an {EMAIL} oder an die oben genannte Anschrift."
+            ]
+          ]
         ]
-      ],
-      [
-        "Angaben gemäß § 5 DDG",
-        [
-          "{NAME}, handelnd unter SoloStarterHQ (Einzelunternehmer)",
-          "Anschrift: {ADDRESS}",
-          "E-Mail: {EMAIL}",
-          "Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV: Pras Rao, Anschrift wie oben.",
-          "Wir nehmen nicht an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teil und sind dazu auch nicht verpflichtet."
+      },
+      "privacy": {
+        "title": "Datenschutzerklärung | SoloStarter HQ",
+        "h1": "Datenschutzerklärung",
+        "sections": [
+          [
+            "1. Verantwortlicher",
+            [
+              "Verantwortlich für die Datenverarbeitung auf dieser Website ist {NAME_LINE}, {ADDRESS}. E-Mail: {EMAIL}. Als kleines Einzelunternehmen haben wir keinen Datenschutzbeauftragten benannt; bitte richte alle Datenschutzfragen an diese E-Mail-Adresse."
+            ]
+          ],
+          [
+            "2. Kurz gesagt",
+            [
+              "Diese Website verwendet keine Cookies, Kontaktformulare, Benutzerkonten, Werbe-Tracker oder Social-Media-Plug-ins. Die Schriften liegen auf dieser Website selbst. Wir verkaufen niemals personenbezogene Daten und erstellen keine Werbeprofile.",
+              "Nur drei Dinge betreffen personenbezogene Daten; sie werden unten erklärt: die Server-Logfiles unseres Hosters, unsere cookiefreie Besuchsstatistik und die Provisionsdaten, die wir von systeme.io erhalten."
+            ]
+          ],
+          [
+            "3. Hosting und Server-Logfiles",
+            [
+              "Was: Bei deinem Besuch speichert unser Hoster GitHub Pages (GitHub, Inc., USA) deine IP-Adresse und technische Angaben zu jeder Anfrage, etwa die aufgerufene Seite, Datum und Uhrzeit sowie den Browsertyp.",
+              "Zweck und Rechtsgrundlage: Auslieferung der Seiten und Schutz vor Angriffen. Rechtsgrundlage ist unser berechtigtes Interesse an einer sicheren Website (Art. 6 Abs. 1 lit. f DSGVO).",
+              "Speicherdauer: GitHub speichert diese Logfiles aus Sicherheitsgründen für den in seiner Datenschutzerklärung genannten Zeitraum. Wir haben keinen Zugriff darauf."
+            ]
+          ],
+          [
+            "4. Besuchsstatistik",
+            [
+              "Was: Wir nutzen Umami Cloud (Umami Software, Inc.), um Seitenaufrufe und Klicks auf die Registrierungsbuttons zu zählen, etwa wie viele Personen auf der deutschen Seite einen Button geklickt haben. Umami setzt keine Cookies, speichert keine Kennungen auf deinem Gerät und verfolgt dich nicht über andere Websites. Zum Zählen eines Besuchs sendet dein Browser deine IP-Adresse und Browserangaben an Umami, die Umami nach eigenen Angaben anonymisiert. Wir sehen nur anonyme Summen.",
+              "Zweck und Rechtsgrundlage: zu verstehen, welche Seiten und Sprachen Besuchern helfen. Rechtsgrundlage ist unser berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO).",
+              "Speicherdauer: Die Statistik ist anonym und wird aufbewahrt, solange wir die Website betreiben. Umami speichert sie in seiner EU-Region; einige seiner Dienstleister sitzen in den USA.",
+              "Deine Wahl: Sendet dein Browser ein „Do Not Track“-Signal, wird keine Statistik erfasst."
+            ]
+          ],
+          [
+            "5. Affiliate-Links und Provisionsdaten",
+            [
+              "Was: Unsere Registrierungsbuttons führen dich mit unserem Affiliate-Code im Link zu systeme.io, damit systeme.io uns die Provision zuordnen kann. Ab dann ist systeme.io (ITACWT Limited, Irland) nach eigener Datenschutzerklärung Verantwortlicher für die Daten, die du dort angibst. Für die Provisionsabrechnung kann systeme.io uns begrenzte Angaben zu Konten zeigen, die über unseren Link erstellt wurden, etwa Anmeldedatum und Tarif.",
+              "Zweck und Rechtsgrundlage: Prüfung der Provisionen (berechtigtes Interesse, Art. 6 Abs. 1 lit. f DSGVO) und steuerliche Aufzeichnungen (rechtliche Verpflichtung, Art. 6 Abs. 1 lit. c DSGVO).",
+              "Speicherdauer: bis zu 6 Jahre nach Ende des jeweiligen Steuerjahres. Wir nutzen diese Angaben nie, um jemanden zu kontaktieren oder zu bewerben."
+            ]
+          ],
+          [
+            "6. E-Mails an uns",
+            [
+              "Wenn du uns schreibst, nutzen wir deine E-Mail-Adresse und Nachricht nur, um dir zu antworten. Rechtsgrundlage ist unser berechtigtes Interesse an der Beantwortung (Art. 6 Abs. 1 lit. f DSGVO). Wir löschen die Korrespondenz nach 2 Jahren, sofern wir sie nicht für Rechtsansprüche benötigen."
+            ]
+          ],
+          [
+            "7. Empfänger",
+            [
+              "Nur die oben genannten Dienstleister: GitHub (Hosting), Umami (Statistik) und systeme.io (Affiliate-Zuordnung, als eigener Verantwortlicher). Wir verkaufen, vermieten oder übermitteln personenbezogene Daten an niemanden sonst, außer wir sind gesetzlich dazu verpflichtet."
+            ]
+          ],
+          [
+            "8. Übermittlung in Drittländer",
+            [
+              "GitHub sitzt in den USA und ist nach dem EU-US Data Privacy Framework zertifiziert (Angemessenheitsbeschluss der EU-Kommission, Art. 45 DSGVO). Umami speichert die Statistik in der EU und setzt einige Dienstleister in den USA auf Grundlage seiner Auftragsverarbeitungsbedingungen ein."
+            ]
+          ],
+          [
+            "9. Deine Rechte",
+            [
+              "Du hast das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18) und Datenübertragbarkeit (Art. 20).",
+              "Widerspruchsrecht (Art. 21 DSGVO): Du kannst jederzeit aus Gründen, die sich aus deiner besonderen Situation ergeben, der Verarbeitung deiner Daten auf Grundlage unseres berechtigten Interesses widersprechen. Wir verarbeiten die Daten dann nicht mehr, es sei denn, wir können zwingende schutzwürdige Gründe nachweisen oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.",
+              "Um diese Rechte auszuüben, schreib an {EMAIL}. Wir antworten innerhalb eines Monats und kostenlos.",
+              "Außerdem hast du das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren (Art. 77 DSGVO), zum Beispiel bei der Behörde deines Bundeslandes."
+            ]
+          ],
+          [
+            "10. Weitere Punkte",
+            [
+              "Cookies: Diese Website setzt keine, daher gibt es kein Cookie-Banner. Automatisierte Entscheidungen: Wir treffen keine automatisierten Entscheidungen über dich. Besondere Kategorien von Daten: Wir erheben keine. Kinder: Diese Website richtet sich nicht an Kinder, und wir erheben wissentlich keine Daten von ihnen.",
+              "Sicherheit: Alle Seiten werden ausschließlich über eine verschlüsselte HTTPS-Verbindung ausgeliefert."
+            ]
+          ],
+          [
+            "11. Änderungen dieser Erklärung",
+            [
+              "Wir aktualisieren diese Erklärung, wenn sich unsere Datenverarbeitung ändert. Versionsnummer und Datum oben zeigen die aktuelle Fassung, zusammen mit einer kurzen Zusammenfassung der Änderungen."
+            ]
+          ]
         ]
-      ],
-      [
-        "Nur zur Information",
-        [
-          "Alle Inhalte dieser Website sind allgemeine Informationen. Sie sind keine Finanz-, Rechts-, Steuer- oder Unternehmensberatung.",
-          "Die Tarifangaben stammen von der Website von systeme.io und wurden im Oktober 2026 geprüft. systeme.io kann Tarife, Grenzen und Preise jederzeit ändern. Prüfe deshalb vor deiner Entscheidung die Preisseite von systeme.io.",
-          "Die Beträge im Rechner sind Beispiele, keine echten Preise. Eine Ersparnis hängt von den Tools und Preisen ab, die du einträgst.",
-          "Wir versprechen keine Einnahmen, Ergebnisse oder Ersparnisse."
+      },
+      "earn": {
+        "title": "So verdienen wir Geld | SoloStarter HQ",
+        "h1": "So verdienen wir Geld",
+        "sections": [
+          [
+            "Diese Website ist Werbung",
+            [
+              "SoloStarter HQ gibt es, um den kostenlosen Tarif von systeme.io bekannt zu machen. Jeder Registrierungsbutton auf dieser Website ist ein Affiliate-Link. Deshalb kennzeichnen wir jede Seite oben und neben den Buttons als Werbung."
+            ]
+          ],
+          [
+            "So funktioniert die Provision",
+            [
+              "Jeder Registrierungsbutton enthält unseren Affiliate-Code. Erstellt jemand darüber ein kostenloses systeme.io-Konto, ordnet systeme.io dieses Konto uns zu.",
+              "Mit kostenlosen Konten verdienen wir nichts. Bucht der Kontoinhaber später einen kostenpflichtigen Tarif, zahlt uns systeme.io einen Anteil am Preis, derzeit 60 %, solange er zahlender Kunde bleibt. systeme.io legt diese Bedingungen fest und kann sie ändern.",
+              "Du zahlst genau denselben Preis wie bei einer direkten Anmeldung bei systeme.io. Die Provision stammt aus den Einnahmen von systeme.io, nicht aus deiner Tasche."
+            ]
+          ],
+          [
+            "Du möchtest unseren Link nicht nutzen?",
+            [
+              "Kein Problem. Du kannst direkt zu systeme.io gehen: {DIRECT}. Dann verdienen wir nichts."
+            ]
+          ],
+          [
+            "So bleiben wir ehrlich",
+            [
+              "systeme.io bezahlt uns nicht für Inhalte, hat diese Website nicht geprüft und genehmigt nicht, was wir schreiben. Die Provision ändert nichts an den Fakten, die wir veröffentlichen: Wir nennen die Grenzen des kostenlosen Tarifs ebenso wie seine Stärken und prüfen Tarifangaben vor der Veröffentlichung auf den Seiten von systeme.io.",
+              "Wir bewerben nur systeme.io. Wenn ein anderes Produkt besser zu dir passt, nutze es."
+            ]
+          ],
+          [
+            "Fehler entdeckt?",
+            [
+              "Wenn ein Link nicht funktioniert, ein Preis veraltet ist oder etwas falsch aussieht, schreib an {EMAIL}. Wir korrigieren es."
+            ]
+          ]
         ]
-      ],
-      [
-        "Links zu anderen Websites",
-        [
-          "Registrierungslinks führen zur Website von systeme.io. Dein Konto, Käufe und deine Nutzung von systeme.io betreffen nur dich und systeme.io und richten sich nach deren eigenen Bedingungen und Datenschutzerklärung.",
-          "Für die Inhalte anderer Websites sind wir nicht verantwortlich. Bei Bekanntwerden von Rechtsverletzungen entfernen wir entsprechende Links umgehend."
-        ]
-      ],
-      [
-        "Haftung",
-        [
-          "Wir bemühen uns um korrekte Inhalte, übernehmen aber keine Gewähr dafür, dass sie vollständig, aktuell oder fehlerfrei sind.",
-          "Soweit gesetzlich zulässig, haften wir nicht für Schäden, die aus der Nutzung dieser Website oder verlinkter Websites entstehen.",
-          "Unberührt bleibt die Haftung für Vorsatz und grobe Fahrlässigkeit, für Schäden aus der Verletzung von Leben, Körper oder Gesundheit, nach dem Produkthaftungsgesetz sowie in allen anderen Fällen, in denen die Haftung gesetzlich nicht beschränkt werden kann. Deine gesetzlichen Rechte als Verbraucher bleiben unberührt."
-        ]
-      ],
-      [
-        "Datenschutz",
-        [
-          "Verantwortlicher: {NAME} (SoloStarterHQ), Anschrift wie oben. Kontakt: {EMAIL}.",
-          "Was diese Website erhebt: Sie verwendet keine Cookies, Formulare, Benutzerkonten oder Tracking-Pixel. Die Schriften liegen auf dieser Website selbst.",
-          "Besuchsstatistik: Wir nutzen Umami Cloud (Umami Software, Inc., USA), um Seitenaufrufe und Klicks auf die Registrierungsbuttons zu zählen. Umami setzt keine Cookies und verfolgt dich nicht über andere Websites hinweg; wir sehen nur anonyme Summen, etwa wie viele Personen auf der deutschen Seite einen Button geklickt haben. Zum Zählen eines Besuchs sendet dein Browser deine IP-Adresse und Browserangaben an Umami, die Umami nach eigenen Angaben anonymisiert; Umami speichert die Statistik in seiner EU-Region, einige seiner Dienstleister sitzen in den USA. Rechtsgrundlage ist unser berechtigtes Interesse daran, zu erfahren, welche Seiten Besuchern helfen (Art. 6 Abs. 1 lit. f DSGVO). Sendet dein Browser ein „Do Not Track“-Signal, wird keine Statistik erfasst.",
-          "Hosting: Die Website wird bei GitHub Pages der GitHub, Inc. (USA) gehostet. Bei deinem Besuch speichert GitHub deine IP-Adresse und technische Angaben zur Anfrage, um die Seiten auszuliefern und abzusichern. Rechtsgrundlage ist unser berechtigtes Interesse an einer sicheren Website (Art. 6 Abs. 1 lit. f DSGVO). GitHub ist nach dem EU-US Data Privacy Framework zertifiziert. Einzelheiten stehen in der Datenschutzerklärung von GitHub.",
-          "Affiliate-Links: Wenn du auf einen Registrierungsbutton klickst, gelangst du zu systeme.io; der Link enthält unseren Affiliate-Code, damit systeme.io uns die Provision zuordnen kann. Ab dann entscheidet systeme.io (ITACWT Limited, Irland) nach eigener Datenschutzerklärung, welche Daten erhoben werden. Für die Provisionsabrechnung kann systeme.io uns begrenzte Angaben zu Konten zeigen, die über unseren Link erstellt wurden. Wir nutzen sie nur zur Prüfung der Provisionen und für steuerliche Aufzeichnungen und bewahren sie bis zu 6 Jahre auf.",
-          "Deine Rechte: Nach der DSGVO hast du das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit sowie ein Widerspruchsrecht. Schreib uns dafür eine E-Mail. Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren, zum Beispiel bei der Behörde deines Bundeslandes."
-        ]
-      ],
-      [
-        "Änderungen und anwendbares Recht",
-        [
-          "Wir können diese Seite aktualisieren. Das Datum unten zeigt die aktuelle Fassung.",
-          "Diese Website wird von England aus betrieben, es gilt das Recht von England und Wales. Als Verbraucher behältst du den Schutz der zwingenden Vorschriften des Landes, in dem du lebst."
-        ]
-      ]
-    ]
+      }
+    }
   }
 }

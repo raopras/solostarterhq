@@ -58,6 +58,8 @@ h2{font-size:clamp(1.6rem,3.2vw,2.3rem);line-height:1.15;font-weight:700}
 h3{font-size:1.1rem}
 mark{background:var(--marker);color:var(--marker-ink);padding:0 .12em;border-radius:4px}
 .lede{font-size:1.15rem;color:var(--muted);max-width:36em;margin:18px 0 26px}
+.adbar{margin:0;padding:8px 16px;background:var(--ink);color:var(--paper);font-size:.85rem;text-align:center}
+.adbar a{color:var(--marker)}
 .aud{font-weight:700;margin:-12px 0 24px;max-width:36em}
 .note{font-size:.85rem;color:var(--muted);margin-top:12px;max-width:38em}
 /* invoice */
@@ -172,7 +174,7 @@ def body(code, preview=False):
     steps = "".join(f"<li><h3>{e(a)}</h3><p>{e(b)}</p></li>" for a, b in t["steps"])
     faq = "".join(f"<details><summary>{e(q)}</summary><p>{e(a)}</p></details>" for q, a in t["faq"])
     keep_tpl = json.dumps(t["keep_line"], ensure_ascii=False)
-    return f"""<div class="wrap">
+    return f"""{banner(code, preview)}<div class="wrap">
 <header class="top">
   <a class="brand" href="{root}{'' if preview else t['path']}">SoloStarter<span>HQ</span></a>
   <nav aria-label="{e(t['lang_label'])}"><div class="langs">{langs}</div><a class="btn small" href="{go}" {rel} {ev(code, 'nav')}>{e(t['nav_cta'])}</a></nav>
@@ -221,7 +223,7 @@ def body(code, preview=False):
   <p>{e(t['disclosure'])}</p>
   <p>{e(t['independent'])}</p>
   <p>{e(t['checked'])}</p>
-  <p><a href="{'#' if preview else '/' + t['path'] + 'legal/'}">{e(t['legal_link'])}</a> · © 2026 SoloStarter HQ</p>
+  <p>{footer_links(code, preview)} · © 2026 SoloStarter HQ</p>
 </footer>
 </div>
 <script>
@@ -253,25 +255,50 @@ OWNER = {k: os.environ.get(k, "").strip() for k in ("OWNER_NAME", "OWNER_ADDRESS
 LEGAL = json.load(open(os.path.join(HERE, "legal.json"), encoding="utf-8"))
 
 
-def legal(code):
+PAGES = {"legal": "legal/", "privacy": "privacy/", "earn": "how-we-make-money/"}
+NAME_LINE = {"en": "{NAME}, trading as SoloStarterHQ (sole trader)",
+             "es": "{NAME}, que opera como SoloStarterHQ (empresario individual)",
+             "pt-br": "{NAME}, atuando como SoloStarterHQ (empresário individual)",
+             "de": "{NAME}, handelnd unter SoloStarterHQ (Einzelunternehmer)"}
+DIRECT = "https://systeme.io/"
+
+
+def footer_links(code, preview=False):
     t, L = S[code], LEGAL[code]
+    return " · ".join(f'<a href="{"#" if preview else "/" + t["path"] + PAGES[k]}">{e(label)}</a>'
+                      for k, label in zip(("legal", "privacy", "earn"), L["footer_links"]))
+
+
+def banner(code, preview=False):
+    t, L = S[code], LEGAL[code]
+    href = "#" if preview else "/" + t["path"] + PAGES["earn"]
+    return f'<p class="adbar"><strong>{e(L["banner"])}</strong> <a href="{href}">{e(L["banner_link"])}</a></p>'
+
+
+def legal(code, kind):
+    t, L = S[code], LEGAL[code]
+    P = L["pages"][kind]
     addr = ", ".join(x.strip() for x in OWNER["OWNER_ADDRESS"].split("|"))
     def fill(x):
-        return e(x).replace("{NAME}", e(OWNER["OWNER_NAME"])).replace("{ADDRESS}", e(addr)).replace(
-            "{EMAIL}", f'<a href="mailto:{e(OWNER["OWNER_EMAIL"])}">{e(OWNER["OWNER_EMAIL"])}</a>')
-    secs = "".join(f"<h2>{e(h)}</h2>" + "".join(f"<p>{fill(p)}</p>" for p in ps) for h, ps in L["sections"])
+        x = e(x.replace("{NAME_LINE}", NAME_LINE[code]))
+        return (x.replace("{NAME}", e(OWNER["OWNER_NAME"])).replace("{ADDRESS}", e(addr))
+                 .replace("{EMAIL}", f'<a href="mailto:{e(OWNER["OWNER_EMAIL"])}">{e(OWNER["OWNER_EMAIL"])}</a>')
+                 .replace("{DIRECT}", f'<a href="{DIRECT}" rel="nofollow noopener">systeme.io</a>'))
+    secs = "".join(f"<h2>{e(h)}</h2>" + "".join(f"<p>{fill(p)}</p>" for p in ps) for h, ps in P["sections"])
     return f"""<!doctype html>
 <html lang="{t['htmllang']}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{e(L['legal_title'])}</title><meta name="description" content="{e(L['legal_h1'])}: SoloStarter HQ.">
+<title>{e(P['title'])}</title><meta name="description" content="{e(P['h1'])}: SoloStarter HQ.">
 <meta name="robots" content="noindex, follow">
-<link rel="canonical" href="{url(code)}legal/"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
-{FONTS}<style>{CSS} main.legal{{max-width:44rem;padding-block:24px 56px}} main.legal h1{{font-size:clamp(1.7rem,4vw,2.2rem);margin-bottom:8px}} main.legal h2{{font-size:1.25rem;margin:32px 0 8px}} main.legal p{{color:var(--muted);margin:0 0 10px}} main.legal a{{color:var(--accent)}} .upd{{font-size:.85rem}}</style>
+<link rel="canonical" href="{url(code)}{PAGES[kind]}"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
+{FONTS}
+{analytics()}
+<style>{CSS} main.legal{{max-width:44rem;padding-block:24px 56px}} main.legal h1{{font-size:clamp(1.7rem,4vw,2.2rem);margin-bottom:8px}} main.legal h2{{font-size:1.2rem;margin:32px 0 8px}} main.legal p{{color:var(--muted);margin:0 0 10px}} main.legal a{{color:var(--accent)}} .upd{{font-size:.85rem}}</style>
 </head><body><div class="wrap">
 <header class="top"><a class="brand" href="/{t['path']}">SoloStarter<span>HQ</span></a></header>
-<main class="legal"><h1>{e(L['legal_h1'])}</h1><p class="upd">{e(L['updated'])}</p>
+<main class="legal"><h1>{e(P['h1'])}</h1><p class="upd">{e(L['version'])}. {e(L['changes'])}</p>
 {secs}
-<p class="upd">{e(L['updated'])}</p>
-<p><a href="/{t['path']}">{e(L['back'])}</a></p></main></div></body></html>
+<p><a href="/{t['path']}">{e(L['back'])}</a></p></main>
+<footer><p>{footer_links(code)} · © 2026 SoloStarter HQ</p></footer></div></body></html>
 """
 
 
@@ -297,8 +324,9 @@ def main():
         d = os.path.join(OUT, S[c]["path"])
         os.makedirs(d, exist_ok=True)
         open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(page(c))
-        os.makedirs(os.path.join(d, "legal"), exist_ok=True)
-        open(os.path.join(d, "legal", "index.html"), "w", encoding="utf-8").write(legal(c))
+        for kind, slug in PAGES.items():
+            os.makedirs(os.path.join(d, slug), exist_ok=True)
+            open(os.path.join(d, slug, "index.html"), "w", encoding="utf-8").write(legal(c, kind))
         g = os.path.join(OUT, "go", c)
         os.makedirs(g, exist_ok=True)
         open(os.path.join(g, "index.html"), "w", encoding="utf-8").write(redirect(c))
