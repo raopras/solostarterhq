@@ -22,6 +22,8 @@ jobs:
       OWNER_NAME: Pras Rao
       OWNER_ADDRESS: 80A Ruskin Ave|Welling, London DA16 3QQ|United Kingdom
       OWNER_EMAIL: raoprasji@gmail.com
+      # Shared with Plunge Radar (Umami free plan allows one site); filter by hostname.
+      UMAMI_WEBSITE_ID: 3b273825-6d33-4f07-ae92-3d5da7163d83
     steps:
       - uses: actions/checkout@v4
       - name: Build site

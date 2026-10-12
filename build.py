@@ -115,6 +115,20 @@ CSS = FONT_CSS + CSS_BASE
 FONTS = '<link rel="preload" href="/fonts/bricolage-grotesque-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>'
 
 
+UMAMI = os.environ.get("UMAMI_WEBSITE_ID", "").strip()
+
+
+def ev(code, button):
+    """Umami click event on a sign-up button (no-op when analytics is off)."""
+    return f'data-umami-event="signup-click" data-umami-event-lang="{code}" data-umami-event-button="{button}"' if UMAMI else ""
+
+
+def analytics():
+    # Cookie-free Umami. Skipped for visitors who send Do Not Track.
+    return (f'<script defer src="https://cloud.umami.is/script.js" data-website-id="{UMAMI}" '
+            f'data-do-not-track="true" data-domains="solostarterhq.com"></script>') if UMAMI else ""
+
+
 def head(code, preview=False):
     t = S[code]
     alts = "".join(f'<link rel="alternate" hreflang="{S[c]["hreflang"]}" href="{url(c)}">' for c in LANGS)
@@ -135,6 +149,7 @@ def head(code, preview=False):
 <meta name="theme-color" content="#1d6b4a">
 <link rel="icon" href="{'' if preview else '/'}favicon.svg" type="image/svg+xml">
 {FONTS}
+{'' if preview else analytics()}
 <script type="application/ld+json">{json.dumps(site_ld, ensure_ascii=False)}</script>
 <script type="application/ld+json">{json.dumps(faq_ld, ensure_ascii=False)}</script>
 <style>{CSS}</style>"""
@@ -160,7 +175,7 @@ def body(code, preview=False):
     return f"""<div class="wrap">
 <header class="top">
   <a class="brand" href="{root}{'' if preview else t['path']}">SoloStarter<span>HQ</span></a>
-  <nav aria-label="{e(t['lang_label'])}"><div class="langs">{langs}</div><a class="btn small" href="{go}" {rel}>{e(t['nav_cta'])}</a></nav>
+  <nav aria-label="{e(t['lang_label'])}"><div class="langs">{langs}</div><a class="btn small" href="{go}" {rel} {ev(code, 'nav')}>{e(t['nav_cta'])}</a></nav>
 </header>
 <main>
 <div class="hero">
@@ -168,7 +183,7 @@ def body(code, preview=False):
     <h1>{t['hero_h1']}</h1>
     <p class="lede">{e(t['hero_sub'])}</p>
     <p class="aud">{e(t['audience'])}</p>
-    <a class="btn" href="{go}" {rel}>{e(t['cta'])}</a>
+    <a class="btn" href="{go}" {rel} {ev(code, 'hero')}>{e(t['cta'])}</a>
     <p class="note">{e(t['cta_note'])}</p>
   </div>
   <form class="invoice" id="calc" aria-labelledby="calc-h" onsubmit="return false">
@@ -199,7 +214,7 @@ def body(code, preview=False):
 <section class="close" aria-labelledby="close-h">
   <h2 id="close-h">{e(t['cta2_h2'])}</h2>
   <p>{e(t['cta2_body'])}</p>
-  <a class="btn" href="{go}" {rel}>{e(t['cta'])}</a>
+  <a class="btn" href="{go}" {rel} {ev(code, 'closing')}>{e(t['cta'])}</a>
 </section>
 </main>
 <footer>
