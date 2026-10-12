@@ -1,0 +1,534 @@
+{
+  "en": {
+    "path": "",
+    "hreflang": "en",
+    "htmllang": "en",
+    "og_locale": "en_GB",
+    "lang_name": "English",
+    "currency": "USD",
+    "examples": [
+      16,
+      29,
+      49,
+      39,
+      12
+    ],
+    "title": "Start Your Freelance Business for $0 | SoloStarter HQ",
+    "desc": "Build your website, email list, sales funnels and course on a free-forever plan. 2,000 contacts, unlimited emails, no credit card. See what you'd save.",
+    "nav_cta": "Start free",
+    "hero_h1": "Launch your freelance business with a <mark>$0</mark> tool bill.",
+    "hero_sub": "Website, email list, sales funnels and checkout in one place with systeme.io, on a plan that stays free. Upgrade only when your business pays for it.",
+    "cta": "Create my free systeme.io account",
+    "cta_note": "Ad · affiliate link. No credit card, so there is nothing to cancel. I earn a commission only if you later choose a paid plan.",
+    "calc_h2": "Your monthly tool bill",
+    "calc_intro": "Most freelancers pay for four or five separate tools. Enter what you pay now and see what a free all-in-one plan saves you.",
+    "calc_example_note": "Figures shown are examples. Type your own.",
+    "items": [
+      "Website & landing pages",
+      "Email marketing",
+      "Sales funnels",
+      "Online course hosting",
+      "Booking & scheduling"
+    ],
+    "per_month": "per month",
+    "currency_label": "Currency",
+    "total_month": "Total per month",
+    "total_year": "Total per year",
+    "free_plan_line": "Free all-in-one plan",
+    "keep_line": "You keep {amount} a year",
+    "invoice_label": "INVOICE",
+    "plan_h2": "What systeme.io's free plan includes",
+    "plan_items": [
+      [
+        "Contacts",
+        "2,000"
+      ],
+      [
+        "Emails",
+        "Unlimited"
+      ],
+      [
+        "Sales funnels",
+        "3"
+      ],
+      [
+        "Automation rules",
+        "1"
+      ],
+      [
+        "Transaction fees",
+        "0%"
+      ],
+      [
+        "Credit card",
+        "Not needed"
+      ],
+      [
+        "Time limit",
+        "None"
+      ],
+      [
+        "Interface languages",
+        "7, incl. English"
+      ]
+    ],
+    "plan_note": "When you outgrow it, paid plans start at $17 a month, or $14 a month billed yearly. Prices in US dollars; taxes may apply.",
+    "steps_h2": "Get started in three steps",
+    "steps": [
+      [
+        "Create your free account",
+        "Sign up with your email. No card, no trial clock."
+      ],
+      [
+        "Pick a template",
+        "Choose a ready-made funnel or website template and add your own words and photos."
+      ],
+      [
+        "Share one link",
+        "Put the link in your bio, email signature or proposals and start collecting leads."
+      ]
+    ],
+    "faq_h2": "Questions freelancers ask",
+    "faq": [
+      [
+        "Is the free plan really free?",
+        "Yes. It has no time limit and needs no credit card. You only pay if you choose to upgrade."
+      ],
+      [
+        "What are the limits?",
+        "2,000 contacts, 3 sales funnels and 1 automation rule, with unlimited email sending. When you reach a limit, you choose whether to upgrade."
+      ],
+      [
+        "Can I use it in my language?",
+        "Yes. The dashboard is available in English, Spanish, Portuguese, German, French, Italian and Dutch."
+      ],
+      [
+        "Do I need technical skills?",
+        "No. You build pages from templates with a drag-and-drop editor. No code needed."
+      ],
+      [
+        "How does this site make money?",
+        "The buttons are affiliate links. If you ever upgrade to a paid plan, the platform pays me a commission. It costs you nothing extra."
+      ]
+    ],
+    "cta2_h2": "Your first client funnel can be live today.",
+    "cta2_body": "Start on the free plan and keep your money for the work that matters.",
+    "disclosure": "Affiliate disclosure: links marked \"Start free\" or \"Create my free systeme.io account\" are affiliate links to systeme.io. If you upgrade to a paid plan, I may earn a commission at no extra cost to you.",
+    "independent": "SoloStarter HQ is an independent site. It is not run, sponsored or endorsed by systeme.io.",
+    "checked": "Plan details checked October 2026. Always confirm current limits and prices on the provider's pricing page.",
+    "lang_label": "Language",
+    "audience": "Built for designers, writers, coaches, virtual assistants, developers and consultants.",
+    "legal_link": "Legal notice & privacy",
+    "legal_title": "Legal notice and privacy | SoloStarter HQ",
+    "legal_h1": "Legal notice and privacy",
+    "legal_owner_h": "Who runs this site",
+    "legal_contact": "Contact",
+    "privacy_h": "Privacy",
+    "privacy": [
+      "This site does not use cookies, contact forms or tracking pixels, and it does not ask for your personal data.",
+      "The site is hosted by Cloudflare, which processes technical data such as IP addresses to deliver and secure the pages and to produce anonymous visit statistics. See Cloudflare's privacy policy for details.",
+      "When you click a sign-up link you leave this site and go to systeme.io through an affiliate link. From then on, systeme.io's own privacy policy applies.",
+      "For any privacy question, write to the contact address above. If you are in the UK or EU you can also complain to your data protection authority."
+    ],
+    "back": "Back to the home page"
+  },
+  "es": {
+    "path": "es/",
+    "hreflang": "es",
+    "htmllang": "es",
+    "og_locale": "es_ES",
+    "lang_name": "Español",
+    "currency": "EUR",
+    "examples": [
+      15,
+      27,
+      45,
+      35,
+      11
+    ],
+    "title": "Empieza tu negocio freelance por 0 € | SoloStarter HQ",
+    "desc": "Crea tu web, tu lista de correo, embudos de venta y tu curso con un plan gratis para siempre. 2.000 contactos, emails ilimitados y sin tarjeta.",
+    "nav_cta": "Empieza gratis",
+    "hero_h1": "Lanza tu negocio freelance pagando <mark>0</mark> en herramientas.",
+    "hero_sub": "Web, lista de correo, embudos de venta y cobros en un solo lugar con systeme.io, con un plan que sigue siendo gratis. Pasa a un plan de pago solo cuando tu negocio lo pague.",
+    "cta": "Crear mi cuenta gratis en systeme.io",
+    "cta_note": "Publicidad · enlace de afiliado. Sin tarjeta, así que no hay nada que cancelar. Solo gano una comisión si más adelante eliges un plan de pago.",
+    "calc_h2": "Tu factura mensual de herramientas",
+    "calc_intro": "La mayoría de freelancers paga cuatro o cinco herramientas distintas. Escribe lo que pagas hoy y mira cuánto te ahorras con un plan todo en uno gratuito.",
+    "calc_example_note": "Las cifras son ejemplos. Escribe las tuyas.",
+    "items": [
+      "Web y páginas de aterrizaje",
+      "Email marketing",
+      "Embudos de venta",
+      "Alojamiento de cursos online",
+      "Reservas y agenda"
+    ],
+    "per_month": "al mes",
+    "currency_label": "Moneda",
+    "total_month": "Total al mes",
+    "total_year": "Total al año",
+    "free_plan_line": "Plan todo en uno gratis",
+    "keep_line": "Te ahorras {amount} al año",
+    "invoice_label": "FACTURA",
+    "plan_h2": "Qué incluye el plan gratis de systeme.io",
+    "plan_items": [
+      [
+        "Contactos",
+        "2.000"
+      ],
+      [
+        "Emails",
+        "Ilimitados"
+      ],
+      [
+        "Embudos de venta",
+        "3"
+      ],
+      [
+        "Reglas de automatización",
+        "1"
+      ],
+      [
+        "Comisión por venta",
+        "0 %"
+      ],
+      [
+        "Tarjeta de crédito",
+        "No hace falta"
+      ],
+      [
+        "Límite de tiempo",
+        "Ninguno"
+      ],
+      [
+        "Idiomas del panel",
+        "7, incluido el español"
+      ]
+    ],
+    "plan_note": "Cuando se te quede pequeño, los planes de pago empiezan en 17 $ al mes, o 14 $ al mes con pago anual. Precios en dólares estadounidenses; pueden aplicarse impuestos.",
+    "steps_h2": "Empieza en tres pasos",
+    "steps": [
+      [
+        "Crea tu cuenta gratis",
+        "Regístrate con tu email. Sin tarjeta y sin periodo de prueba."
+      ],
+      [
+        "Elige una plantilla",
+        "Escoge un embudo o una web ya diseñados y añade tus textos y fotos."
+      ],
+      [
+        "Comparte un enlace",
+        "Ponlo en tu bio, tu firma de email o tus propuestas y empieza a captar clientes."
+      ]
+    ],
+    "faq_h2": "Preguntas frecuentes",
+    "faq": [
+      [
+        "¿El plan gratis es gratis de verdad?",
+        "Sí. No caduca y no pide tarjeta. Solo pagas si decides cambiar a un plan de pago."
+      ],
+      [
+        "¿Qué límites tiene?",
+        "2.000 contactos, 3 embudos de venta y 1 regla de automatización, con envío de emails ilimitado. Cuando llegues a un límite, tú decides si cambias de plan."
+      ],
+      [
+        "¿Está en español?",
+        "Sí. El panel está disponible en español, portugués, inglés, alemán, francés, italiano y neerlandés."
+      ],
+      [
+        "¿Necesito saber de tecnología?",
+        "No. Montas las páginas con plantillas y un editor de arrastrar y soltar. Sin código."
+      ],
+      [
+        "¿Cómo gana dinero esta web?",
+        "Los botones son enlaces de afiliado. Si algún día pasas a un plan de pago, la plataforma me paga una comisión. A ti no te cuesta nada más."
+      ]
+    ],
+    "cta2_h2": "Tu primer embudo para clientes puede estar listo hoy.",
+    "cta2_body": "Empieza con el plan gratis y guarda tu dinero para lo que de verdad importa.",
+    "disclosure": "Aviso de afiliación: los enlaces «Empieza gratis» y «Crear mi cuenta gratis en systeme.io» son enlaces de afiliado a systeme.io. Si pasas a un plan de pago, puedo recibir una comisión sin coste adicional para ti.",
+    "independent": "SoloStarter HQ es una web independiente. No está gestionada, patrocinada ni avalada por systeme.io.",
+    "checked": "Datos del plan revisados en octubre de 2026. Confirma siempre los límites y precios actuales en la página de precios del proveedor.",
+    "lang_label": "Idioma",
+    "audience": "Pensado para diseñadores, redactores, coaches, asistentes virtuales, desarrolladores y consultores.",
+    "legal_link": "Aviso legal y privacidad",
+    "legal_title": "Aviso legal y privacidad | SoloStarter HQ",
+    "legal_h1": "Aviso legal y privacidad",
+    "legal_owner_h": "Titular del sitio",
+    "legal_contact": "Contacto",
+    "privacy_h": "Privacidad",
+    "privacy": [
+      "Este sitio no usa cookies, formularios de contacto ni píxeles de seguimiento, y no te pide datos personales.",
+      "El sitio está alojado en Cloudflare, que trata datos técnicos como la dirección IP para servir y proteger las páginas y elaborar estadísticas de visitas anónimas. Consulta la política de privacidad de Cloudflare para más detalles.",
+      "Al hacer clic en un enlace de registro sales de este sitio y vas a systeme.io mediante un enlace de afiliado. A partir de ahí se aplica la política de privacidad de systeme.io.",
+      "Para cualquier consulta sobre privacidad, escribe a la dirección de contacto indicada arriba. También puedes reclamar ante la autoridad de protección de datos de tu país."
+    ],
+    "back": "Volver a la página principal"
+  },
+  "pt-br": {
+    "path": "pt-br/",
+    "hreflang": "pt-BR",
+    "htmllang": "pt-BR",
+    "og_locale": "pt_BR",
+    "lang_name": "Português (BR)",
+    "currency": "BRL",
+    "examples": [
+      80,
+      150,
+      250,
+      200,
+      60
+    ],
+    "title": "Comece seu negócio freelancer por R$ 0 | SoloStarter HQ",
+    "desc": "Crie seu site, sua lista de e-mails, funis de vendas e seu curso em um plano grátis para sempre. 2.000 contatos, e-mails ilimitados, sem cartão.",
+    "nav_cta": "Comece grátis",
+    "hero_h1": "Lance seu negócio freelancer pagando <mark>R$ 0</mark> em ferramentas.",
+    "hero_sub": "Site, lista de e-mails, funis de vendas e checkout em um só lugar com a systeme.io, em um plano que continua grátis. Faça upgrade só quando o seu negócio pagar por isso.",
+    "cta": "Criar minha conta grátis na systeme.io",
+    "cta_note": "Publicidade · link de afiliado. Sem cartão, então não há nada para cancelar. Só recebo comissão se você escolher um plano pago no futuro.",
+    "calc_h2": "Sua conta mensal de ferramentas",
+    "calc_intro": "A maioria dos freelancers paga quatro ou cinco ferramentas diferentes. Digite quanto você paga hoje e veja quanto economiza com um plano tudo em um gratuito.",
+    "calc_example_note": "Os valores são exemplos. Digite os seus.",
+    "items": [
+      "Site e landing pages",
+      "E-mail marketing",
+      "Funis de vendas",
+      "Hospedagem de cursos online",
+      "Agendamentos"
+    ],
+    "per_month": "por mês",
+    "currency_label": "Moeda",
+    "total_month": "Total por mês",
+    "total_year": "Total por ano",
+    "free_plan_line": "Plano tudo em um grátis",
+    "keep_line": "Você economiza {amount} por ano",
+    "invoice_label": "FATURA",
+    "plan_h2": "O que o plano grátis da systeme.io inclui",
+    "plan_items": [
+      [
+        "Contatos",
+        "2.000"
+      ],
+      [
+        "E-mails",
+        "Ilimitados"
+      ],
+      [
+        "Funis de vendas",
+        "3"
+      ],
+      [
+        "Regras de automação",
+        "1"
+      ],
+      [
+        "Taxa por venda",
+        "0%"
+      ],
+      [
+        "Cartão de crédito",
+        "Não precisa"
+      ],
+      [
+        "Prazo",
+        "Nenhum"
+      ],
+      [
+        "Idiomas do painel",
+        "7, incluindo português"
+      ]
+    ],
+    "plan_note": "Quando o plano ficar pequeno, os planos pagos começam em US$ 17 por mês, ou US$ 14 por mês no plano anual. Preços em dólares americanos; impostos podem ser aplicados.",
+    "steps_h2": "Comece em três passos",
+    "steps": [
+      [
+        "Crie sua conta grátis",
+        "Cadastre-se com seu e-mail. Sem cartão e sem período de teste."
+      ],
+      [
+        "Escolha um modelo",
+        "Pegue um funil ou site pronto e coloque seus textos e fotos."
+      ],
+      [
+        "Compartilhe um link",
+        "Coloque o link na bio, na assinatura de e-mail ou nas propostas e comece a captar clientes."
+      ]
+    ],
+    "faq_h2": "Perguntas frequentes",
+    "faq": [
+      [
+        "O plano grátis é grátis mesmo?",
+        "Sim. Não tem prazo e não pede cartão. Você só paga se decidir fazer upgrade."
+      ],
+      [
+        "Quais são os limites?",
+        "2.000 contatos, 3 funis de vendas e 1 regra de automação, com envio de e-mails ilimitado. Quando chegar a um limite, você decide se quer fazer upgrade."
+      ],
+      [
+        "Tem em português?",
+        "Sim. O painel está disponível em português, espanhol, inglês, alemão, francês, italiano e holandês."
+      ],
+      [
+        "Preciso saber programar?",
+        "Não. Você monta as páginas com modelos e um editor de arrastar e soltar. Sem código."
+      ],
+      [
+        "Como este site ganha dinheiro?",
+        "Os botões são links de afiliado. Se um dia você fizer upgrade para um plano pago, a plataforma me paga uma comissão. Para você, não custa nada a mais."
+      ]
+    ],
+    "cta2_h2": "Seu primeiro funil para clientes pode estar no ar hoje.",
+    "cta2_body": "Comece no plano grátis e guarde seu dinheiro para o que realmente importa.",
+    "disclosure": "Aviso de afiliado: os links \"Comece grátis\" e \"Criar minha conta grátis na systeme.io\" são links de afiliado para a systeme.io. Se você fizer upgrade para um plano pago, posso receber uma comissão sem custo extra para você.",
+    "independent": "SoloStarter HQ é um site independente. Não é administrado, patrocinado nem endossado pela systeme.io.",
+    "checked": "Dados do plano conferidos em outubro de 2026. Confirme sempre os limites e preços atuais na página de preços do fornecedor.",
+    "lang_label": "Idioma",
+    "audience": "Feito para designers, redatores, coaches, assistentes virtuais, desenvolvedores e consultores.",
+    "legal_link": "Aviso legal e privacidade",
+    "legal_title": "Aviso legal e privacidade | SoloStarter HQ",
+    "legal_h1": "Aviso legal e privacidade",
+    "legal_owner_h": "Responsável pelo site",
+    "legal_contact": "Contato",
+    "privacy_h": "Privacidade",
+    "privacy": [
+      "Este site não usa cookies, formulários de contato nem pixels de rastreamento, e não pede seus dados pessoais.",
+      "O site é hospedado pela Cloudflare, que trata dados técnicos como o endereço IP para entregar e proteger as páginas e gerar estatísticas anônimas de visitas. Veja a política de privacidade da Cloudflare para mais detalhes.",
+      "Ao clicar em um link de cadastro, você sai deste site e vai para a systeme.io por um link de afiliado. A partir daí vale a política de privacidade da systeme.io.",
+      "Para qualquer dúvida sobre privacidade, escreva para o contato acima. Você também pode apresentar reclamação à ANPD."
+    ],
+    "back": "Voltar para a página inicial"
+  },
+  "de": {
+    "path": "de/",
+    "hreflang": "de",
+    "htmllang": "de",
+    "og_locale": "de_DE",
+    "lang_name": "Deutsch",
+    "currency": "EUR",
+    "examples": [
+      15,
+      27,
+      45,
+      35,
+      11
+    ],
+    "title": "Freelance-Business für 0 € starten | SoloStarter HQ",
+    "desc": "Website, E-Mail-Liste, Sales Funnels und Onlinekurs im dauerhaft kostenlosen Tarif. 2.000 Kontakte, unbegrenzte E-Mails, keine Kreditkarte.",
+    "nav_cta": "Kostenlos starten",
+    "hero_h1": "Starte dein Freelance-Business mit <mark>0 €</mark> Toolkosten.",
+    "hero_sub": "Website, E-Mail-Liste, Sales Funnels und Checkout an einem Ort mit systeme.io, in einem Tarif, der kostenlos bleibt. Upgrade erst, wenn dein Business es trägt.",
+    "cta": "Kostenloses systeme.io-Konto erstellen",
+    "cta_note": "Werbung · Affiliate-Link. Keine Kreditkarte, also nichts zu kündigen. Ich erhalte nur eine Provision, wenn du später einen kostenpflichtigen Tarif wählst.",
+    "calc_h2": "Deine monatliche Tool-Rechnung",
+    "calc_intro": "Die meisten Freelancer zahlen für vier oder fünf getrennte Tools. Trag ein, was du heute zahlst, und sieh, was ein kostenloser All-in-one-Tarif spart.",
+    "calc_example_note": "Die Beträge sind Beispiele. Trag deine eigenen ein.",
+    "items": [
+      "Website & Landingpages",
+      "E-Mail-Marketing",
+      "Sales Funnels",
+      "Onlinekurs-Hosting",
+      "Terminbuchung"
+    ],
+    "per_month": "pro Monat",
+    "currency_label": "Währung",
+    "total_month": "Summe pro Monat",
+    "total_year": "Summe pro Jahr",
+    "free_plan_line": "Kostenloser All-in-one-Tarif",
+    "keep_line": "Du sparst {amount} im Jahr",
+    "invoice_label": "RECHNUNG",
+    "plan_h2": "Das ist im kostenlosen Tarif von systeme.io enthalten",
+    "plan_items": [
+      [
+        "Kontakte",
+        "2.000"
+      ],
+      [
+        "E-Mails",
+        "Unbegrenzt"
+      ],
+      [
+        "Sales Funnels",
+        "3"
+      ],
+      [
+        "Automatisierungsregeln",
+        "1"
+      ],
+      [
+        "Transaktionsgebühren",
+        "0 %"
+      ],
+      [
+        "Kreditkarte",
+        "Nicht nötig"
+      ],
+      [
+        "Laufzeit",
+        "Unbegrenzt"
+      ],
+      [
+        "Sprachen der Oberfläche",
+        "7, auch Deutsch"
+      ]
+    ],
+    "plan_note": "Wenn du mehr brauchst, starten die kostenpflichtigen Tarife bei 17 $ im Monat, bei jährlicher Zahlung 14 $ im Monat. Preise in US-Dollar; ggf. zzgl. Steuern.",
+    "steps_h2": "In drei Schritten startklar",
+    "steps": [
+      [
+        "Kostenloses Konto erstellen",
+        "Mit deiner E-Mail-Adresse registrieren. Keine Kreditkarte, keine Testphase."
+      ],
+      [
+        "Vorlage wählen",
+        "Eine fertige Funnel- oder Website-Vorlage aussuchen und eigene Texte und Bilder einsetzen."
+      ],
+      [
+        "Einen Link teilen",
+        "Den Link in Bio, E-Mail-Signatur oder Angebote setzen und Anfragen sammeln."
+      ]
+    ],
+    "faq_h2": "Häufige Fragen",
+    "faq": [
+      [
+        "Ist der kostenlose Tarif wirklich kostenlos?",
+        "Ja. Er ist zeitlich unbegrenzt und braucht keine Kreditkarte. Du zahlst nur, wenn du upgradest."
+      ],
+      [
+        "Welche Grenzen gibt es?",
+        "2.000 Kontakte, 3 Sales Funnels und 1 Automatisierungsregel, bei unbegrenztem E-Mail-Versand. Wenn du eine Grenze erreichst, entscheidest du selbst, ob du upgradest."
+      ],
+      [
+        "Gibt es die Oberfläche auf Deutsch?",
+        "Ja. Das Dashboard gibt es auf Deutsch, Englisch, Spanisch, Portugiesisch, Französisch, Italienisch und Niederländisch."
+      ],
+      [
+        "Brauche ich technische Kenntnisse?",
+        "Nein. Du baust Seiten mit Vorlagen und einem Drag-and-drop-Editor. Ohne Code."
+      ],
+      [
+        "Wie verdient diese Website Geld?",
+        "Die Buttons sind Affiliate-Links. Wenn du irgendwann auf einen kostenpflichtigen Tarif wechselst, zahlt mir die Plattform eine Provision. Für dich entstehen keine Mehrkosten."
+      ]
+    ],
+    "cta2_h2": "Dein erster Kunden-Funnel kann heute online sein.",
+    "cta2_body": "Starte im kostenlosen Tarif und behalte dein Geld für das, was zählt.",
+    "disclosure": "Hinweis (Werbung/Affiliate-Links): Die Links „Kostenlos starten“ und „Kostenloses systeme.io-Konto erstellen“ sind Affiliate-Links zu systeme.io. Wenn du einen kostenpflichtigen Tarif buchst, erhalte ich eventuell eine Provision. Für dich entstehen keine Mehrkosten.",
+    "independent": "SoloStarter HQ ist eine unabhängige Website. Sie wird nicht von systeme.io betrieben, gesponsert oder empfohlen.",
+    "checked": "Tarifangaben geprüft im Oktober 2026. Aktuelle Grenzen und Preise bitte immer auf der Preisseite des Anbieters prüfen.",
+    "lang_label": "Sprache",
+    "audience": "Für Designer, Texter, Coaches, virtuelle Assistenzen, Entwickler und Berater.",
+    "legal_link": "Impressum & Datenschutz",
+    "legal_title": "Impressum und Datenschutz | SoloStarter HQ",
+    "legal_h1": "Impressum und Datenschutz",
+    "legal_owner_h": "Angaben gemäß § 5 DDG",
+    "legal_contact": "Kontakt",
+    "privacy_h": "Datenschutz",
+    "privacy": [
+      "Diese Website setzt keine Cookies, keine Kontaktformulare und keine Tracking-Pixel ein und fragt keine personenbezogenen Daten ab.",
+      "Die Website wird bei Cloudflare gehostet. Cloudflare verarbeitet technische Daten wie IP-Adressen, um die Seiten auszuliefern, abzusichern und anonyme Besuchsstatistiken zu erstellen. Einzelheiten stehen in der Datenschutzerklärung von Cloudflare.",
+      "Wenn du auf einen Registrierungslink klickst, verlässt du diese Website und gelangst über einen Affiliate-Link zu systeme.io. Ab dann gilt die Datenschutzerklärung von systeme.io.",
+      "Bei Fragen zum Datenschutz schreib an die oben genannte Kontaktadresse. Du kannst dich außerdem bei einer Datenschutz-Aufsichtsbehörde beschweren."
+    ],
+    "back": "Zurück zur Startseite"
+  }
+}

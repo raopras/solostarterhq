@@ -1,0 +1,4 @@
+_site/
+dist/
+preview.html
+__pycache__/
