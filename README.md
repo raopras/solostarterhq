@@ -17,6 +17,7 @@ The site address and the legal-page details are set in the workflow's `env` bloc
 
 - No competitor brand names (systeme.io affiliate agreement).
 - Name systeme.io next to sign-up buttons, and keep the "Ad" label and disclosure.
+- Every CTA points to systeme.io's page in the same language as the page it sits on (`SYSTEME_LANG` in `build.py`). A new language must add its systeme.io path there.
 - Every claim about the plan must be checkable on systeme.io's own pages.
 
 © 2026 SoloStarterHQ. All rights reserved.
