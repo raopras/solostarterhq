@@ -124,6 +124,10 @@ details p{color:var(--muted);margin:10px 0 0}
 footer{border-top:1px solid var(--line);padding-block:28px 40px;font-size:.82rem;color:var(--muted)}
 footer a{color:inherit}
 footer p{max-width:60em;margin:0 0 8px}
+.hcards{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(14rem,1fr));gap:14px;margin:24px 0 8px}
+.hcards a{display:block;height:100%;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;color:var(--ink);text-decoration:none}
+.hcards a:hover{border-color:var(--accent)}.hcards b{display:block;font:700 1.05rem/1.3 var(--display);margin-bottom:6px}.hcards span{color:var(--muted);font-size:.92rem}
+.note a{color:var(--accent);font-weight:700}
 @media (max-width:820px){.hero{grid-template-columns:1fr}.facts{grid-template-columns:repeat(2,minmax(0,1fr))}.steps{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:no-preference){.keep{transition:transform .2s}.keep.bump{transform:scale(1.03)}}
 """
@@ -236,7 +240,7 @@ def body(code, preview=False):
   <h2 id="steps-h">{e(t['steps_h2'])}</h2>
   <ol class="steps">{steps}</ol>
 </section>
-<section aria-labelledby="faq-h">
+{home_guides(code, preview)}<section aria-labelledby="faq-h">
   <h2 id="faq-h">{e(t['faq_h2'])}</h2>
   <div class="faq">{faq}</div>
 </section>
@@ -277,6 +281,23 @@ def body(code, preview=False):
   cur.addEventListener('change',function(){{convert(prev,cur.value);calc()}});calc();
 }})();
 </script>"""
+
+
+def home_guides(code, preview=False):
+    """A section on the landing page linking to that language's most useful guides."""
+    if preview or code not in G or "home_picks" not in G[code]:
+        return ""
+    L = G[code]["labels"]
+    byid = {pid(p): p for p in G[code]["pages"]}
+    cards = "".join(f'<li><a href="{gpath(code, byid[i]["slug"])}"><b>{e(byid[i]["h1"])}</b><span>{e(byid[i]["card"])}</span></a></li>'
+                    for i in G[code]["home_picks"] if i in byid)
+    return f"""<section aria-labelledby="guides-h">
+  <h2 id="guides-h">{e(L['home_h2'])}</h2>
+  <p class="sec-intro">{e(L['home_intro'])}</p>
+  <ul class="hcards">{cards}</ul>
+  <p class="note"><a href="{gpath(code)}">{e(L['home_more'])} →</a></p>
+</section>
+"""
 
 
 def page(code):
