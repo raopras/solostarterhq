@@ -32,6 +32,9 @@ for code, t in S.items():
     need(os.path.exists(os.path.join(OUT, "go", code, "index.html")), "redirect missing")
 # Guide pages: same SEO rules, plus affiliate-compliance rules.
 G = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "guides.json"), encoding="utf-8"))
+import glob
+for _f in sorted(glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), "guides.*.json"))):
+    G.update(json.load(open(_f, encoding="utf-8")))
 # systeme.io's affiliate agreement: "you may not use any other competitor trademarks in your promotion".
 COMPETITORS = ["ClickFunnels", "Leadpages", "Mailchimp", "ConvertKit", "Kajabi", "Kartra", "Teachable", "Thinkific", "Podia",
                "Wix", "Squarespace", "WordPress", "Calendly", "Acuity", "Tapfiliate", "Zapier", "ActiveCampaign", "Keap",

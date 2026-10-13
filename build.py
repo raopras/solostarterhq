@@ -353,6 +353,10 @@ def redirect(code):
 # in systeme.io's own pages (see GUIDE_FACTS.md); every page carries the Ad label,
 # the disclosure and several sign-up buttons.
 G = json.load(open(os.path.join(HERE, "guides.json"), encoding="utf-8"))
+# Translations live in guides.<lang>.json (same structure, same page ids).
+import glob as _glob
+for _f in sorted(_glob.glob(os.path.join(HERE, "guides.*.json"))):
+    G.update(json.load(open(_f, encoding="utf-8")))
 GUIDE_CSS = """
 .crumbs{font-size:.85rem;color:var(--muted);margin:8px 0 0}.crumbs a{color:inherit}
 .g-hero{padding-block:clamp(20px,4vw,48px) 8px;max-width:46rem}
@@ -397,11 +401,23 @@ def gpath(code, slug=None):
     return f"/{S[code]['path']}{G[code]['dir']}{slug + '/' if slug else ''}"
 
 
-def guide_alts(slug):
-    langs = [c for c in guide_langs() if slug is None or any(p["slug"] == slug for p in G[c]["pages"])]
-    a = "".join(f'<link rel="alternate" hreflang="{S[c]["hreflang"]}" href="{gurl(c, slug)}">' for c in langs)
+def pid(p):
+    """A guide's id is the same in every language; its slug is translated."""
+    return p.get("id", p["slug"])
+
+
+def slug_for(code, gid):
+    for p in G[code]["pages"]:
+        if pid(p) == gid:
+            return p["slug"]
+    return None
+
+
+def guide_alts(gid):
+    langs = [c for c in guide_langs() if gid is None or slug_for(c, gid)]
+    a = "".join(f'<link rel="alternate" hreflang="{S[c]["hreflang"]}" href="{gurl(c, None if gid is None else slug_for(c, gid))}">' for c in langs)
     if "en" in langs:
-        a += f'<link rel="alternate" hreflang="x-default" href="{gurl("en", slug)}">'
+        a += f'<link rel="alternate" hreflang="x-default" href="{gurl("en", None if gid is None else slug_for("en", gid))}">'
     return a
 
 
@@ -492,7 +508,7 @@ def render_section(sec, i):
 
 def guide_page(code, g):
     t, L = S[code], G[code]["labels"]
-    pages = {p["slug"]: p for p in G[code]["pages"]}
+    pages = {pid(p): p for p in G[code]["pages"]}
     canonical = gurl(code, g["slug"])
     crumbs = [("SoloStarter HQ", f"{BASE}/{t['path']}"), (L["guides"], gurl(code)), (g["h1"], canonical)]
     ld = [
@@ -511,9 +527,9 @@ def guide_page(code, g):
             body += ctabox(code, "guide-mid")
     toc = "".join(f'<a href="#s{i}">{e(sec["h2"])}</a>' for i, sec in enumerate(secs))
     faq = "".join(f"<details><summary>{e(q)}</summary><p>{e(a)}</p></details>" for q, a in g["faq"])
-    related = "".join(f'<li><a href="{gpath(code, r)}"><b>{e(pages[r]["h1"])}</b><span>{e(pages[r]["card"])}</span></a></li>' for r in g["related"] if r in pages)
+    related = "".join(f'<li><a href="{gpath(code, pages[r]["slug"])}"><b>{e(pages[r]["h1"])}</b><span>{e(pages[r]["card"])}</span></a></li>' for r in g["related"] if r in pages)
     srcs = "".join(f'<li><a href="{u}" rel="nofollow noopener">{e(u.replace("https://", ""))}</a></li>' for u in g["sources"])
-    return guide_head(code, g["title"], g["desc"], canonical, g["slug"], ld) + guide_top(code) + f"""
+    return guide_head(code, g["title"], g["desc"], canonical, pid(g), ld) + guide_top(code) + f"""
 <main>
 <p class="crumbs"><a href="/{t['path']}">SoloStarter HQ</a> › <a href="{gpath(code)}">{e(L['guides'])}</a></p>
 <div class="g-hero">
@@ -546,9 +562,9 @@ def guide_hub(code):
             {"@type": "ListItem", "position": 2, "name": L["guides"], "item": canonical}]},
         {"@context": "https://schema.org", "@type": "CollectionPage", "name": H["h1"], "description": H["desc"], "inLanguage": t["htmllang"], "url": canonical},
     ]
-    byslug = {p["slug"]: p for p in pages}
+    byslug = {pid(p): p for p in pages}
     goals = "".join(f'<label><input type="checkbox" value="{k}"> {e(label)}</label>' for k, label, _ in H["goals"])
-    gmap = {k: [{"href": gpath(code, s), "t": byslug[s]["h1"]} for s in sl if s in byslug] for k, _, sl in H["goals"]}
+    gmap = {k: [{"href": gpath(code, byslug[s]["slug"]), "t": byslug[s]["h1"]} for s in sl if s in byslug] for k, _, sl in H["goals"]}
     cards = "".join(f'<li><a href="{gpath(code, p["slug"])}"><b>{e(p["h1"])}</b><span>{e(p["card"])}</span></a></li>' for p in pages)
     return guide_head(code, H["title"], H["desc"], canonical, None, ld) + guide_top(code) + f"""
 <main>
@@ -580,12 +596,12 @@ def write_guides(out):
         base_dir = os.path.join(out, S[c]["path"], G[c]["dir"])
         os.makedirs(base_dir, exist_ok=True)
         open(os.path.join(base_dir, "index.html"), "w", encoding="utf-8").write(guide_hub(c))
-        urls.append((gurl(c), None))
+        urls.append((gurl(c), "hub"))
         for g in G[c]["pages"]:
             d = os.path.join(base_dir, g["slug"])
             os.makedirs(d, exist_ok=True)
             open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(guide_page(c, g))
-            urls.append((gurl(c, g["slug"]), g["slug"]))
+            urls.append((gurl(c, g["slug"]), pid(g)))
     return urls
 
 

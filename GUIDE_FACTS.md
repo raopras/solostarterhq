@@ -53,3 +53,8 @@ on ours. Where systeme.io's pages contradict each other, the claim is left out.
 
 ## Free migration (systeme.io/free-migration)
 - Included "with the Unlimited monthly plan ($97/month) or any annual plan"; team moves funnels, pages, email lists, sequences, courses, customer records.
+
+## Translations (es, pt-br, de; checked 13 Oct 2026)
+- `guides.<lang>.json` translate `guides.json` page for page. Checked before publishing: same sections, FAQs, related pages and sources as the English; every figure matches; only systeme.io links; no affiliate IDs in the text; no competitor names; German uses the formal "Sie".
+- Each language's buttons and copy box go to systeme.io's sign-up page in that language (`/go/<lang>/` → systeme.io/es/, /pt/, /de/), with the same affiliate ID.
+- The facts come from systeme.io's English pages, and each page says so in its sources note.
