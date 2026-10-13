@@ -204,7 +204,7 @@ def body(code, preview=False):
     return f"""{banner(code, preview)}<div class="wrap">
 <header class="top">
   <a class="brand" href="{root}{'' if preview else t['path']}">SoloStarter<span>HQ</span></a>
-  <nav aria-label="{e(t['lang_label'])}"><div class="langs">{langs}</div><a class="btn small" href="{go}" {rel} {ev(code, 'nav')}>{e(t['nav_cta'])}</a></nav>
+  <nav aria-label="{e(t['lang_label'])}">{'' if preview or code not in G else f'<a href="{gpath(code)}" style="color:var(--ink);font-weight:700;text-decoration:none">{e(G[code]["labels"]["guides"])}</a>'}<div class="langs">{langs}</div><a class="btn small" href="{go}" {rel} {ev(code, 'nav')}>{e(t['nav_cta'])}</a></nav>
 </header>
 <main>
 <div class="hero">
@@ -250,7 +250,7 @@ def body(code, preview=False):
   <p>{e(t['disclosure'])}</p>
   <p>{e(t['independent'])}</p>
   <p>{e(t['checked'])}</p>
-  <p>{footer_links(code, preview)} · © 2026 SoloStarter HQ</p>
+  <p>{'' if preview or code not in G else f'<a href="{gpath(code)}">{e(G[code]["labels"]["all_guides"])}</a> · '}{footer_links(code, preview)} · © 2026 SoloStarter HQ</p>
 </footer>
 </div>
 <script>
@@ -348,6 +348,247 @@ def redirect(code):
 """
 
 
+# ---- Guides (content pages) ------------------------------------------------
+# guides.json holds the guide pages per language. Every claim in them is grounded
+# in systeme.io's own pages (see GUIDE_FACTS.md); every page carries the Ad label,
+# the disclosure and several sign-up buttons.
+G = json.load(open(os.path.join(HERE, "guides.json"), encoding="utf-8"))
+GUIDE_CSS = """
+.crumbs{font-size:.85rem;color:var(--muted);margin:8px 0 0}.crumbs a{color:inherit}
+.g-hero{padding-block:clamp(20px,4vw,48px) 8px;max-width:46rem}
+.g-hero h1{font-size:clamp(2rem,4.6vw,3rem)}
+.g-cta{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-top:6px}
+.g-body{display:grid;grid-template-columns:minmax(0,46rem) minmax(0,15rem);gap:clamp(24px,5vw,56px);align-items:start}
+.g-body article section{padding-block:22px}.g-body article section+section{border-top:1px solid var(--line)}
+.g-body h2{font-size:clamp(1.35rem,2.6vw,1.75rem);margin-bottom:10px}
+.g-body p,.g-body li{max-width:42em}.g-body ul,.g-body ol{padding-left:1.3em}.g-body li{margin:6px 0}
+.toc{position:sticky;top:16px;font-size:.88rem;border-left:3px solid var(--line);padding-left:14px}
+.toc b{display:block;margin-bottom:6px}.toc a{display:block;color:var(--muted);text-decoration:none;padding:3px 0}.toc a:hover{color:var(--ink)}
+.ctabox{background:var(--card);border:2px solid var(--accent);border-radius:14px;padding:20px;margin:26px 0}
+.ctabox h3{font-size:1.25rem}.ctabox p{color:var(--muted);margin:6px 0 14px}
+.copybox{border:1px dashed var(--line);border-radius:12px;padding:16px;margin:22px 0}
+.copybox p{margin:0 0 8px}.copyrow{display:flex;gap:8px;flex-wrap:wrap}.copyrow input{flex:1 1 16rem;min-width:0;font:500 .85rem/1.4 var(--mono)}
+.copyrow button{font:700 .9rem/1 var(--body);background:var(--ink);color:var(--paper);border:0;border-radius:8px;padding:10px 14px;cursor:pointer}
+.cards{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));gap:14px;margin:16px 0 0}
+.cards a{display:block;height:100%;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;color:var(--ink);text-decoration:none}
+.cards a:hover{border-color:var(--accent)}.cards b{display:block;font:700 1.05rem/1.3 var(--display);margin-bottom:6px}.cards span{color:var(--muted);font-size:.92rem}
+.sources{font-size:.85rem;color:var(--muted)}.sources a{color:inherit;word-break:break-all}
+.picker{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin-top:18px}
+.picker label{display:flex;gap:10px;align-items:center;padding:8px 0;cursor:pointer}.picker input{width:1.1rem;height:1.1rem;accent-color:var(--accent)}
+.picker button{margin-top:10px;font:700 1rem/1 var(--body);background:var(--ink);color:var(--paper);border:0;border-radius:10px;padding:12px 18px;cursor:pointer}
+#pick-out{margin-top:14px}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:5;display:flex;gap:10px;align-items:center;background:var(--ink);color:var(--paper);padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px))}
+.sticky span{flex:1;font-size:.9rem}.sticky .btn{padding:10px 14px;font-size:.9rem}.sticky button{background:none;border:0;color:var(--paper);font-size:1.3rem;cursor:pointer}
+[hidden]{display:none!important}
+@media (min-width:900px){.sticky{display:none!important}}
+@media (max-width:900px){.g-body{grid-template-columns:1fr}.toc{display:none}}
+"""
+
+
+def guide_langs():
+    return [c for c in LANGS if c in G]
+
+
+def gurl(code, slug=None):
+    return f"{BASE}/{S[code]['path']}{G[code]['dir']}{slug + '/' if slug else ''}"
+
+
+def gpath(code, slug=None):
+    return f"/{S[code]['path']}{G[code]['dir']}{slug + '/' if slug else ''}"
+
+
+def guide_alts(slug):
+    langs = [c for c in guide_langs() if slug is None or any(p["slug"] == slug for p in G[c]["pages"])]
+    a = "".join(f'<link rel="alternate" hreflang="{S[c]["hreflang"]}" href="{gurl(c, slug)}">' for c in langs)
+    if "en" in langs:
+        a += f'<link rel="alternate" hreflang="x-default" href="{gurl("en", slug)}">'
+    return a
+
+
+def guide_head(code, title, desc, canonical, slug, ld):
+    t = S[code]
+    return f"""<!doctype html>
+<html lang="{t['htmllang']}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{e(title)}</title>
+<meta name="description" content="{e(desc)}">
+<link rel="canonical" href="{canonical}">{guide_alts(slug)}
+<meta property="og:type" content="article"><meta property="og:site_name" content="SoloStarter HQ">
+<meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}">
+<meta property="og:url" content="{canonical}"><meta property="og:image" content="{BASE}/og.png">
+<meta property="og:locale" content="{t['og_locale']}"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1d6b4a"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
+{FONTS}
+{analytics()}
+{''.join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in ld)}
+<style>{CSS}{GUIDE_CSS}</style>
+</head><body>"""
+
+
+def guide_top(code):
+    t, L = S[code], G[code]["labels"]
+    rel = 'rel="sponsored nofollow noopener"'
+    return f"""{banner(code)}<div class="wrap">
+<header class="top">
+  <a class="brand" href="/{t['path']}">SoloStarter<span>HQ</span></a>
+  <nav aria-label="{e(L['guides'])}"><a href="{gpath(code)}" style="color:var(--ink);font-weight:700;text-decoration:none">{e(L['guides'])}</a><a class="btn small" href="/go/{code}/" {rel} {ev(code, 'guide-nav')}>{e(t['nav_cta'])}</a></nav>
+</header>"""
+
+
+def guide_cta(code, where, cls="btn"):
+    t = S[code]
+    return f'<a class="{cls}" href="/go/{code}/" rel="sponsored nofollow noopener" {ev(code, where)}>{e(t["cta"])}</a>'
+
+
+def guide_bottom(code, page_id):
+    t, L = S[code], G[code]["labels"]
+    return f"""
+<footer>
+  <p>{e(t['disclosure'])}</p>
+  <p>{e(t['independent'])}</p>
+  <p>{e(L['updated'])} {e(t['checked'])}</p>
+  <p><a href="{gpath(code)}">{e(L['all_guides'])}</a> · {footer_links(code)} · © 2026 SoloStarter HQ</p>
+</footer>
+</div>
+<div class="sticky" id="sticky" hidden><span>{e(L['sticky'])}</span><a class="btn" href="/go/{code}/" rel="sponsored nofollow noopener" {ev(code, 'sticky')}>{e(L['sticky_btn'])}</a><button type="button" id="sticky-x" aria-label="{e(L['close'])}">×</button></div>
+<script>
+(function(){{
+  var b=document.getElementById('copy-btn'),i=document.getElementById('copy-url');
+  if(b&&i){{b.addEventListener('click',function(){{var done=function(){{b.textContent={json.dumps(L['copy_done'])};if(window.umami)umami.track('referral-copy',{{lang:{json.dumps(code)},page:{json.dumps(page_id)}}});setTimeout(function(){{b.textContent={json.dumps(L['copy_btn'])}}},2500)}};
+    if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(i.value).then(done,function(){{i.select()}});else{{i.select();try{{document.execCommand('copy');done()}}catch(x){{}}}}}});i.addEventListener('focus',function(){{i.select()}});}}
+  var s=document.getElementById('sticky'),x=document.getElementById('sticky-x'),off=false;
+  try{{off=sessionStorage.getItem('ssq-bar')==='off'}}catch(err){{}}
+  if(s&&!off&&'IntersectionObserver' in window){{var tgt=[].slice.call(document.querySelectorAll('.g-cta,.ctabox')),seen=tgt.map(function(_,n){{return n===0}});
+    var up=function(){{s.hidden=off||seen.some(Boolean)}};
+    var io=new IntersectionObserver(function(es){{es.forEach(function(en){{seen[tgt.indexOf(en.target)]=en.isIntersecting}});up()}});tgt.forEach(function(t){{io.observe(t)}});
+    x.addEventListener('click',function(){{off=true;try{{sessionStorage.setItem('ssq-bar','off')}}catch(err){{}}up()}});}}
+}})();
+</script>
+</body></html>
+"""
+
+
+def copybox(code):
+    L = G[code]["labels"]
+    return f"""<div class="copybox"><p><b>{e(L['copy_h'])}</b></p><div class="copyrow"><input id="copy-url" type="text" readonly value="{e(aff(code))}" aria-label="{e(L['copy_h'])}"><button type="button" id="copy-btn">{e(L['copy_btn'])}</button></div><p class="note">{e(L['copy_note'])}</p></div>"""
+
+
+def ctabox(code, where):
+    L = G[code]["labels"]
+    return f"""<aside class="ctabox"><h3>{e(L['cta_box_h'])}</h3><p>{e(L['cta_box_p'])}</p>{guide_cta(code, where)}<p class="note">{e(S[code]['cta_note'])}</p></aside>"""
+
+
+def render_section(sec, i):
+    h = f'<section id="s{i}"><h2>{e(sec["h2"])}</h2>'
+    for p in sec.get("p", []):
+        h += f"<p>{e(p)}</p>"
+    if sec.get("ul"):
+        h += "<ul>" + "".join(f"<li>{e(x)}</li>" for x in sec["ul"]) + "</ul>"
+    if sec.get("ol"):
+        h += "<ol>" + "".join(f"<li>{e(x)}</li>" for x in sec["ol"]) + "</ol>"
+    if sec.get("after"):
+        h += f"<p>{e(sec['after'])}</p>"
+    return h + "</section>"
+
+
+def guide_page(code, g):
+    t, L = S[code], G[code]["labels"]
+    pages = {p["slug"]: p for p in G[code]["pages"]}
+    canonical = gurl(code, g["slug"])
+    crumbs = [("SoloStarter HQ", f"{BASE}/{t['path']}"), (L["guides"], gurl(code)), (g["h1"], canonical)]
+    ld = [
+        {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "name": n, "item": u} for i, (n, u) in enumerate(crumbs)]},
+        {"@context": "https://schema.org", "@type": "Article", "headline": g["h1"], "description": g["desc"], "inLanguage": t["htmllang"],
+         "dateModified": "2026-10-13", "author": {"@type": "Organization", "name": "SoloStarter HQ"}, "mainEntityOfPage": canonical},
+        {"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": t["htmllang"], "mainEntity": [
+            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in g["faq"]]},
+    ]
+    secs = g["sections"]
+    body = ""
+    for i, sec in enumerate(secs):
+        body += render_section(sec, i)
+        if i == 1:
+            body += ctabox(code, "guide-mid")
+    toc = "".join(f'<a href="#s{i}">{e(sec["h2"])}</a>' for i, sec in enumerate(secs))
+    faq = "".join(f"<details><summary>{e(q)}</summary><p>{e(a)}</p></details>" for q, a in g["faq"])
+    related = "".join(f'<li><a href="{gpath(code, r)}"><b>{e(pages[r]["h1"])}</b><span>{e(pages[r]["card"])}</span></a></li>' for r in g["related"] if r in pages)
+    srcs = "".join(f'<li><a href="{u}" rel="nofollow noopener">{e(u.replace("https://", ""))}</a></li>' for u in g["sources"])
+    return guide_head(code, g["title"], g["desc"], canonical, g["slug"], ld) + guide_top(code) + f"""
+<main>
+<p class="crumbs"><a href="/{t['path']}">SoloStarter HQ</a> › <a href="{gpath(code)}">{e(L['guides'])}</a></p>
+<div class="g-hero">
+  <h1>{e(g['h1'])}</h1>
+  <p class="lede">{e(g['lede'])}</p>
+  <div class="g-cta">{guide_cta(code, 'guide-top')}</div>
+  <p class="note">{e(t['cta_note'])}</p>
+</div>
+<div class="g-body">
+<article>
+{body}
+<section id="faq"><h2>{e(L['faq_h2'])}</h2><div class="faq">{faq}</div></section>
+{ctabox(code, 'guide-end')}
+{copybox(code)}
+<section><h2>{e(L['related_h2'])}</h2><ul class="cards">{related}</ul></section>
+<section class="sources"><h2>{e(L['sources_h2'])}</h2><p>{e(L['sources_intro'])}</p><ul>{srcs}</ul></section>
+</article>
+<nav class="toc" aria-label="{e(L['on_this_page'])}"><b>{e(L['on_this_page'])}</b>{toc}<a href="#faq">{e(L['faq_h2'])}</a></nav>
+</div>
+</main>""" + guide_bottom(code, g["slug"])
+
+
+def guide_hub(code):
+    t, L, H = S[code], G[code]["labels"], G[code]["hub"]
+    pages = G[code]["pages"]
+    canonical = gurl(code)
+    ld = [
+        {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "SoloStarter HQ", "item": f"{BASE}/{t['path']}"},
+            {"@type": "ListItem", "position": 2, "name": L["guides"], "item": canonical}]},
+        {"@context": "https://schema.org", "@type": "CollectionPage", "name": H["h1"], "description": H["desc"], "inLanguage": t["htmllang"], "url": canonical},
+    ]
+    byslug = {p["slug"]: p for p in pages}
+    goals = "".join(f'<label><input type="checkbox" value="{k}"> {e(label)}</label>' for k, label, _ in H["goals"])
+    gmap = {k: [{"href": gpath(code, s), "t": byslug[s]["h1"]} for s in sl if s in byslug] for k, _, sl in H["goals"]}
+    cards = "".join(f'<li><a href="{gpath(code, p["slug"])}"><b>{e(p["h1"])}</b><span>{e(p["card"])}</span></a></li>' for p in pages)
+    return guide_head(code, H["title"], H["desc"], canonical, None, ld) + guide_top(code) + f"""
+<main>
+<div class="g-hero">
+  <h1>{e(H['h1'])}</h1>
+  <p class="lede">{e(H['lede'])}</p>
+  <div class="g-cta">{guide_cta(code, 'hub-top')}</div>
+  <p class="note">{e(t['cta_note'])}</p>
+</div>
+<section aria-labelledby="pick-h"><h2 id="pick-h">{e(H['pick_h2'])}</h2><p class="sec-intro">{e(H['pick_intro'])}</p>
+<form class="picker" id="picker" onsubmit="return false">{goals}<button type="submit">{e(H['pick_btn'])}</button><div id="pick-out" aria-live="polite"></div></form></section>
+<section aria-labelledby="all-h"><h2 id="all-h">{e(H['all_h2'])}</h2><ul class="cards">{cards}</ul></section>
+{ctabox(code, 'hub-end')}
+{copybox(code)}
+</main>
+<script>
+(function(){{var M={json.dumps(gmap, ensure_ascii=False)},f=document.getElementById('picker'),o=document.getElementById('pick-out');
+f.addEventListener('submit',function(){{var seen={{}},list=[];[].slice.call(f.querySelectorAll('input:checked')).forEach(function(c){{(M[c.value]||[]).forEach(function(x){{if(!seen[x.href]){{seen[x.href]=1;list.push(x)}}}})}});
+o.textContent='';if(!list.length){{o.textContent={json.dumps(H['pick_none'])};return}}
+var p=document.createElement('p');p.innerHTML='<b></b>';p.firstChild.textContent={json.dumps(H['pick_result'])};o.appendChild(p);var ul=document.createElement('ul');
+list.forEach(function(x){{var li=document.createElement('li'),a=document.createElement('a');a.href=x.href;a.textContent=x.t;li.appendChild(a);ul.appendChild(li)}});o.appendChild(ul);
+if(window.umami)umami.track('guide-picker',{{lang:{json.dumps(code)},goals:[].slice.call(f.querySelectorAll('input:checked')).map(function(c){{return c.value}}).join(',')}});}});}})();
+</script>""" + guide_bottom(code, "hub")
+
+
+def write_guides(out):
+    urls = []
+    for c in guide_langs():
+        base_dir = os.path.join(out, S[c]["path"], G[c]["dir"])
+        os.makedirs(base_dir, exist_ok=True)
+        open(os.path.join(base_dir, "index.html"), "w", encoding="utf-8").write(guide_hub(c))
+        urls.append((gurl(c), None))
+        for g in G[c]["pages"]:
+            d = os.path.join(base_dir, g["slug"])
+            os.makedirs(d, exist_ok=True)
+            open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(guide_page(c, g))
+            urls.append((gurl(c, g["slug"]), g["slug"]))
+    return urls
+
+
 def main():
     missing = [k for k, v in OWNER.items() if not v]
     if missing and not os.environ.get("ALLOW_MISSING"):
@@ -364,11 +605,13 @@ def main():
         g = os.path.join(OUT, "go", c)
         os.makedirs(g, exist_ok=True)
         open(os.path.join(g, "index.html"), "w", encoding="utf-8").write(redirect(c))
+    guide_urls = write_guides(OUT)
     shutil.copytree(os.path.join(HERE, "static"), OUT, dirs_exist_ok=True)
     # sitemap with hreflang alternates
     alts = "".join(f'<xhtml:link rel="alternate" hreflang="{S[c]["hreflang"]}" href="{url(c)}"/>' for c in LANGS)
     alts += f'<xhtml:link rel="alternate" hreflang="x-default" href="{url("en")}"/>'
     urls = "".join(f"<url><loc>{url(c)}</loc><lastmod>2026-10-12</lastmod>{alts}</url>" for c in LANGS)
+    urls += "".join(f"<url><loc>{u}</loc><lastmod>2026-10-13</lastmod></url>" for u, _ in guide_urls)
     open(os.path.join(OUT, "sitemap.xml"), "w").write(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">'
         + urls + "</urlset>\n")
