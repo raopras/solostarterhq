@@ -1,0 +1,279 @@
+{
+  "de": {
+    "dir": "ratgeber/",
+    "labels": {
+      "guides": "Ratgeber",
+      "all_guides": "Alle Ratgeber",
+      "home": "SoloStarter HQ",
+      "on_this_page": "Auf dieser Seite",
+      "faq_h2": "Häufige Fragen",
+      "related_h2": "Weiterlesen",
+      "sources_h2": "Woher diese Angaben stammen",
+      "sources_intro": "Alle Funktionen, Grenzen und Preise auf dieser Seite stammen von der Website von systeme.io (den englischsprachigen Seiten), geprüft im Oktober 2026. Tarife ändern sich, prüfen Sie die aktuellen Angaben deshalb bitte auf systeme.io, bevor Sie sich darauf verlassen.",
+      "cta_box_h": "Im kostenlosen Tarif ausprobieren",
+      "cta_box_p": "Der kostenlose Tarif läuft nicht ab und verlangt keine Kreditkarte. Sie können also alles aus diesem Ratgeber testen, bevor Sie etwas ausgeben.",
+      "copy_h": "Später oder auf einem anderen Gerät anmelden?",
+      "copy_btn": "Link kopieren",
+      "copy_done": "Kopiert",
+      "copy_note": "Das ist unser Affiliate-Link zur kostenlosen Anmeldeseite von systeme.io. Fügen Sie ihn in Ihren Browser ein, wenn Sie so weit sind.",
+      "sticky": "Kostenloses systeme.io-Konto",
+      "sticky_btn": "Kostenlos starten",
+      "close": "Ausblenden",
+      "updated": "Im Oktober 2026 auf systeme.io geprüft."
+    },
+    "hub": {
+      "title": "systeme.io-Ratgeber für Freelancer | SoloStarter HQ",
+      "desc": "Verständliche Ratgeber zu systeme.io für Freelancer: kostenloser Tarif, Sales Funnel, E-Mail, Kurse, Buchungen, Zahlungen und wann sich Zahlen lohnt.",
+      "h1": "systeme.io-Ratgeber für Freelancer",
+      "lede": "systeme.io ist eine All-in-one-Plattform für ein Onlinegeschäft: Seiten, E-Mail, Kurse, Buchungen und Zahlungen in einem Konto. Diese Ratgeber zeigen, was die einzelnen Teile können, was der kostenlose Tarif enthält und wie Sie alles einrichten, und stützen sich dabei nur auf Angaben von systeme.io selbst.",
+      "pick_h2": "Was möchten Sie zuerst tun?",
+      "pick_intro": "Kreuzen Sie an, was Sie brauchen, dann zeigen wir Ihnen die passenden Ratgeber.",
+      "goals": [
+        ["page", "Eine Website oder Seite online stellen", ["first-page", "website-and-blog"]],
+        ["email", "Eine E-Mail-Liste aufbauen und Newsletter senden", ["email-marketing", "automation"]],
+        ["sell", "Ein Produkt, eine Leistung oder eine Vorlage verkaufen", ["sales-funnels", "payments"]],
+        ["course", "Einen Onlinekurs verkaufen", ["online-courses", "payments"]],
+        ["book", "Kundinnen und Kunden Termine buchen und bezahlen lassen", ["booking-calendar", "payments"]],
+        ["cost", "Weniger für einzelne Tools bezahlen", ["all-in-one", "free-plan"]]
+      ],
+      "pick_btn": "Meine Ratgeber anzeigen",
+      "pick_result": "Beginnen Sie hier:",
+      "pick_none": "Bitte kreuzen Sie mindestens ein Feld an.",
+      "all_h2": "Alle Ratgeber"
+    },
+    "pages": [
+      {
+        "id": "first-page", "slug": "erste-seite",
+        "title": "Die erste Seite in systeme.io erstellen | SoloStarter HQ",
+        "desc": "Schritt für Schritt zur ersten Seite oder zum ersten Funnel im kostenlosen Tarif von systeme.io: Vorlage, Bearbeitung, Zahlungen und Veröffentlichung.",
+        "h1": "Ihre erste Seite in systeme.io, Schritt für Schritt",
+        "card": "Vom leeren Konto zur veröffentlichten Seite, mit den Schritten von systeme.io selbst.",
+        "lede": "Am schnellsten merken Sie, ob systeme.io zu Ihnen passt, wenn Sie etwas Echtes veröffentlichen. Dieser Ratgeber folgt den Schritten, die systeme.io für einen ersten Funnel und eine erste Website angibt. Beides funktioniert im kostenlosen Tarif.",
+        "sections": [
+          {"h2": "Bevor Sie starten", "p": ["Sie brauchen ein kostenloses systeme.io-Konto. Laut systeme.io läuft der kostenlose Tarif nie ab und verlangt keine Kreditkarte. Es gibt also nichts zu kündigen, falls Sie sich dagegen entscheiden.", "Überlegen Sie, wofür Ihre erste Seite da ist. Für die meisten Freelancer ist das eines von zwei Dingen: eine einfache Website, die erklärt, was Sie tun, oder eine einzelne Seite, die E-Mail-Adressen sammelt oder ein Angebot verkauft. Das Zweite nennt systeme.io einen Sales Funnel."]},
+          {"h2": "Variante 1: Ihr erster Funnel", "p": ["systeme.io beschreibt einen Sales Funnel als eine Abfolge von Seiten, die Besucherinnen und Besucher vom ersten Kontakt mit Ihrem Geschäft bis zum Kauf führt, üblicherweise eine Eintragsseite, eine Verkaufsseite, eine Kassenseite und eine Dankeseite. Der kostenlose Tarif enthält bis zu 3 Funnel."], "ol": ["Gehen Sie in Ihrem Dashboard auf Funnels und klicken Sie auf einen Funnel erstellen.", "Wählen Sie eine Funnel-Art (Lead-Erfassung, Produktverkauf, Webinar und so weiter) und eine Vorlage.", "Klicken Sie auf jeden Schritt und bearbeiten Sie die Seite im Drag-and-drop-Editor: Texte, Bilder und Angebotsdetails.", "Wenn Sie verkaufen, verbinden Sie im Kassenschritt Ihren Zahlungsanbieter.", "Richten Sie eine E-Mail-Automatisierung ein, um neue Leads oder Käufer nachzufassen.", "Klicken Sie auf Veröffentlichen."], "after": "Laut systeme.io sind die meisten ersten Funnel in weniger als 2 Stunden online."},
+          {"h2": "Variante 2: Ihre erste Website", "p": ["Der Website-Builder ist im kostenlosen Tarif enthalten. systeme.io beschreibt den Ablauf so: Vorlage wählen, Texte und Bilder anpassen, Seiten hinzufügen, Navigation einrichten, Domain verbinden und veröffentlichen, ganz ohne Programmieren."], "ul": ["Starten Sie mit einer Vorlage und ändern Sie Farben, Schriften und Bilder für die ganze Website.", "Legen Sie Seiten wie Start, Leistungen und Kontakt an und ordnen Sie das Menü.", "Legen Sie in den Einstellungen jeder Seite Titel und Beschreibung für Google fest.", "Veröffentlichen Sie auf Ihrer eigenen Domain: Der kostenlose Tarif enthält 1 eigene Domain."]},
+          {"h2": "Mit Ihrer E-Mail-Liste verbinden", "p": ["Fügen Sie in beiden Varianten ein Formular ein. Laut systeme.io landet jemand, der ein Formular auf Ihrer Website oder in Ihrem Funnel ausfüllt, automatisch in Ihren Kontakten und kann per E-Mail weiterbetreut werden. So beginnt eine E-Mail-Liste, die Ihnen gehört."]},
+          {"h2": "Wie es weitergeht", "p": ["Wenn Ihre Seite online ist, sind die nächsten sinnvollen Schritte eine Willkommens-E-Mail für neue Eintragungen und, wenn Sie Leistungen verkaufen, eine Buchungsseite. Die Ratgeber unten erklären beides."]}
+        ],
+        "faq": [
+          ["Muss ich programmieren können?", "Nein. Laut systeme.io ist der Editor vollständig visuell: Sie klicken ein Element an, um es zu bearbeiten, und ziehen Blöcke, um sie neu anzuordnen. Fortgeschrittene können eigenes CSS ergänzen, nötig ist das nie."],
+          ["Kann ich im kostenlosen Tarif eine eigene Domain nutzen?", "Ja. Die Preisseite von systeme.io nennt 1 eigene Domain im kostenlosen Tarif."],
+          ["Kann ich im kostenlosen Tarif Zahlungen annehmen?", "Ja. Laut systeme.io verbinden Sie im Kassenschritt einen Zahlungsanbieter wie Stripe oder PayPal, und systeme.io berechnet in allen Tarifen 0 % Transaktionsgebühr. Die Gebühren Ihres Zahlungsanbieters fallen weiterhin an."]
+        ],
+        "related": ["free-plan", "sales-funnels", "website-and-blog"],
+        "sources": ["https://systeme.io/sales-funnels", "https://systeme.io/website-builder", "https://systeme.io/pricing"]
+      },
+      {
+        "id": "free-plan", "slug": "kostenloser-tarif",
+        "title": "systeme.io kostenloser Tarif: Inhalte | SoloStarter HQ",
+        "desc": "Was der kostenlose Tarif von systeme.io enthält, von 2.000 Kontakten und unbegrenzten E-Mails bis zu 3 Funneln und 1 Kurs, und welche Grenzen gelten.",
+        "h1": "Der kostenlose Tarif von systeme.io: Inhalt und Grenzen",
+        "card": "Genau das ist kostenlos, und hier liegen die Grenzen.",
+        "lede": "Der kostenlose Tarif von systeme.io deckt viel ab, hat aber Grenzen. Hier steht, was systeme.io dazu angibt, mit den eigenen Zahlen, damit Sie wissen, was möglich ist, bevor Sie etwas bezahlen.",
+        "sections": [
+          {"h2": "Was der kostenlose Tarif enthält", "p": ["Laut der Preisseite von systeme.io enthält der kostenlose Tarif:"], "ul": ["Bis zu 2.000 Kontakte", "Unbegrenzt viele E-Mail-Sendungen", "3 Sales Funnel", "1 Blog", "1 Kurs", "1 Partnerprogramm", "1 eigene Domain", "1 Automatisierungsregel und 1 E-Mail-Kampagne"], "after": "systeme.io gibt außerdem an, dass alle Tarife unbegrenzt viele Sub-Accounts, 0 % Transaktionsgebühr und denselben Satz an Kernfunktionen enthalten."},
+          {"h2": "Er läuft nicht ab", "p": ["Laut systeme.io läuft der kostenlose Tarif nie ab und verlangt keine Kreditkarte. Es ist kein befristeter Test: Sie können ihn so lange nutzen, wie Ihr Geschäft in die Grenzen passt."]},
+          {"h2": "Die wichtigsten Grenzen", "p": ["Für die meisten Freelancer am Anfang entscheiden zwei Grenzen, wann der kostenlose Tarif zu klein wird:"], "ul": ["Kontakte: Bei 2.000 ist Schluss. Laut systeme.io richten sich die Tarife vor allem nach der Zahl der Kontakte.", "Automatisierung: Der kostenlose Tarif enthält 1 Automatisierungsregel und 1 E-Mail-Kampagne. Wenn Sie mehrere getrennte E-Mail-Strecken wollen, etwa eine pro Produkt, erreichen Sie diese Grenze vor der Kontaktgrenze."], "after": "Funnel (3) und Kurse (1) sind die weiteren Grenzen, auf die Sie achten sollten, wenn Sie mehr als eine Sache verkaufen."},
+          {"h2": "Für wen der kostenlose Tarif passt", "p": ["Der Rat von systeme.io ist einfach: Unter 2.000 Kontakten nutzen Sie den kostenlosen Tarif, er kostet nichts und deckt die meisten Anforderungen ab. Für Freelancer mit Portfolio-Website, Newsletter und einem Angebot heißt das meist: lange Zeit kostenlos."]}
+        ],
+        "faq": [
+          ["Ist der kostenlose Tarif von systeme.io wirklich dauerhaft kostenlos?", "Laut systeme.io läuft der kostenlose Tarif nie ab und verlangt keine Kreditkarte."],
+          ["Wie viele E-Mails kann ich im kostenlosen Tarif senden?", "Unbegrenzt viele. Laut systeme.io gibt es keine tägliche oder monatliche Obergrenze; begrenzt ist nur die Zahl der Kontakte (2.000 im kostenlosen Tarif)."],
+          ["Behält systeme.io im kostenlosen Tarif einen Teil meiner Verkäufe ein?", "Nein. systeme.io berechnet in allen Tarifen 0 % Transaktionsgebühr, auch im kostenlosen. Ihr Zahlungsanbieter (etwa Stripe oder PayPal) berechnet weiterhin eigene Gebühren."]
+        ],
+        "related": ["when-to-upgrade", "first-page", "email-marketing"],
+        "sources": ["https://systeme.io/pricing", "https://systeme.io/email-marketing"]
+      },
+      {
+        "id": "when-to-upgrade", "slug": "wann-kostenpflichtig",
+        "title": "Wann lohnt ein kostenpflichtiger Tarif? | SoloStarter HQ",
+        "desc": "Die kostenpflichtigen Tarife von systeme.io im Vergleich: Startup, Webinar und Unlimited, was sie zusätzlich bieten und wann sich der Wechsel lohnt.",
+        "h1": "Wann lohnt sich ein kostenpflichtiger systeme.io-Tarif?",
+        "card": "Die Anzeichen, dass der kostenlose Tarif zu klein wird, und welcher Tarif folgt.",
+        "lede": "Starten Sie kostenlos und wechseln Sie, wenn Ihr Geschäft es verlangt. Dieser Ratgeber zeigt, was jeder kostenpflichtige Tarif zusätzlich bietet, mit den Zahlen von systeme.io, damit Sie erkennen, wann sich der Schritt lohnt.",
+        "sections": [
+          {"h2": "Die vier Tarife im Überblick", "p": ["Die Preisseite von systeme.io nennt vier Tarife, die sich vor allem nach der Zahl der Kontakte richten:"], "ul": ["Kostenlos: 2.000 Kontakte, 3 Sales Funnel, 1 Kurs.", "Startup (17 $ im Monat): 5.000 Kontakte, 10 Funnel, 5 Kurse.", "Webinar (47 $ im Monat): 10.000 Kontakte, 50 Funnel, 20 Kurse sowie Evergreen-Webinare.", "Unlimited (97 $ im Monat): unbegrenzt Kontakte, Funnel, Kurse und Automatisierungsregeln."], "after": "Alle Tarife enthalten unbegrenzt viele E-Mail-Sendungen, unbegrenzt viele Sub-Accounts und 0 % Transaktionsgebühr. Laut Preisseite erhalten Sie bei jährlicher Zahlung 2 Monate gratis."},
+          {"h2": "Anzeichen für einen Wechsel", "ul": ["Ihre Liste nähert sich 2.000 Kontakten. Der Rat von systeme.io: 2.000 bis 5.000 Kontakte, Startup für 17 $ im Monat.", "Sie brauchen mehr als eine E-Mail-Kampagne oder Automatisierungsregel, die engsten Grenzen des kostenlosen Tarifs.", "Sie wollen mehr als einen Kurs verkaufen oder mehr als drei Funnel betreiben.", "Sie wollen automatisierte Webinare, die es ab dem Webinar-Tarif gibt."]},
+          {"h2": "Wechseln und kündigen", "p": ["Laut systeme.io können Sie jederzeit in den Kontoeinstellungen wechseln oder kündigen. Nach einer Kündigung behalten Sie Ihren Tarif bis zum nächsten Abrechnungstermin, danach wechselt Ihr Konto in den kostenlosen Tarif. Ihr Konto bleibt also bestehen."]},
+          {"h2": "Kostenlose Migration in den größeren Tarifen", "p": ["Wenn Sie ein bestehendes Geschäft von einer anderen Plattform mitbringen, bietet systeme.io mit dem monatlichen Unlimited-Tarif oder jedem Jahrestarif eine kostenlose Migration durch das eigene Team an. Laut systeme.io überträgt das Team Funnel, Seiten, E-Mail-Listen und -Strecken, Kurse und Kundendaten."]}
+        ],
+        "faq": [
+          ["Was kostet der Startup-Tarif von systeme.io?", "systeme.io nennt 17 $ im Monat für den Startup-Tarif, mit 5.000 Kontakten, 10 Sales Funneln und 5 Kursen. Bei jährlicher Zahlung gibt es 2 Monate gratis."],
+          ["Was passiert, wenn ich einen kostenpflichtigen Tarif kündige?", "Laut systeme.io behalten Sie Ihren Tarif bis zum nächsten Abrechnungstermin, danach wechselt Ihr Konto in den kostenlosen Tarif."],
+          ["Ist die kostenlose Migration wirklich kostenlos?", "Laut systeme.io fällt für den Migrationsservice keine zusätzliche Gebühr an; er ist im monatlichen Unlimited-Tarif oder in jedem Jahrestarif enthalten."]
+        ],
+        "related": ["free-plan", "all-in-one", "automation"],
+        "sources": ["https://systeme.io/pricing", "https://systeme.io/free-migration"]
+      },
+      {
+        "id": "sales-funnels", "slug": "sales-funnel",
+        "title": "Sales Funnel in systeme.io für Freelancer | SoloStarter HQ",
+        "desc": "So funktioniert der Funnel-Builder von systeme.io: Vorlagen, visueller Editor, Kasse, Zusatzangebote, A/B-Tests und 3 Funnel im kostenlosen Tarif.",
+        "h1": "Verkaufen mit Sales Funneln in systeme.io",
+        "card": "Aus Besuchern Leads und Kunden machen, mit Seiten, die zusammenarbeiten.",
+        "lede": "Ein Funnel macht aus einer Besucherin eine Eintragung oder Kundin, ohne dass Sie selbst verkaufen müssen. So funktioniert der Funnel-Builder von systeme.io, und das können Freelancer damit machen.",
+        "sections": [
+          {"h2": "Was ein Funnel ist", "p": ["systeme.io beschreibt einen Sales Funnel als eine Abfolge von Seiten, die Besucherinnen und Besucher vom ersten Kontakt mit Ihrem Geschäft bis zum Kauf führt. Ein typischer Funnel hat eine Eintragsseite, die die E-Mail-Adresse erfasst, eine Verkaufsseite, eine Kassenseite und eine Dankeseite. Besucher durchlaufen ihn zu jeder Tageszeit, ohne dass Sie anwesend sind."]},
+          {"h2": "Was der Funnel-Builder kann", "ul": ["Vorlagen für gängige Funnel-Arten, darunter Lead-Magnet, Produktlaunch, Webinar-Anmeldung, Tripwire und Mitgliederbereich.", "Ein Drag-and-drop-Editor für jede Seite.", "Kasse mit Stripe oder PayPal, dazu Zusatz- und Alternativangebote (Upsell und Downsell).", "Funnel mit Frist, die Besucher auf eine Seite mit beendetem Angebot leiten, wenn der Zähler auf null steht.", "A/B-Tests, die den Verkehr auf zwei Seitenvarianten aufteilen.", "Statistiken zu jedem Schritt: Seitenaufrufe, Eintragsquote und Verkäufe."]},
+          {"h2": "Warum alles verbunden ist", "p": ["Laut systeme.io ist der Funnel-Builder mit Ihrer E-Mail-Liste, Ihren Kursen und Ihrem Partnerprogramm verbunden. Ein Kauf kann also automatisch das Produkt ausliefern, den Käufer in Ihre Liste aufnehmen und den Partner erfassen. systeme.io gibt außerdem an, dass ein einzelner Funnel ein digitales Produkt verkaufen, Kurszugang geben, einen Termin buchen und eine E-Mail-Strecke starten kann."]},
+          {"h2": "Ideen für Freelancer", "ul": ["Eine kostenlose Checkliste oder Vorlage gegen die E-Mail-Adresse, gefolgt von einer kurzen E-Mail-Serie.", "Eine kostenpflichtige Vorlage, ein Leitfaden oder ein Minikurs mit Kassenseite.", "Ein Funnel für ein Erstgespräch, der auf Ihrer Buchungsseite endet."]}
+        ],
+        "faq": [
+          ["Wie viele Funnel sind kostenlos?", "Der kostenlose Tarif von systeme.io enthält bis zu 3 Sales Funnel. Startup enthält 10, Webinar 50."],
+          ["Brauche ich eine zusätzliche Software für Zahlungen?", "Nein. Laut systeme.io verbinden Sie im Kassenschritt einen Zahlungsanbieter wie Stripe oder PayPal, und systeme.io berechnet 0 % Transaktionsgebühr."],
+          ["Wie lange dauert der erste Funnel?", "Laut systeme.io sind die meisten ersten Funnel in weniger als 2 Stunden online."]
+        ],
+        "related": ["first-page", "payments", "email-marketing"],
+        "sources": ["https://systeme.io/sales-funnels", "https://systeme.io/pricing"]
+      },
+      {
+        "id": "email-marketing", "slug": "e-mail-marketing",
+        "title": "E-Mail-Marketing mit systeme.io | SoloStarter HQ",
+        "desc": "Das eingebaute E-Mail-Marketing von systeme.io: unbegrenzte Sendungen an 2.000 Kontakte gratis, Newsletter, automatische Strecken, Tags und Editor.",
+        "h1": "E-Mail-Marketing mit systeme.io",
+        "card": "Newsletter und automatische E-Mails, im selben Konto.",
+        "lede": "Eine E-Mail-Liste ist der einzige Marketingkanal, der Ihnen gehört. systeme.io hat E-Mail-Marketing im selben Konto wie Ihre Seiten und Funnel, und im kostenlosen Tarif können Sie unbegrenzt viele E-Mails senden.",
+        "sections": [
+          {"h2": "Was enthalten ist", "ul": ["Einzelsendungen: Newsletter an Ihre ganze Liste oder an eine Gruppe mit Tag.", "Automatische Strecken: zeitlich gesteuerte E-Mail-Serien, die starten, wenn sich jemand einträgt, kauft oder eine Seite besucht.", "Tags und Segmentierung, um einzelnen Gruppen passende E-Mails zu senden.", "Ein Drag-and-drop-Editor oder ein klassischer Editor für reine Text-E-Mails.", "Terminierte Sendungen und A/B-Tests für Betreffzeilen.", "Statistiken zu Öffnungen, Klicks und Verkäufen."]},
+          {"h2": "Was der kostenlose Tarif erlaubt", "p": ["Laut systeme.io enthält der kostenlose Tarif unbegrenzt viele E-Mail-Sendungen an bis zu 2.000 Kontakte, ohne tägliche oder monatliche Obergrenze. Die Preisseite nennt außerdem 1 E-Mail-Kampagne und 1 Automatisierungsregel im kostenlosen Tarif. Für mehrere getrennte automatische Strecken brauchen Sie also einen kostenpflichtigen Tarif."]},
+          {"h2": "Wie alles zusammenhängt", "p": ["Laut systeme.io landet jemand, der sich über ein Formular in Ihrem Funnel oder auf Ihrer Website einträgt, automatisch in Ihrer Liste. Da E-Mail im selben System liegt wie Funnel und Kurse, können Sie eine Strecke starten, wenn sich jemand einträgt, kauft oder ein Kursmodul abschließt, ohne separate Tools zu verbinden."]},
+          {"h2": "Ein einfacher Anfang für Freelancer", "ol": ["Fügen Sie Ihrer Website oder einem Funnel ein Eintragsformular hinzu.", "Schreiben Sie eine kurze Willkommens-E-Mail, die sagt, was Eingetragene bekommen.", "Senden Sie regelmäßig einen nützlichen Newsletter."]}
+        ],
+        "faq": [
+          ["Gibt es im kostenlosen Tarif eine Sendegrenze?", "Nein. Laut systeme.io hat der kostenlose Tarif unbegrenzt viele Sendungen an bis zu 2.000 Kontakte, ohne tägliche oder monatliche Obergrenze."],
+          ["Kann ich im kostenlosen Tarif E-Mails automatisieren?", "Ja, im begrenzten Rahmen: Die Preisseite nennt 1 E-Mail-Kampagne und 1 Automatisierungsregel im kostenlosen Tarif. Kostenpflichtige Tarife erhöhen diese Grenzen."],
+          ["Brauche ich ein separates E-Mail-Tool?", "Laut systeme.io ist E-Mail-Marketing im selben Konto wie Ihre Funnel, Kurse und Automatisierungen enthalten, dafür brauchen Sie also keines."]
+        ],
+        "related": ["automation", "sales-funnels", "free-plan"],
+        "sources": ["https://systeme.io/email-marketing", "https://systeme.io/pricing"]
+      },
+      {
+        "id": "online-courses", "slug": "onlinekurse",
+        "title": "Onlinekurs verkaufen mit systeme.io | SoloStarter HQ",
+        "desc": "So erstellen und verkaufen Sie einen Onlinekurs mit systeme.io: Module, Lektionen, zeitversetzte Freigabe, Quiz, Pakete und Kasse, 1 Kurs gratis.",
+        "h1": "Einen Onlinekurs mit systeme.io verkaufen",
+        "card": "Machen Sie aus Ihrem Wissen einen Kurs und verkaufen Sie ihn im selben Konto.",
+        "lede": "Viele Freelancer erklären ihren Kundinnen und Kunden immer wieder dasselbe. Ein Kurs macht daraus ein Produkt. systeme.io enthält einen Kurs-Builder, mit dem Sie einen Kurs an einem Ort erstellen, verkaufen und ausliefern.",
+        "sections": [
+          {"h2": "Was der Kurs-Builder kann", "ul": ["Module und Lektionen, erstellt mit einem Drag-and-drop-Editor.", "Videolektionen: Laut systeme.io können Sie Videos von YouTube, Vimeo oder Wistia einbinden und Downloads wie PDFs und Vorlagen anhängen.", "Zeitversetzte Freigabe, die Lektionen tage- oder wochenweise freischaltet.", "Quiz mit automatischer Auswertung.", "Kurspakete, als Bündel oder Mitgliedschaft verkauft.", "Fortschrittsanzeige für jede Teilnehmerin und jeden Teilnehmer."]},
+          {"h2": "Den Kurs verkaufen", "p": ["Laut systeme.io erhalten Teilnehmende nach dem Kauf sofort Zugang und erscheinen automatisch in Ihren Kontakten, sodass Sie per E-Mail nachfassen können. systeme.io berechnet in jedem Tarif 0 % Transaktionsgebühr, Ihnen bleiben also die Einnahmen abzüglich der Gebühren Ihres Zahlungsanbieters."]},
+          {"h2": "Kostenloser Tarif und kostenpflichtige Tarife", "p": ["Der kostenlose Tarif enthält 1 Kurs. Startup (17 $ im Monat) enthält 5, Webinar (47 $ im Monat) 20 und Unlimited (97 $ im Monat) unbegrenzt viele Kurse."]},
+          {"h2": "Gut zu wissen", "p": ["Laut systeme.io erstellt die Kursplattform keine Zertifikate von Haus aus. Prüfen Sie das, wenn Ihre Teilnehmenden Zertifikate brauchen."]}
+        ],
+        "faq": [
+          ["Kann ich im kostenlosen Tarif einen Kurs verkaufen?", "Ja. Der kostenlose Tarif enthält 1 Kurs, und systeme.io berechnet 0 % Transaktionsgebühr."],
+          ["Kann ich Lektionen nach und nach freischalten?", "Ja. Die zeitversetzte Freigabe von systeme.io schaltet Lektionen automatisch frei, tage- oder wochenweise nach der Anmeldung."],
+          ["Stellt systeme.io Kurszertifikate aus?", "Laut systeme.io erstellt es keine Zertifikate von Haus aus."]
+        ],
+        "related": ["sales-funnels", "payments", "email-marketing"],
+        "sources": ["https://systeme.io/online-courses", "https://systeme.io/pricing"]
+      },
+      {
+        "id": "booking-calendar", "slug": "buchungskalender",
+        "title": "Termine buchen lassen mit systeme.io | SoloStarter HQ",
+        "desc": "Der kostenlose Buchungskalender von systeme.io: Buchungsseiten, Google-Kalender-Abgleich, Zoom- und Meet-Links, Erinnerungen und Zahlung vorab.",
+        "h1": "Kundentermine mit systeme.io buchen lassen",
+        "card": "Lassen Sie Termine buchen und bezahlen, ohne E-Mails hin und her.",
+        "lede": "Wenn Sie Ihre Zeit verkaufen, spart eine Buchungsseite Stunden an E-Mails. Der Buchungskalender von systeme.io ist im kostenlosen Tarif enthalten und kann bei der Buchung Zahlungen einziehen.",
+        "sections": [
+          {"h2": "Was er kann", "ul": ["Eine Buchungsseite, auf der Kundinnen und Kunden eine Zeit wählen und ihre Daten eintragen.", "Einzeltermine oder Gruppenveranstaltungen mit begrenzter Teilnehmerzahl.", "Ihre verfügbaren Zeiten, Pufferzeiten und eine Höchstzahl an Buchungen pro Tag.", "Abgleich in beide Richtungen mit Google Kalender, um Doppelbuchungen zu vermeiden.", "Automatische Zoom- oder Google-Meet-Links.", "Bestätigungs- und Erinnerungs-E-Mails."]},
+          {"h2": "Bezahlung bei der Buchung", "p": ["Laut systeme.io können Sie die volle Zahlung oder eine Anzahlung bei der Buchung verlangen, über Stripe oder PayPal, bevor der Termin bestätigt wird. systeme.io berechnet 0 % Transaktionsgebühr, und der Zahlungseinzug ist im kostenlosen Tarif verfügbar."]},
+          {"h2": "Jede Buchung kommt in Ihre Liste", "p": ["Laut systeme.io werden neue Buchungen Ihren Kontakten hinzugefügt. Aus einem einmaligen Gespräch kann so eine dauerhafte Eintragung werden, die Sie per E-Mail weiterbetreuen."]},
+          {"h2": "Gut zu wissen", "p": ["Laut systeme.io deckt der Kalender die Kernfunktionen ab, die die meisten Coaches, Beraterinnen und Dienstleister brauchen, aber keine fortgeschrittene Teamplanung und keine komplexen Aufnahmeformulare. Außerdem werden frühere Termine nicht automatisch übernommen, wenn Sie von einem anderen Tool wechseln."]}
+        ],
+        "faq": [
+          ["Ist der Buchungskalender von systeme.io kostenlos?", "Ja. Laut systeme.io ist der Buchungskalender einschließlich Zahlungseinzug im kostenlosen Tarif enthalten."],
+          ["Funktioniert er mit Google Kalender?", "Ja. Laut systeme.io gleicht er sich in beide Richtungen mit Google Kalender ab, um Doppelbuchungen zu verhindern."],
+          ["Können Kundinnen und Kunden eine Anzahlung leisten?", "Ja. Laut systeme.io können Sie bei der Buchung die volle Zahlung oder eine Anzahlung verlangen, über Stripe oder PayPal."]
+        ],
+        "related": ["payments", "sales-funnels", "automation"],
+        "sources": ["https://systeme.io/booking-calendar"]
+      },
+      {
+        "id": "automation", "slug": "automatisierungen",
+        "title": "Automatisierungen in systeme.io | SoloStarter HQ",
+        "desc": "So funktionieren Regeln und Workflows in systeme.io: Auslöser, Aktionen, Tags, Wartezeiten und E-Mail-Strecken, und was der kostenlose Tarif enthält.",
+        "h1": "Automatisierungen, die Freelancern Zeit sparen",
+        "card": "Lassen Sie das System E-Mails senden, Kontakte markieren und Zugänge freigeben.",
+        "lede": "Automatisierung heißt, dass die übliche Nachbetreuung ohne Sie läuft. systeme.io bietet zwei Arten: einfache Regeln und visuelle Workflows, beide eingebaut.",
+        "sections": [
+          {"h2": "Regeln und Workflows", "p": ["systeme.io beschreibt zwei Werkzeuge. Automatisierungsregeln sind einfache Wenn-dann-Paare: ein Auslöser wie ein ausgefülltes Formular mit einer Aktion wie dem Eintrag in eine Kampagne. Workflows sind visuelle, mehrstufige Abläufe, die Wartezeiten, Bedingungen und Verzweigungen enthalten können."]},
+          {"h2": "Was sie auslöst", "p": ["systeme.io nennt Auslöser wie eine Eintragung, einen Kauf, einen Klick auf einen Link, ein gesetztes Tag oder ein Datum. Zu den Aktionen gehören E-Mails senden, Kurszugang geben, Tags aktualisieren und jemanden in einen anderen Funnel verschieben."]},
+          {"h2": "Beispiele für Freelancer", "ul": ["Jemand lädt Ihre kostenlose Checkliste herunter: Tag setzen und eine Willkommensstrecke starten.", "Jemand kauft Ihre Vorlage: Download senden und ein paar Tage später eine Nachfass-E-Mail.", "Jemand bucht ein Gespräch: als Interessent markieren, damit die passenden Newsletter ankommen."]},
+          {"h2": "Was der kostenlose Tarif erlaubt", "p": ["Die Preisseite nennt 1 Automatisierungsregel im kostenlosen Tarif und unbegrenzt viele im Unlimited-Tarif. Wenn Automatisierung für Ihr Geschäft zentral ist, prüfen Sie auf der Preisseite von systeme.io, welchen Tarif Sie brauchen."]}
+        ],
+        "faq": [
+          ["Muss ich für Automatisierungen programmieren?", "Nein. Laut systeme.io arbeitet der Workflow-Builder mit Drag-and-drop-Blöcken, ohne Code und ohne API-Schlüssel."],
+          ["Wie viele Automatisierungsregeln hat der kostenlose Tarif?", "Die Preisseite von systeme.io nennt 1 Automatisierungsregel im kostenlosen Tarif."],
+          ["Kann eine Automatisierung Kurszugang geben?", "Ja. systeme.io führt das Freigeben von Kurszugang als eine der möglichen Aktionen auf."]
+        ],
+        "related": ["email-marketing", "sales-funnels", "when-to-upgrade"],
+        "sources": ["https://systeme.io/marketing-automation", "https://systeme.io/pricing"]
+      },
+      {
+        "id": "website-and-blog", "slug": "website-und-blog",
+        "title": "Website und Blog mit systeme.io erstellen | SoloStarter HQ",
+        "desc": "Der Website-Builder und der Blog von systeme.io: Vorlagen, visuelle Seiten, SEO-Einstellungen, mehrsprachige Seiten und eigene Domain, gratis.",
+        "h1": "Website und Blog mit systeme.io erstellen",
+        "card": "Eine vollständige Website mit Blog, verbunden mit Ihrer E-Mail-Liste.",
+        "lede": "Die Website einer Freelancerin muss erklären, was Sie tun, Ihre Arbeit zeigen und Anfragen sammeln. Der Website-Builder von systeme.io ist im kostenlosen Tarif enthalten und direkt mit Ihrer E-Mail-Liste verbunden.",
+        "sections": [
+          {"h2": "Was Sie erstellen können", "ul": ["Eine vollständige Website mit Startseite, Unterseiten und Navigation, aus einer Vorlage oder von Grund auf.", "Einen Blog mit Kategorien, Tags und SEO-Einstellungen für jeden Beitrag.", "Seiten in mehreren Sprachen, verwaltet im selben Editor.", "Seitentitel und Beschreibungen für Google, je Seite einstellbar."]},
+          {"h2": "Im kostenlosen Tarif", "p": ["Laut systeme.io ist der Website-Builder im kostenlosen Tarif enthalten, mit 1 eigenen Domain, ohne Hosting-Gebühr, ohne Plugin-Kosten und ohne Speichergrenzen. Der kostenlose Tarif enthält 1 Blog."]},
+          {"h2": "Mit Ihrem Geschäft verbunden", "p": ["Laut systeme.io teilen sich Website, Funnel, E-Mail und Kurse dieselben Daten. Ein Formular auf Ihrer Website trägt Besucher also automatisch in Ihre Kontakte ein. Verkaufsseiten entstehen im Funnel-Builder und lassen sich aus dem Menü Ihrer Website verlinken."]},
+          {"h2": "Eine einfache Freelancer-Website", "ol": ["Start: wem Sie helfen und wie, mit einem Eintragsformular.", "Leistungen oder Arbeiten: was Sie anbieten, mit Beispielen.", "Blog: nützliche Beiträge, die Besucher über Google bringen.", "Kontakt oder Buchung: ein einfacher nächster Schritt."]}
+        ],
+        "faq": [
+          ["Ist der Website-Builder von systeme.io kostenlos?", "Ja. Laut systeme.io ist er im kostenlosen Tarif enthalten, mit 1 eigenen Domain."],
+          ["Kann ich im kostenlosen Tarif einen Blog haben?", "Ja. Die Preisseite nennt 1 Blog im kostenlosen Tarif."],
+          ["Kann ich Seiten in mehreren Sprachen anlegen?", "Ja. Laut systeme.io können Sie Seiten für andere Sprachen duplizieren und die Übersetzungen im selben Editor verwalten."]
+        ],
+        "related": ["first-page", "email-marketing", "booking-calendar"],
+        "sources": ["https://systeme.io/website-builder", "https://systeme.io/pricing"]
+      },
+      {
+        "id": "payments", "slug": "zahlungen",
+        "title": "Zahlungen annehmen mit systeme.io | SoloStarter HQ",
+        "desc": "So funktionieren Zahlungen in systeme.io: Stripe, PayPal und weitere Anbieter, 0 % Transaktionsgebühr in allen Tarifen, Zusatzangebote und Buchungen.",
+        "h1": "Zahlungen annehmen mit systeme.io",
+        "card": "Kassieren Sie für Produkte, Kurse und Termine, mit 0 % Gebühr von systeme.io.",
+        "lede": "Wie Sie auch verkaufen, Sie müssen bezahlt werden. systeme.io verbindet sich mit Zahlungsanbietern, die Sie kennen, und erhebt keine eigene Transaktionsgebühr.",
+        "sections": [
+          {"h2": "0 % Transaktionsgebühr", "p": ["Laut systeme.io berechnet es in allen Tarifen 0 % Transaktionsgebühr, auch im kostenlosen. Ihnen bleibt der volle Betrag abzüglich der üblichen Gebühren Ihres Zahlungsanbieters."]},
+          {"h2": "Zahlungsanbieter", "p": ["Die Preisseite von systeme.io nennt Anbindungen an Stripe, Apple Pay, PayPal, Razorpay, Flutterwave, Mercado Pago und Xendit sowie Zahlung bei Lieferung. Welcher Tarif welche Anbindung enthält, steht auf der Preisseite."]},
+          {"h2": "Wo Sie kassieren können", "ul": ["Im Kassenschritt eines Sales Funnels, mit Zusatz- und Alternativangeboten.", "Bei einem Onlinekurs, mit sofortigem Zugang nach dem Kauf.", "Wenn jemand einen Termin bucht, als volle Zahlung oder Anzahlung."]},
+          {"h2": "Was nach einem Verkauf passiert", "p": ["Laut systeme.io kann ein Kauf in Ihrem Funnel automatisch das Produkt ausliefern, den Käufer in Ihre E-Mail-Liste aufnehmen und den vermittelnden Partner erfassen."]}
+        ],
+        "faq": [
+          ["Behält systeme.io einen Prozentsatz meiner Verkäufe ein?", "Nein. Laut systeme.io berechnet es in allen Tarifen 0 % Transaktionsgebühr. Die Gebühren Ihres Zahlungsanbieters fallen weiterhin an."],
+          ["Mit welchen Zahlungsanbietern arbeitet systeme.io?", "Die Preisseite nennt Stripe, Apple Pay, PayPal, Razorpay, Flutterwave, Mercado Pago, Xendit und Zahlung bei Lieferung."],
+          ["Kann ich im kostenlosen Tarif Zahlungen annehmen?", "Ja. Laut systeme.io ist der Zahlungseinzug, auch für Buchungen, im kostenlosen Tarif über Stripe oder PayPal verfügbar."]
+        ],
+        "related": ["sales-funnels", "online-courses", "booking-calendar"],
+        "sources": ["https://systeme.io/pricing", "https://systeme.io/sales-funnels", "https://systeme.io/booking-calendar", "https://systeme.io/online-courses"]
+      },
+      {
+        "id": "all-in-one", "slug": "alles-in-einem",
+        "title": "systeme.io statt mehrerer Tools | SoloStarter HQ",
+        "desc": "Warum der All-in-one-Ansatz von systeme.io zu Freelancern passt: Seiten, E-Mail, Kurse, Buchungen, Automatisierung und Zahlungen mit einer Liste.",
+        "h1": "Warum ein Tool mehrere ersetzen kann",
+        "card": "Ein Konto und eine Kontaktliste statt vieler Abos.",
+        "lede": "Viele Freelancer zahlen für einen Website-Baukasten, ein E-Mail-Tool, eine Kursplattform und eine Buchungs-App und verbringen dann Zeit damit, alles zu verbinden. systeme.io verspricht, dass ein Konto all das leistet. Hier steht, was es enthält, in den Worten von systeme.io.",
+        "sections": [
+          {"h2": "Was in einem Konto steckt", "p": ["systeme.io nennt unter seinen Funktionen Sales Funnel, E-Mail-Marketing, Website-Builder, Marketing-Automatisierung, Onlinekurse, Buchungskalender, Partnerverwaltung, Communitys und Evergreen-Webinare. Laut Preisseite enthalten alle Tarife denselben Satz an Kernfunktionen."]},
+          {"h2": "Warum das zählt: eine Kontaktliste", "p": ["Laut systeme.io arbeiten alle Funktionen zusammen. Da E-Mail, Tags, Funnel, Kurse und Kontakte im selben System liegen, landen Eintragung, Kauf und Buchung in einer Liste, und eine Automatisierung kann E-Mails senden, Kurszugang geben und Personen zwischen Funneln verschieben. Laut systeme.io müssen Sie deshalb keine Daten zwischen getrennten Tools abgleichen."]},
+          {"h2": "Was es kostet", "p": ["Laut systeme.io deckt es einen typischen Satz getrennter Tools für Funnel, E-Mail, Kurse und Partnerprogramme im kostenlosen Tarif oder für 17 $ im Monat ab, und alle Tarife haben 0 % Transaktionsgebühr."]},
+          {"h2": "Ehrlich zu den Nachteilen", "p": ["systeme.io sagt selbst, dass manche Spezialwerkzeuge an einzelnen Stellen weiter gehen: aufwendigeres E-Mail-Design, mehr Website-Vorlagen, fortgeschrittene Teamplanung und Kurszertifikate, die es nicht von Haus aus gibt. Wenn Ihnen einer dieser Punkte wichtig ist, prüfen Sie ihn vor einem Wechsel."]}
+        ],
+        "faq": [
+          ["Ersetzt systeme.io ein separates E-Mail-Tool?", "Für E-Mails im eigenen Geschäft laut systeme.io ja: E-Mail ist im selben Konto wie Funnel und Kurse enthalten. Spezialisierte E-Mail-Tools bieten teils aufwendigeres Design."],
+          ["Kann ich mein bestehendes Geschäft zu systeme.io umziehen?", "Ja. systeme.io bietet eine kostenlose Migration mit dem monatlichen Unlimited-Tarif oder jedem Jahrestarif."],
+          ["Hat der kostenlose Tarif einen Haken?", "Die wichtigsten Grenzen sind 2.000 Kontakte, 1 E-Mail-Kampagne und 1 Automatisierungsregel. Der kostenlose Tarif läuft nicht ab und verlangt keine Kreditkarte."]
+        ],
+        "related": ["free-plan", "when-to-upgrade", "automation"],
+        "sources": ["https://systeme.io/pricing", "https://systeme.io/sales-funnels", "https://systeme.io/marketing-automation", "https://systeme.io/email-marketing", "https://systeme.io/booking-calendar", "https://systeme.io/online-courses", "https://systeme.io/free-migration"]
+      }
+    ]
+  }
+}

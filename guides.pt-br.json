@@ -1,0 +1,279 @@
+{
+  "pt-br": {
+    "dir": "guias/",
+    "labels": {
+      "guides": "Guias",
+      "all_guides": "Todos os guias",
+      "home": "SoloStarter HQ",
+      "on_this_page": "Nesta página",
+      "faq_h2": "Perguntas frequentes",
+      "related_h2": "Continue lendo",
+      "sources_h2": "De onde vêm estas informações",
+      "sources_intro": "Cada recurso, limite e preço desta página vem do próprio site da systeme.io (das páginas em inglês), conferido em outubro de 2026. Os planos mudam, então confirme os dados atuais na systeme.io antes de contar com eles.",
+      "cta_box_h": "Teste no plano gratuito",
+      "cta_box_p": "O plano gratuito não expira e não pede cartão, então você pode testar tudo deste guia antes de gastar qualquer coisa.",
+      "copy_h": "Vai se cadastrar depois ou em outro aparelho?",
+      "copy_btn": "Copiar link",
+      "copy_done": "Copiado",
+      "copy_note": "Este é o nosso link de afiliado para a página de cadastro grátis da systeme.io. Cole no navegador quando quiser.",
+      "sticky": "Conta grátis na systeme.io",
+      "sticky_btn": "Comece grátis",
+      "close": "Fechar",
+      "updated": "Conferido na systeme.io em outubro de 2026."
+    },
+    "hub": {
+      "title": "Guias da systeme.io para freelancers | SoloStarter HQ",
+      "desc": "Guias claros da systeme.io para freelancers: plano gratuito, funis de vendas, email, cursos, agendamentos, pagamentos e quando vale a pena pagar.",
+      "h1": "Guias da systeme.io para freelancers",
+      "lede": "A systeme.io é uma plataforma tudo em um para tocar um negócio online: páginas, email, cursos, agendamentos e pagamentos em uma única conta. Estes guias mostram o que cada parte faz, o que o plano gratuito inclui e como configurar, usando só o que a própria systeme.io diz.",
+      "pick_h2": "O que você quer fazer primeiro?",
+      "pick_intro": "Marque o que você precisa e indicamos os guias certos.",
+      "goals": [
+        ["page", "Colocar um site ou uma página no ar", ["first-page", "website-and-blog"]],
+        ["email", "Montar uma lista de email e enviar newsletters", ["email-marketing", "automation"]],
+        ["sell", "Vender um produto, serviço ou template", ["sales-funnels", "payments"]],
+        ["course", "Vender um curso online", ["online-courses", "payments"]],
+        ["book", "Deixar clientes agendarem e pagarem chamadas", ["booking-calendar", "payments"]],
+        ["cost", "Gastar menos com ferramentas separadas", ["all-in-one", "free-plan"]]
+      ],
+      "pick_btn": "Ver meus guias",
+      "pick_result": "Comece por estes:",
+      "pick_none": "Marque pelo menos uma opção.",
+      "all_h2": "Todos os guias"
+    },
+    "pages": [
+      {
+        "id": "first-page", "slug": "primeira-pagina",
+        "title": "Crie sua primeira página na systeme.io | SoloStarter HQ",
+        "desc": "Guia passo a passo para criar sua primeira página ou funil de vendas no plano gratuito da systeme.io: template, edição, pagamentos e publicação.",
+        "h1": "Crie sua primeira página na systeme.io, passo a passo",
+        "card": "De uma conta vazia a uma página publicada, com os passos da própria systeme.io.",
+        "lede": "O jeito mais rápido de saber se a systeme.io serve para você é publicar algo de verdade. Este guia segue os passos que a systeme.io indica para um primeiro funil de vendas e um primeiro site, e os dois funcionam no plano gratuito.",
+        "sections": [
+          {"h2": "Antes de começar", "p": ["Você precisa de uma conta grátis na systeme.io. Segundo a systeme.io, o plano gratuito nunca expira e não exige cartão de crédito, então não há nada para cancelar se você decidir que não é para você.", "Decida para que serve sua primeira página. Para a maioria dos freelancers, é uma de duas coisas: um site simples que explica o que você faz, ou uma única página que coleta emails ou vende uma oferta. A systeme.io chama a segunda de funil de vendas."]},
+          {"h2": "Opção 1: seu primeiro funil de vendas", "p": ["A systeme.io descreve um funil de vendas como uma sequência de páginas que leva o visitante do primeiro contato com o seu negócio até a compra; normalmente, uma página de captura, uma página de vendas, uma de checkout e uma de agradecimento. O plano gratuito inclui até 3 funis."], "ol": ["Vá em Funis no seu painel e clique para criar um funil.", "Escolha um tipo de funil (captura de leads, venda de produtos, webinar etc.) e um template.", "Clique em cada etapa para editar a página no editor de arrastar e soltar: mude textos, imagens e detalhes da oferta.", "Se for vender, conecte seu processador de pagamentos na etapa de checkout.", "Configure uma automação de email para acompanhar novos leads ou compradores.", "Clique em Publicar."], "after": "Segundo a systeme.io, a maioria dos primeiros funis pode estar no ar em menos de 2 horas."},
+          {"h2": "Opção 2: seu primeiro site", "p": ["O construtor de sites está incluído no plano gratuito. A systeme.io descreve o processo assim: escolha um template, personalize textos e imagens, adicione páginas, configure o menu, conecte seu domínio e publique, sem programar."], "ul": ["Comece com um template e mude cores, fontes e imagens no site inteiro.", "Adicione páginas como Início, Serviços e Contato, e organize o menu.", "Defina nas configurações de cada página o título e a descrição que aparecem no Google.", "Publique no seu próprio domínio: o plano gratuito inclui 1 domínio personalizado."]},
+          {"h2": "Conecte à sua lista de email", "p": ["Seja qual for a opção, adicione um formulário. Segundo a systeme.io, quando um visitante preenche um formulário no seu site ou funil, ele é adicionado automaticamente aos seus contatos, pronto para o acompanhamento por email. É assim que começa uma lista que é sua."]},
+          {"h2": "O que fazer depois", "p": ["Com a página no ar, os próximos passos úteis são um email de boas-vindas para novos inscritos e, se você vende serviços, uma página de agendamentos. Os guias abaixo explicam as duas coisas."]}
+        ],
+        "faq": [
+          ["Preciso saber programar?", "Não. Segundo a systeme.io, o editor é totalmente visual: você clica em qualquer elemento para editar e arrasta blocos para reorganizar. Usuários avançados podem adicionar CSS próprio, mas isso nunca é obrigatório."],
+          ["Posso usar meu próprio domínio no plano gratuito?", "Sim. A página de preços da systeme.io indica 1 domínio personalizado no plano gratuito."],
+          ["Posso receber pagamentos no plano gratuito?", "Sim. Segundo a systeme.io, você conecta um processador de pagamentos como Stripe ou PayPal na etapa de checkout, e a systeme.io cobra 0% de taxa por transação em todos os planos. As taxas do seu processador de pagamentos continuam valendo."]
+        ],
+        "related": ["free-plan", "sales-funnels", "website-and-blog"],
+        "sources": ["https://systeme.io/sales-funnels", "https://systeme.io/website-builder", "https://systeme.io/pricing"]
+      },
+      {
+        "id": "free-plan", "slug": "plano-gratuito",
+        "title": "Plano gratuito da systeme.io: o que inclui | SoloStarter HQ",
+        "desc": "O que o plano gratuito da systeme.io inclui, de 2.000 contatos e emails ilimitados a 3 funis e 1 curso, e os limites que você precisa conhecer.",
+        "h1": "O plano gratuito da systeme.io: o que inclui e seus limites",
+        "card": "Exatamente o que é grátis e onde estão os limites.",
+        "lede": "O plano gratuito da systeme.io cobre muita coisa, mas tem limites. Veja o que a systeme.io diz que ele inclui, com os números dela, para você saber o que dá para fazer antes de pagar qualquer coisa.",
+        "sections": [
+          {"h2": "O que o plano gratuito inclui", "p": ["Segundo a página de preços da systeme.io, o plano gratuito inclui:"], "ul": ["Até 2.000 contatos", "Envios de email ilimitados", "3 funis de vendas", "1 blog", "1 curso", "1 programa de afiliados", "1 domínio personalizado", "1 regra de automação e 1 campanha de email"], "after": "A systeme.io também informa que todos os planos incluem subcontas ilimitadas, 0% de taxa por transação e o mesmo conjunto de ferramentas principais."},
+          {"h2": "Ele não expira", "p": ["Segundo a systeme.io, o plano gratuito nunca expira e não exige cartão de crédito. Não é um teste com prazo: você pode ficar nele enquanto o seu negócio couber nos limites."]},
+          {"h2": "Os limites que mais importam", "p": ["Para a maioria dos freelancers que estão começando, dois limites decidem quando o plano gratuito fica pequeno:"], "ul": ["Contatos: o plano gratuito vai até 2.000. Segundo a systeme.io, os planos se baseiam principalmente no limite de contatos.", "Automação: o plano gratuito inclui 1 regra de automação e 1 campanha de email. Se você quiser várias sequências de email separadas, por exemplo uma por produto, vai chegar a este limite antes do limite de contatos."], "after": "Funis (3) e cursos (1) são os outros limites para ficar de olho se você vende mais de uma coisa."},
+          {"h2": "Para quem serve o plano gratuito", "p": ["O conselho da systeme.io é simples: com menos de 2.000 contatos, use o plano gratuito; ele não custa nada e cobre a maioria das necessidades. Para um freelancer com um site de portfólio, uma newsletter e uma oferta, isso costuma significar muito tempo no plano gratuito."]}
+        ],
+        "faq": [
+          ["O plano gratuito da systeme.io é grátis para sempre?", "Segundo a systeme.io, o plano gratuito nunca expira e não exige cartão de crédito."],
+          ["Quantos emails posso enviar no plano gratuito?", "Ilimitados. Segundo a systeme.io, não há limite diário nem mensal de envios; o único limite é o número de contatos (2.000 no plano gratuito)."],
+          ["A systeme.io fica com uma parte das minhas vendas no plano gratuito?", "Não. A systeme.io cobra 0% de taxa por transação em todos os planos, inclusive no gratuito. Seu processador de pagamentos (por exemplo, Stripe ou PayPal) cobra as próprias taxas."]
+        ],
+        "related": ["when-to-upgrade", "first-page", "email-marketing"],
+        "sources": ["https://systeme.io/pricing", "https://systeme.io/email-marketing"]
+      },
+      {
+        "id": "when-to-upgrade", "slug": "quando-fazer-upgrade",
+        "title": "Quando vale pagar a systeme.io? | SoloStarter HQ",
+        "desc": "Os planos pagos da systeme.io comparados: Startup, Webinar e Ilimitado, o que cada um acrescenta ao gratuito e como saber a hora de fazer upgrade.",
+        "h1": "Quando vale a pena um plano pago da systeme.io?",
+        "card": "Os sinais de que o plano gratuito ficou pequeno e qual plano vem depois.",
+        "lede": "Comece grátis e faça upgrade quando o seu negócio pedir. Este guia mostra o que cada plano pago acrescenta, com os números da systeme.io, para você saber quando o salto compensa.",
+        "sections": [
+          {"h2": "Os quatro planos em resumo", "p": ["A página de preços da systeme.io mostra quatro planos, baseados principalmente no limite de contatos:"], "ul": ["Gratuito: 2.000 contatos, 3 funis de vendas, 1 curso.", "Startup (US$ 17 por mês): 5.000 contatos, 10 funis, 5 cursos.", "Webinar (US$ 47 por mês): 10.000 contatos, 50 funis, 20 cursos e webinars automatizados.", "Ilimitado (US$ 97 por mês): contatos, funis, cursos e regras de automação ilimitados."], "after": "Todos os planos incluem envios de email ilimitados, subcontas ilimitadas e 0% de taxa por transação. Segundo a página de preços, no pagamento anual você ganha 2 meses grátis."},
+          {"h2": "Sinais de que chegou a hora", "ul": ["Sua lista está perto de 2.000 contatos. O conselho da systeme.io: de 2.000 a 5.000 contatos, Startup por US$ 17 por mês.", "Você precisa de mais de uma campanha de email ou regra de automação, os limites mais apertados do plano gratuito.", "Você quer vender mais de um curso ou ter mais de três funis.", "Você quer webinars automatizados, que começam no plano Webinar."]},
+          {"h2": "Fazer upgrade e cancelar", "p": ["Segundo a systeme.io, você pode fazer upgrade ou cancelar a qualquer momento nas configurações da conta. Se cancelar, mantém o plano até a próxima data de cobrança e depois a conta volta para o plano gratuito, ou seja, ela continua funcionando em vez de sumir."]},
+          {"h2": "Migração gratuita nos planos maiores", "p": ["Se você vai trazer um negócio que já existe em outra plataforma, a systeme.io oferece uma migração gratuita feita pela equipe dela com o plano Ilimitado mensal ou qualquer plano anual. Segundo a systeme.io, a equipe transfere funis, páginas, listas e sequências de email, cursos e cadastros de clientes."]}
+        ],
+        "faq": [
+          ["Quanto custa o plano Startup da systeme.io?", "A systeme.io informa US$ 17 por mês para o plano Startup, com 5.000 contatos, 10 funis de vendas e 5 cursos. No pagamento anual você ganha 2 meses grátis."],
+          ["O que acontece se eu cancelar um plano pago?", "Segundo a systeme.io, você mantém o plano até a próxima data de cobrança e depois a conta volta para o plano gratuito."],
+          ["A migração gratuita é mesmo grátis?", "Segundo a systeme.io, o serviço de migração não tem custo adicional e está incluído no plano Ilimitado mensal ou em qualquer plano anual."]
+        ],
+        "related": ["free-plan", "all-in-one", "automation"],
+        "sources": ["https://systeme.io/pricing", "https://systeme.io/free-migration"]
+      },
+      {
+        "id": "sales-funnels", "slug": "funis-de-vendas",
+        "title": "Funis de vendas da systeme.io | SoloStarter HQ",
+        "desc": "Como funciona o construtor de funis de vendas da systeme.io: templates, editor visual, checkout, ofertas extras, testes A/B e 3 funis grátis.",
+        "h1": "Vendendo com os funis de vendas da systeme.io",
+        "card": "Transforme visitantes em leads e clientes com páginas que trabalham juntas.",
+        "lede": "Um funil é como você transforma um visitante em inscrito ou cliente sem precisar vender pessoalmente. Veja como funciona o construtor de funis da systeme.io e o que um freelancer pode fazer com ele.",
+        "sections": [
+          {"h2": "O que é um funil", "p": ["A systeme.io descreve um funil de vendas como uma sequência de páginas que leva o visitante do primeiro contato com o seu negócio até a compra. Um funil típico tem uma página de captura que coleta o email, uma página de vendas, uma de checkout e uma de agradecimento. Os visitantes percorrem o funil a qualquer hora, sem você estar presente."]},
+          {"h2": "O que o construtor de funis faz", "ul": ["Templates para os tipos de funil mais comuns: isca digital, lançamento de produto, inscrição em webinar, tripwire e área de membros.", "Um editor de arrastar e soltar para cada página.", "Checkout com Stripe ou PayPal, com ofertas extras (upsell) e alternativas (downsell).", "Funis com prazo que levam a uma página de oferta encerrada quando o cronômetro chega a zero.", "Testes A/B que dividem o tráfego entre duas versões de uma página.", "Estatísticas de cada etapa: visualizações, taxa de captura e vendas."]},
+          {"h2": "Por que é integrado", "p": ["Segundo a systeme.io, o construtor de funis é ligado à sua lista de email, aos seus cursos e ao seu programa de afiliados, então uma compra pode entregar o produto, adicionar o comprador à sua lista e registrar o afiliado automaticamente. Ela também diz que um mesmo funil pode vender um produto digital, liberar um curso, agendar uma sessão e iniciar uma sequência de email."]},
+          {"h2": "Ideias para freelancers", "ul": ["Um checklist ou template grátis em troca do email, seguido de uma curta série de emails.", "Um template, guia ou minicurso pago com página de checkout.", "Um funil de chamada de diagnóstico que termina na sua página de agendamentos."]}
+        ],
+        "faq": [
+          ["Quantos funis tenho de graça?", "O plano gratuito da systeme.io inclui até 3 funis de vendas. O Startup inclui 10, e o Webinar, 50."],
+          ["Preciso de outro programa para receber pagamentos?", "Não. Segundo a systeme.io, você conecta um processador de pagamentos como Stripe ou PayPal na etapa de checkout, e a systeme.io cobra 0% de taxa por transação."],
+          ["Quanto tempo leva para criar o primeiro funil?", "Segundo a systeme.io, a maioria dos primeiros funis pode estar no ar em menos de 2 horas."]
+        ],
+        "related": ["first-page", "payments", "email-marketing"],
+        "sources": ["https://systeme.io/sales-funnels", "https://systeme.io/pricing"]
+      },
+      {
+        "id": "email-marketing", "slug": "email-marketing",
+        "title": "Email marketing na systeme.io | SoloStarter HQ",
+        "desc": "O email marketing integrado da systeme.io: envios ilimitados para 2.000 contatos grátis, newsletters, sequências automáticas, tags e editor visual.",
+        "h1": "Email marketing com a systeme.io",
+        "card": "Newsletters e emails automáticos, na mesma conta.",
+        "lede": "Uma lista de email é o único canal de marketing que é seu. A systeme.io inclui email marketing na mesma conta das suas páginas e funis, e o plano gratuito deixa você enviar emails ilimitados.",
+        "sections": [
+          {"h2": "O que está incluído", "ul": ["Envios avulsos: newsletters para a lista inteira ou para um grupo com tag.", "Sequências automáticas: séries de emails programados que começam quando alguém se inscreve, compra ou visita uma página.", "Tags e segmentação, para mandar emails sob medida para cada grupo.", "Um editor de arrastar e soltar, ou um editor clássico para emails só de texto.", "Agendamento de envios e testes A/B de assunto.", "Estatísticas de aberturas, cliques e vendas."]},
+          {"h2": "O que o plano gratuito permite", "p": ["Segundo a systeme.io, o plano gratuito inclui envios de email ilimitados para até 2.000 contatos, sem limite diário nem mensal. A página de preços também indica 1 campanha de email e 1 regra de automação no plano gratuito, então se você quiser várias sequências automáticas separadas vai precisar de um plano pago."]},
+          {"h2": "Como tudo se conecta", "p": ["Segundo a systeme.io, quando alguém se inscreve por um formulário do seu funil ou site, é adicionado automaticamente à sua lista. Como o email fica no mesmo sistema que os funis e cursos, você pode iniciar uma sequência quando alguém se inscreve, compra ou conclui um módulo de curso, sem conectar ferramentas separadas."]},
+          {"h2": "Um começo simples para freelancers", "ol": ["Adicione um formulário de inscrição ao seu site ou a um funil.", "Escreva um email de boas-vindas curto dizendo o que a pessoa vai receber.", "Envie uma newsletter útil com regularidade."]}
+        ],
+        "faq": [
+          ["Existe limite de envios no plano gratuito da systeme.io?", "Não. Segundo a systeme.io, o plano gratuito tem envios ilimitados para até 2.000 contatos, sem limite diário nem mensal."],
+          ["Posso automatizar emails no plano gratuito?", "Sim, com limites: a página de preços indica 1 campanha de email e 1 regra de automação no plano gratuito. Os planos pagos aumentam esses limites."],
+          ["Preciso de outra ferramenta de email?", "Segundo a systeme.io, o email marketing está incluído na mesma conta dos seus funis, cursos e automações, então você não precisa de outra para isso."]
+        ],
+        "related": ["automation", "sales-funnels", "free-plan"],
+        "sources": ["https://systeme.io/email-marketing", "https://systeme.io/pricing"]
+      },
+      {
+        "id": "online-courses", "slug": "cursos-online",
+        "title": "Venda um curso online com a systeme.io | SoloStarter HQ",
+        "desc": "Como criar e vender um curso online com a systeme.io: módulos, aulas, liberação programada, quizzes, pacotes e checkout, com 1 curso grátis.",
+        "h1": "Vendendo um curso online com a systeme.io",
+        "card": "Transforme o que você sabe em um curso e venda pela mesma conta.",
+        "lede": "Muitos freelancers já explicam as mesmas coisas para clientes várias vezes. Um curso transforma isso em produto. A systeme.io inclui um criador de cursos, para você criar, vender e entregar o curso em um só lugar.",
+        "sections": [
+          {"h2": "O que o criador de cursos faz", "ul": ["Módulos e aulas, montados com um editor de arrastar e soltar.", "Aulas em vídeo: segundo a systeme.io, você pode incorporar vídeos hospedados no YouTube, Vimeo ou Wistia e anexar materiais como PDFs e templates.", "Liberação programada de aulas, dia a dia ou semana a semana.", "Quizzes com correção automática.", "Pacotes de cursos, vendidos juntos ou como assinatura.", "Acompanhamento do progresso de cada aluno."]},
+          {"h2": "Vendendo o curso", "p": ["Segundo a systeme.io, quando um aluno compra seu curso, recebe acesso na hora e entra automaticamente nos seus contatos, para você acompanhar por email. A systeme.io cobra 0% de taxa por transação em qualquer plano, então você fica com a receita do curso menos as taxas do seu processador de pagamentos."]},
+          {"h2": "Plano gratuito e planos pagos", "p": ["O plano gratuito inclui 1 curso. O Startup (US$ 17 por mês) inclui 5; o Webinar (US$ 47 por mês), 20; e o Ilimitado (US$ 97 por mês), cursos ilimitados."]},
+          {"h2": "Bom saber", "p": ["Segundo a systeme.io, a plataforma de cursos não gera certificados nativamente, então confira isso se seus alunos precisarem de certificado."]}
+        ],
+        "faq": [
+          ["Posso vender um curso no plano gratuito da systeme.io?", "Sim. O plano gratuito inclui 1 curso, e a systeme.io cobra 0% de taxa por transação."],
+          ["Posso liberar as aulas aos poucos?", "Sim. A liberação programada da systeme.io solta as aulas automaticamente, dia a dia ou semana a semana após a matrícula."],
+          ["A systeme.io emite certificados de curso?", "Segundo a systeme.io, ela não gera certificados nativamente."]
+        ],
+        "related": ["sales-funnels", "payments", "email-marketing"],
+        "sources": ["https://systeme.io/online-courses", "https://systeme.io/pricing"]
+      },
+      {
+        "id": "booking-calendar", "slug": "calendario-de-agendamentos",
+        "title": "Agendamentos de clientes com a systeme.io | SoloStarter HQ",
+        "desc": "O calendário de agendamentos grátis da systeme.io: páginas de agendamento, sincronização com Google Agenda, links de Zoom e Meet, lembretes e pagamento.",
+        "h1": "Recebendo agendamentos de clientes com a systeme.io",
+        "card": "Deixe os clientes agendarem e pagarem sem troca de emails.",
+        "lede": "Se você vende seu tempo, uma página de agendamentos economiza horas de emails. O calendário de agendamentos da systeme.io está incluído no plano gratuito e pode cobrar no momento do agendamento.",
+        "sections": [
+          {"h2": "O que ele faz", "ul": ["Uma página de agendamento onde o cliente escolhe o horário e preenche os dados.", "Sessões individuais ou eventos em grupo com número de vagas.", "Seus horários disponíveis, intervalos entre compromissos e um limite de agendamentos por dia.", "Sincronização nos dois sentidos com o Google Agenda para evitar agendamentos duplicados.", "Links automáticos de Zoom ou Google Meet.", "Emails de confirmação e lembrete."]},
+          {"h2": "Recebendo no agendamento", "p": ["Segundo a systeme.io, você pode exigir o pagamento integral ou um sinal no momento do agendamento, por Stripe ou PayPal, antes de o horário ser confirmado. A systeme.io cobra 0% de taxa por transação, e a cobrança está disponível no plano gratuito."]},
+          {"h2": "Cada agendamento entra na sua lista", "p": ["Segundo a systeme.io, novos agendamentos são adicionados aos seus contatos, então uma chamada avulsa pode virar um inscrito para quem você continua escrevendo."]},
+          {"h2": "Bom saber", "p": ["Segundo a systeme.io, o calendário cobre o essencial para a maioria de coaches, consultores e prestadores de serviço, mas não o agendamento avançado para equipes nem formulários de entrada complexos. Ela também informa que agendamentos antigos não são importados automaticamente se você vier de outra ferramenta."]}
+        ],
+        "faq": [
+          ["O calendário de agendamentos da systeme.io é grátis?", "Sim. Segundo a systeme.io, o calendário de agendamentos, incluindo a cobrança, está no plano gratuito."],
+          ["Funciona com o Google Agenda?", "Sim. Segundo a systeme.io, ele sincroniza nos dois sentidos com o Google Agenda para evitar agendamentos duplicados."],
+          ["O cliente pode pagar um sinal?", "Sim. Segundo a systeme.io, você pode exigir o pagamento integral ou um sinal no agendamento, por Stripe ou PayPal."]
+        ],
+        "related": ["payments", "sales-funnels", "automation"],
+        "sources": ["https://systeme.io/booking-calendar"]
+      },
+      {
+        "id": "automation", "slug": "automacoes",
+        "title": "Automações da systeme.io para freelancers | SoloStarter HQ",
+        "desc": "Como funcionam as regras e os fluxos de automação da systeme.io: gatilhos, ações, tags, esperas e sequências, e o que o plano gratuito inclui.",
+        "h1": "Automações que poupam tempo de um freelancer",
+        "card": "Deixe o sistema enviar emails, marcar contatos e liberar acessos por você.",
+        "lede": "Automação significa que o acompanhamento de rotina acontece sem você. A systeme.io tem dois tipos: regras simples e fluxos visuais, ambos integrados.",
+        "sections": [
+          {"h2": "Regras e fluxos", "p": ["A systeme.io descreve duas ferramentas. As regras de automação são pares simples de se acontecer isto, faça aquilo: um gatilho como formulário preenchido com uma ação como inscrever em uma campanha. Os fluxos são caminhos visuais de várias etapas, que podem incluir esperas, condições e ramificações."]},
+          {"h2": "O que dispara as automações", "p": ["A systeme.io cita gatilhos como se inscrever, comprar, clicar em um link, receber uma tag ou chegar uma data. Entre as ações estão enviar emails, liberar acesso a um curso, atualizar tags e mover alguém para outro funil."]},
+          {"h2": "Exemplos para freelancers", "ul": ["Alguém baixa seu checklist grátis: marque com uma tag e inicie uma sequência de boas-vindas.", "Alguém compra seu template: envie o download e um email de acompanhamento alguns dias depois.", "Alguém agenda uma chamada: marque como lead para receber as newsletters certas."]},
+          {"h2": "O que o plano gratuito permite", "p": ["A página de preços indica 1 regra de automação no plano gratuito e regras ilimitadas no plano Ilimitado. Se automação é central no seu negócio, confira qual plano você precisa na página de preços da systeme.io."]}
+        ],
+        "faq": [
+          ["Preciso programar para criar automações?", "Não. Segundo a systeme.io, o criador de fluxos usa blocos de arrastar e soltar, sem código nem chaves de API."],
+          ["Quantas regras de automação tem o plano gratuito?", "A página de preços da systeme.io indica 1 regra de automação no plano gratuito."],
+          ["Uma automação pode liberar acesso a um curso?", "Sim. A systeme.io inclui liberar acesso a um curso entre as ações de uma regra ou fluxo."]
+        ],
+        "related": ["email-marketing", "sales-funnels", "when-to-upgrade"],
+        "sources": ["https://systeme.io/marketing-automation", "https://systeme.io/pricing"]
+      },
+      {
+        "id": "website-and-blog", "slug": "site-e-blog",
+        "title": "Crie um site e um blog com a systeme.io | SoloStarter HQ",
+        "desc": "O construtor de sites e o blog da systeme.io: templates, páginas visuais, configurações de SEO, páginas em vários idiomas e domínio próprio, grátis.",
+        "h1": "Criando um site e um blog com a systeme.io",
+        "card": "Um site completo com blog, ligado à sua lista de email.",
+        "lede": "O site de um freelancer precisa explicar o que você faz, mostrar seu trabalho e captar contatos. O construtor de sites da systeme.io está incluído no plano gratuito e se conecta direto à sua lista de email.",
+        "sections": [
+          {"h2": "O que você pode criar", "ul": ["Um site completo com página inicial, páginas e menu, a partir de um template ou do zero.", "Um blog com categorias, tags e configurações de SEO em cada post.", "Páginas em mais de um idioma, gerenciadas no mesmo editor.", "Títulos e descrições para o Google, em cada página."]},
+          {"h2": "No plano gratuito", "p": ["Segundo a systeme.io, o construtor de sites está incluído no plano gratuito, com 1 domínio personalizado e sem taxa de hospedagem, sem cobrança de plugins e sem limite de armazenamento. O plano gratuito inclui 1 blog."]},
+          {"h2": "Ligado ao seu negócio", "p": ["Segundo a systeme.io, seu site, seus funis, seu email e seus cursos compartilham os mesmos dados, então um formulário no site adiciona as pessoas aos seus contatos automaticamente. As páginas de vendas são criadas no construtor de funis e podem ter link no menu do site."]},
+          {"h2": "Um site simples de freelancer", "ol": ["Início: quem você ajuda e como, com um formulário de inscrição.", "Serviços ou portfólio: o que você oferece, com exemplos.", "Blog: posts úteis que trazem visitas do Google.", "Contato ou agendamento: um próximo passo fácil."]}
+        ],
+        "faq": [
+          ["O construtor de sites da systeme.io é grátis?", "Sim. Segundo a systeme.io, ele está incluído no plano gratuito, com 1 domínio personalizado."],
+          ["Posso ter um blog no plano gratuito?", "Sim. A página de preços indica 1 blog no plano gratuito."],
+          ["Posso criar páginas em mais de um idioma?", "Sim. Segundo a systeme.io, você pode duplicar páginas para outros idiomas e gerenciar as traduções no mesmo editor."]
+        ],
+        "related": ["first-page", "email-marketing", "booking-calendar"],
+        "sources": ["https://systeme.io/website-builder", "https://systeme.io/pricing"]
+      },
+      {
+        "id": "payments", "slug": "pagamentos",
+        "title": "Recebendo pagamentos com a systeme.io | SoloStarter HQ",
+        "desc": "Como funcionam os pagamentos na systeme.io: Stripe, PayPal e outros meios, 0% de taxa por transação em todos os planos, upsells e agendamentos pagos.",
+        "h1": "Recebendo pagamentos com a systeme.io",
+        "card": "Receba por produtos, cursos e sessões com 0% de taxa da systeme.io.",
+        "lede": "Seja qual for o jeito de vender, você precisa receber. A systeme.io se conecta a meios de pagamento que você já conhece e não acrescenta taxa própria por transação.",
+        "sections": [
+          {"h2": "0% de taxa por transação", "p": ["Segundo a systeme.io, ela cobra 0% de taxa por transação em todos os planos, inclusive no gratuito. Você fica com o valor integral menos as taxas normais do seu processador de pagamentos."]},
+          {"h2": "Meios de pagamento", "p": ["A página de preços da systeme.io mostra integrações com Stripe, Apple Pay, PayPal, Razorpay, Flutterwave, Mercado Pago e Xendit, além de pagamento na entrega. Veja na página de preços qual plano inclui cada uma."]},
+          {"h2": "Onde você pode cobrar", "ul": ["Na etapa de checkout de um funil de vendas, com ofertas extras e alternativas.", "Em um curso online, com acesso imediato após a compra.", "Quando um cliente agenda uma sessão, como pagamento integral ou sinal."]},
+          {"h2": "O que acontece depois de uma venda", "p": ["Segundo a systeme.io, uma compra no seu funil pode entregar o produto, adicionar o comprador à sua lista de email e registrar o afiliado que indicou, tudo automaticamente."]}
+        ],
+        "faq": [
+          ["A systeme.io fica com uma porcentagem das minhas vendas?", "Não. Segundo a systeme.io, ela cobra 0% de taxa por transação em todos os planos. As taxas do seu processador de pagamentos continuam valendo."],
+          ["Com quais meios de pagamento a systeme.io funciona?", "A página de preços dela mostra Stripe, Apple Pay, PayPal, Razorpay, Flutterwave, Mercado Pago, Xendit e pagamento na entrega."],
+          ["Posso receber no plano gratuito?", "Sim. Segundo a systeme.io, a cobrança, inclusive de agendamentos, está disponível no plano gratuito via Stripe ou PayPal."]
+        ],
+        "related": ["sales-funnels", "online-courses", "booking-calendar"],
+        "sources": ["https://systeme.io/pricing", "https://systeme.io/sales-funnels", "https://systeme.io/booking-calendar", "https://systeme.io/online-courses"]
+      },
+      {
+        "id": "all-in-one", "slug": "tudo-em-um",
+        "title": "systeme.io: várias ferramentas em uma | SoloStarter HQ",
+        "desc": "Por que a proposta tudo em um da systeme.io combina com freelancers: páginas, email, cursos, agendamentos, automação e pagamentos com uma só lista.",
+        "h1": "Por que uma ferramenta pode substituir várias",
+        "card": "Uma conta e uma lista de contatos, em vez de várias assinaturas.",
+        "lede": "Muitos freelancers pagam por um construtor de sites, uma ferramenta de email, uma plataforma de cursos e um app de agendamentos, e ainda perdem tempo conectando tudo. A proposta da systeme.io é que uma única conta faça tudo isso. Veja o que ela inclui, segundo a própria systeme.io.",
+        "sections": [
+          {"h2": "O que cabe em uma conta", "p": ["Entre os recursos, a systeme.io cita funis de vendas, email marketing, construtor de sites, automação de marketing, cursos online, calendário de agendamentos, gestão de afiliados, comunidades e webinars automatizados. A página de preços diz que todos os planos incluem o mesmo conjunto de ferramentas principais."]},
+          {"h2": "Por que importa: uma só lista de contatos", "p": ["Segundo a systeme.io, todos os recursos funcionam juntos. Como email, tags, funis, cursos e contatos ficam no mesmo sistema, uma inscrição, compra ou agendamento cai em uma única lista, e uma automação pode enviar emails, liberar um curso e mover pessoas entre funis. A systeme.io diz que assim você não precisa sincronizar dados entre ferramentas separadas."]},
+          {"h2": "Quanto custa", "p": ["Segundo a systeme.io, ela cobre um conjunto típico de ferramentas separadas de funis, email, cursos e afiliados no plano gratuito ou por US$ 17 por mês, e todos os planos têm 0% de taxa por transação."]},
+          {"h2": "Sendo honestos sobre as limitações", "p": ["A própria systeme.io reconhece que algumas ferramentas especializadas vão mais longe em certos pontos: design de email mais avançado, mais templates de site, agendamento avançado para equipes e certificados de curso, que ela não oferece nativamente. Se algum desses pontos for essencial para você, confira antes de mudar."]}
+        ],
+        "faq": [
+          ["A systeme.io substitui uma ferramenta de email separada?", "Para o email do seu próprio negócio, segundo a systeme.io, sim: o email é integrado à mesma conta dos seus funis e cursos. Ferramentas de email especializadas podem ter recursos de design mais avançados."],
+          ["Posso levar meu negócio atual para a systeme.io?", "Sim. A systeme.io oferece migração gratuita com o plano Ilimitado mensal ou qualquer plano anual."],
+          ["O plano gratuito tem pegadinha?", "Os principais limites são 2.000 contatos, 1 campanha de email e 1 regra de automação. O plano gratuito não expira e não pede cartão."]
+        ],
+        "related": ["free-plan", "when-to-upgrade", "automation"],
+        "sources": ["https://systeme.io/pricing", "https://systeme.io/sales-funnels", "https://systeme.io/marketing-automation", "https://systeme.io/email-marketing", "https://systeme.io/booking-calendar", "https://systeme.io/online-courses", "https://systeme.io/free-migration"]
+      }
+    ]
+  }
+}
