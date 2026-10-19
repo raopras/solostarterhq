@@ -21,3 +21,5 @@ The site address and the legal-page details are set in the workflow's `env` bloc
 - Every claim about the plan must be checkable on systeme.io's own pages.
 
 © 2026 SoloStarterHQ. All rights reserved.
+
+Tradedoubler verification: `static/3503367.html` is an intentionally empty file (site ID 3503367) that proves site ownership. Keep it while the site is in the Tradedoubler network.
