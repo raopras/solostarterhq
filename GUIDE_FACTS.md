@@ -134,3 +134,8 @@ from the pricing table. Usage ideas ("you could…") only combine features the p
 
 ### Template library (systeme.io/templates)
 - Checked but not used for a guide: the page is a filterable gallery with no feature text to quote.
+
+### Translations of the feature guides (es, pt-br, de; 20 Oct 2026)
+- The 10 feature guides are translated page for page in `guides.<lang>.json`, with the same `id` as the English so hreflang, related cards and `[[id|text]]` links line up.
+- Checked by script before publishing: same number of sections, paragraphs, list items and FAQs as the English; identical link targets and inline affiliate link; identical figures; same related pages and sources; no URLs or affiliate IDs in the text; German uses "Sie"; Portuguese uses "a systeme.io"; titles ≤ 60 and descriptions 70–160 characters.
+- Conventions kept from the first translations: es "Según systeme.io", prices "17 $ al mes", plan "Ilimitado"; pt-br "Segundo a systeme.io", "US$ 17 por mês", plan "Ilimitado"; de "Laut systeme.io", "17 $ im Monat", "Unlimited-Tarif". Inline ad label matches each language's banner: Publicidad, Publicidade, Werbung.

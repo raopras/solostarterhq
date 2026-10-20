@@ -23,7 +23,7 @@
       "home_h2": "Kostenlose Ratgeber für den Einstieg",
       "home_intro": "Verständliche Ratgeber zu systeme.io. Jede Angabe stammt von den Seiten von systeme.io selbst.",
       "home_more": "Alle Ratgeber ansehen",
-      "ad_tag": "Anzeige",
+      "ad_tag": "Werbung",
       "ad_title": "Affiliate-Link: Wir erhalten eventuell eine Provision, wenn Sie sich registrieren"
     },
     "hub": {
@@ -81,12 +81,54 @@
             "all-in-one",
             "free-plan"
           ]
+        ],
+        [
+          "grow",
+          "Mehr verkaufen mit Partnern, Webinaren oder SMS",
+          [
+            "affiliate-program",
+            "evergreen-webinars",
+            "sms-marketing"
+          ]
+        ],
+        [
+          "community",
+          "Eine bezahlte Community oder Mitgliedschaft betreiben",
+          [
+            "online-community",
+            "online-courses"
+          ]
+        ],
+        [
+          "shop",
+          "Physische Produkte verkaufen oder einen Creator-Shop eröffnen",
+          [
+            "physical-products",
+            "creator-store"
+          ]
+        ],
+        [
+          "agency",
+          "Kunden als Agentur betreuen",
+          [
+            "sub-accounts",
+            "white-label",
+            "crm-pipelines"
+          ]
+        ],
+        [
+          "move",
+          "Mein Business von einer anderen Plattform umziehen",
+          [
+            "free-migration"
+          ]
         ]
       ],
       "pick_btn": "Meine Ratgeber anzeigen",
       "pick_result": "Beginnen Sie hier:",
       "pick_none": "Bitte kreuzen Sie mindestens ein Feld an.",
-      "all_h2": "Alle Ratgeber"
+      "all_h2": "Alle Ratgeber",
+      "modified": "2026-10-20"
     },
     "pages": [
       {
@@ -162,7 +204,8 @@
         "related": [
           "free-plan",
           "sales-funnels",
-          "website-and-blog"
+          "website-and-blog",
+          "creator-store"
         ],
         "sources": [
           "https://systeme.io/sales-funnels",
@@ -237,7 +280,9 @@
         "related": [
           "when-to-upgrade",
           "first-page",
-          "email-marketing"
+          "email-marketing",
+          "sub-accounts",
+          "affiliate-program"
         ],
         "sources": [
           "https://systeme.io/pricing",
@@ -305,7 +350,9 @@
         "related": [
           "free-plan",
           "all-in-one",
-          "automation"
+          "automation",
+          "evergreen-webinars",
+          "free-migration"
         ],
         "sources": [
           "https://systeme.io/pricing",
@@ -370,7 +417,9 @@
         "related": [
           "first-page",
           "payments",
-          "email-marketing"
+          "email-marketing",
+          "evergreen-webinars",
+          "physical-products"
         ],
         "sources": [
           "https://systeme.io/sales-funnels",
@@ -435,7 +484,8 @@
         "related": [
           "automation",
           "sales-funnels",
-          "free-plan"
+          "free-plan",
+          "sms-marketing"
         ],
         "sources": [
           "https://systeme.io/email-marketing",
@@ -498,7 +548,9 @@
         "related": [
           "sales-funnels",
           "payments",
-          "email-marketing"
+          "email-marketing",
+          "online-community",
+          "creator-store"
         ],
         "sources": [
           "https://systeme.io/online-courses",
@@ -561,7 +613,8 @@
         "related": [
           "payments",
           "sales-funnels",
-          "automation"
+          "automation",
+          "crm-pipelines"
         ],
         "sources": [
           "https://systeme.io/booking-calendar"
@@ -620,7 +673,9 @@
         "related": [
           "email-marketing",
           "sales-funnels",
-          "when-to-upgrade"
+          "when-to-upgrade",
+          "sms-marketing",
+          "crm-pipelines"
         ],
         "sources": [
           "https://systeme.io/marketing-automation",
@@ -684,7 +739,9 @@
         "related": [
           "first-page",
           "email-marketing",
-          "booking-calendar"
+          "booking-calendar",
+          "creator-store",
+          "free-migration"
         ],
         "sources": [
           "https://systeme.io/website-builder",
@@ -744,7 +801,8 @@
         "related": [
           "sales-funnels",
           "online-courses",
-          "booking-calendar"
+          "booking-calendar",
+          "physical-products"
         ],
         "sources": [
           "https://systeme.io/pricing",
@@ -804,7 +862,9 @@
         "related": [
           "free-plan",
           "when-to-upgrade",
-          "automation"
+          "automation",
+          "free-migration",
+          "sub-accounts"
         ],
         "sources": [
           "https://systeme.io/pricing",
@@ -814,6 +874,779 @@
           "https://systeme.io/booking-calendar",
           "https://systeme.io/online-courses",
           "https://systeme.io/free-migration"
+        ]
+      },
+      {
+        "id": "affiliate-program",
+        "slug": "partnerprogramm",
+        "modified": "2026-10-20",
+        "title": "Eigenes Partnerprogramm mit systeme.io | SoloStarter HQ",
+        "desc": "So funktioniert das eingebaute Partnerprogramm von systeme.io: Provisionen, zweite Stufe, monatliche Rechnungen und Auszahlungen, in jedem Tarif.",
+        "h1": "Ein eigenes Partnerprogramm mit systeme.io starten",
+        "card": "Lassen Sie andere Ihre Produkte gegen Provision verkaufen, verwaltet im selben Konto.",
+        "lede": "Ein Partnerprogramm (Affiliate-Programm) zahlt anderen eine Provision, wenn sie Ihnen Kundinnen und Kunden bringen. Mit systeme.io betreiben Sie es direkt in Ihrem Konto, neben Ihren [[sales-funnels|Sales Funnels]] und [[online-courses|Onlinekursen]], und es ist in jedem Tarif enthalten, auch im kostenlosen.",
+        "sections": [
+          {
+            "h2": "Was Sie einstellen können",
+            "ul": [
+              "Den Provisionssatz, den Ihre Partner verdienen.",
+              "Eine Wartezeit vor der Auszahlung.",
+              "Einen Mindestbetrag für Auszahlungen.",
+              "Provisionen der zweiten Stufe."
+            ],
+            "after": "Weil das Programm im selben Konto liegt wie Ihre Funnels, erfasst laut systeme.io ein Kauf in einem [[sales-funnels|Funnel]] den Partner automatisch, liefert das Produkt aus und trägt die Käuferin oder den Käufer in Ihre E-Mail-Liste ein."
+          },
+          {
+            "h2": "Jedem Partner seinen Link geben",
+            "p": [
+              "systeme.io bietet die Variable {affiliate_id} für E-Mails, sodass jeder Partner seinen eigenen Link erhält, ohne dass Sie etwas von Hand kopieren. Sie können sie in jeder Nachricht verwenden, die Sie mit dem [[email-marketing|E-Mail-Marketing von systeme.io]] versenden."
+            ]
+          },
+          {
+            "h2": "So laufen Auszahlungen",
+            "p": [
+              "Laut systeme.io werden Rechnungen am 10. jedes Monats automatisch erstellt. Partner wählen in ihrem eigenen Dashboard Banküberweisung oder PayPal.",
+              "Das Bezahlen bleibt ein Schritt, den Sie selbst erledigen: Sie können Wise verbinden, um alle auf einmal zu bezahlen, oder jeden Partner einzeln. Wenn Sie noch entscheiden, wie Sie Zahlungen annehmen, lesen Sie [[payments|Zahlungen mit systeme.io annehmen]]."
+            ]
+          },
+          {
+            "h2": "Was es kostet",
+            "p": [
+              "Laut systeme.io ist die Partnerfunktion in allen Tarifen enthalten, auch im kostenlosen Tarif, ohne Gebühr pro Partner, und die Einrichtung dauert etwa 10 Minuten. Die übrigen Grenzen Ihres Tarifs, etwa Kontakte und Funnels, gelten weiter; prüfen Sie [[free-plan|was der kostenlose Tarif enthält]] und [[when-to-upgrade|wann sich ein bezahlter Tarif lohnt]].",
+              "Sie können [[go|ein kostenloses systeme.io-Konto eröffnen]] und das Programm aufbauen, bevor Sie den ersten Partner haben."
+            ]
+          },
+          {
+            "h2": "Was Ihre Partner bewerben können",
+            "ul": [
+              "Einen [[online-courses|Onlinekurs]], der über einen Funnel verkauft wird.",
+              "Ein [[evergreen-webinars|Evergreen-Webinar]], das mit einem Angebot endet.",
+              "Den bezahlten Zugang zu Ihrer [[online-community|Online-Community]]."
+            ]
+          }
+        ],
+        "faq": [
+          [
+            "Ist die Partnerfunktion von systeme.io kostenlos?",
+            "Ja. Laut systeme.io ist sie in allen Tarifen enthalten, auch im kostenlosen Tarif, ohne Gebühr pro Partner."
+          ],
+          [
+            "Wie werden Partner bezahlt?",
+            "systeme.io erstellt die Rechnungen am 10. jedes Monats. Partner wählen Banküberweisung oder PayPal, und Sie können alle auf einmal über Wise oder einzeln bezahlen."
+          ],
+          [
+            "Kann ich Provisionen der zweiten Stufe anbieten?",
+            "Ja. systeme.io führt Provisionen der zweiten Stufe unter den Einstellungen, neben Provisionssatz, Wartezeit und Mindestauszahlung."
+          ],
+          [
+            "Ist das dasselbe wie das Partnerprogramm von systeme.io?",
+            "Nein. Mit dieser Funktion betreiben Sie ein Programm für Ihre eigenen Produkte. systeme.io hat außerdem ein Programm für alle, die systeme.io selbst empfehlen. SoloStarter HQ ist dort Mitglied, und so finanziert sich diese Website."
+          ]
+        ],
+        "related": [
+          "sales-funnels",
+          "online-courses",
+          "evergreen-webinars",
+          "payments"
+        ],
+        "sources": [
+          "https://systeme.io/affiliate-management",
+          "https://systeme.io/sales-funnels"
+        ]
+      },
+      {
+        "id": "evergreen-webinars",
+        "slug": "evergreen-webinare",
+        "modified": "2026-10-20",
+        "title": "Evergreen-Webinare mit systeme.io | SoloStarter HQ",
+        "desc": "So funktionieren Evergreen-Webinare bei systeme.io: wiederkehrende Termine, Erinnerungs-E-Mails, zeitgesteuerte Angebote, Aufzeichnungen und passende Tarife.",
+        "h1": "Evergreen-Webinare mit systeme.io",
+        "card": "Nehmen Sie eine Präsentation einmal auf und lassen Sie sie nach Zeitplan laufen, mit Erinnerungen und Angeboten.",
+        "lede": "Ein Evergreen-Webinar ist eine aufgezeichnete Präsentation, die nach einem wiederkehrenden Zeitplan läuft. So können sich neue Interessierte anmelden und zuschauen, ohne dass Sie jedes Mal live gehen. Bei systeme.io gehört es zum Webinar- und zum Unlimited-Tarif und arbeitet mit Ihren [[sales-funnels|Funnels]], [[email-marketing|E-Mails]] und [[online-courses|Kursen]] zusammen.",
+        "sections": [
+          {
+            "h2": "Was enthalten ist",
+            "ul": [
+              "Vorlagen für Anmelde-, Übertragungs- und Wiederholungsseite, per Drag-and-drop bearbeitbar.",
+              "Termine nach wiederkehrendem Zeitplan, etwa stündlich oder täglich.",
+              "Automatische Erinnerungs-E-Mails, jede mit einem eigenen Zugangslink.",
+              "Zeitgesteuerte „Jetzt kaufen“-Buttons, Banner und Countdown-Timer während der Übertragung.",
+              "Verwaltung der Aufzeichnungen."
+            ]
+          },
+          {
+            "h2": "Von der Anmeldung zum Verkauf",
+            "ol": [
+              "Eine Person meldet sich auf Ihrer Webinarseite an, die ein Schritt in einem [[sales-funnels|Sales Funnel]] sein oder in Ihrem [[creator-store|Creator-Shop]] verlinkt sein kann.",
+              "systeme.io verschickt Erinnerungs-E-Mails mit dem Zugangslink.",
+              "Zum festgelegten Zeitpunkt erscheint ein Button oder Banner mit Ihrem Angebot.",
+              "Laut systeme.io wird, wer kauft, automatisch eingeschrieben und aus der Sequenz für Nicht-Käufer entfernt."
+            ],
+            "after": "Die Folge-E-Mails bauen Sie mit [[automation|Automatisierungsregeln und Workflows]], und Partner, die Ihnen Anmeldungen bringen, belohnen Sie mit Ihrem eigenen [[affiliate-program|Partnerprogramm]]."
+          },
+          {
+            "h2": "Welchen Tarif Sie brauchen",
+            "p": [
+              "Die Preisseite von systeme.io führt Evergreen-Webinare im Webinar-Tarif (47 $ im Monat, bis zu 10 Webinare) und im Unlimited-Tarif (97 $ im Monat, unbegrenzt). Der kostenlose Tarif und der Startup-Tarif enthalten keine. Wenn Webinare Ihr wichtigster Verkaufsweg werden sollen, lesen Sie zuerst [[when-to-upgrade|wann sich ein bezahlter Tarif lohnt]].",
+              "Sie können [[go|mit dem kostenlosen Tarif von systeme.io starten]], Funnel und E-Mails aufbauen und upgraden, sobald Sie das Webinar freischalten möchten."
+            ]
+          },
+          {
+            "h2": "Wie lange die Einrichtung dauert",
+            "p": [
+              "Laut systeme.io dauert die Einrichtung eines Evergreen-Webinars in der Regel 2 bis 4 Stunden."
+            ]
+          },
+          {
+            "h2": "Gut zu wissen",
+            "p": [
+              "Laut systeme.io eignen sich Evergreen-Webinare nicht für live und interaktive Sitzungen. Wenn Sie in Echtzeit mit Menschen sprechen möchten, passt eine Gruppenveranstaltung im [[booking-calendar|Buchungskalender]] mit automatischem Zoom- oder Google-Meet-Link womöglich besser."
+            ]
+          }
+        ],
+        "faq": [
+          [
+            "Kann ich Evergreen-Webinare im kostenlosen Tarif nutzen?",
+            "Nein. Die Preisseite von systeme.io nennt 0 Evergreen-Webinare im kostenlosen Tarif und im Startup-Tarif. Sie beginnen mit dem Webinar-Tarif für 47 $ im Monat."
+          ],
+          [
+            "Wie oft können Termine laufen?",
+            "systeme.io beschreibt wiederkehrende Zeitpläne, etwa stündlich oder täglich."
+          ],
+          [
+            "Können Zuschauer während des Webinars kaufen?",
+            "Ja. Sie können zeitgesteuerte „Jetzt kaufen“-Buttons, Banner und Countdown-Timer einblenden."
+          ],
+          [
+            "Kann ich Live-Webinare veranstalten?",
+            "Laut systeme.io eignet sich die Funktion nicht für live und interaktive Webinare."
+          ]
+        ],
+        "related": [
+          "sales-funnels",
+          "email-marketing",
+          "when-to-upgrade",
+          "affiliate-program"
+        ],
+        "sources": [
+          "https://systeme.io/automated-webinars",
+          "https://systeme.io/pricing"
+        ]
+      },
+      {
+        "id": "creator-store",
+        "slug": "creator-shop",
+        "modified": "2026-10-20",
+        "title": "Creator-Shop mit systeme.io aufbauen | SoloStarter HQ",
+        "desc": "Der Creator-Shop von systeme.io: eine Link-in-Bio-Seite, die Kurse, digitale und physische Produkte, Coaching und Affiliate-Links verkauft. Kostenlos startbar.",
+        "h1": "Einen Creator-Shop mit systeme.io aufbauen",
+        "card": "Eine Seite zum Teilen für alles, was Sie verkaufen, vom Kurs bis zum Coaching.",
+        "lede": "Ein Creator-Shop ist eine Link-in-Bio-Seite, die verkauft. Der von systeme.io kann [[online-courses|Kurse]], digitale Produkte, [[physical-products|physische Produkte]], Coaching und Affiliate-Links zu anderen Websites verkaufen, alles unter einer Adresse, die Sie überall teilen können.",
+        "sections": [
+          {
+            "h2": "Was Sie verkaufen können",
+            "ul": [
+              "Digitale Produkte.",
+              "[[online-courses|Onlinekurse]].",
+              "[[physical-products|Physische Produkte]].",
+              "Coaching. Für bezahlte Termine zu einer festen Zeit können Sie zusätzlich den [[booking-calendar|Buchungskalender]] nutzen.",
+              "Affiliate-Links zu Produkten auf anderen Websites."
+            ]
+          },
+          {
+            "h2": "So bauen Sie ihn auf",
+            "ul": [
+              "Vorlagen und eigene Abschnitte.",
+              "Eine „Abonnieren“-Karte, um Kontakte zu sammeln und ein Freebie zu verschenken, damit Besucher, die noch nicht kaufen, Ihrer [[email-marketing|E-Mail-Liste]] beitreten können.",
+              "SEO-Einstellungen.",
+              "Eine Adresse zum Teilen: ihrname.systeme.io oder Ihre eigene Domain."
+            ],
+            "after": "Laut systeme.io ist ein einfacher Shop in etwa 20 Minuten eingerichtet."
+          },
+          {
+            "h2": "Was es kostet",
+            "p": [
+              "Laut systeme.io ist der Creator-Shop im kostenlosen Tarif verfügbar, der 2.000 Kontakte und 1 eigene Domain enthält, und bezahlte Tarife beginnen bei 17 $ im Monat. systeme.io berechnet 0 % Transaktionsgebühr. Die Preisseite nennt 1 mobil optimierte Link-in-Bio-Seite im kostenlosen Tarif, 3 im Startup-, 10 im Webinar- und unbegrenzt viele im Unlimited-Tarif.",
+              "[[go|Erstellen Sie ein kostenloses systeme.io-Konto]] und probieren Sie Ihren Shop aus. Zahlungen laufen über die Anbieter, die wir in [[payments|unserem Ratgeber zu Zahlungen]] erklären."
+            ]
+          },
+          {
+            "h2": "Ihre eigene Domain nutzen",
+            "p": [
+              "Der kostenlose Tarif enthält 1 eigene Domain. Wenn DNS-Einträge nicht Ihr Ding sind, bietet das Support-Team von systeme.io an, [[free-migration|Ihre Domain kostenlos für Sie zu verbinden]]."
+            ]
+          },
+          {
+            "h2": "Shop, Website oder Funnel?",
+            "p": [
+              "Ein Creator-Shop ist eine einzelne Seite mit allem, was Sie verkaufen. Wenn Sie mehrere Seiten, eine Navigation und einen Blog brauchen, lesen Sie [[website-and-blog|Website und Blog aufbauen]]. Um Käufer Schritt für Schritt zu einem Angebot zu führen, nutzen Sie einen [[sales-funnels|Sales Funnel]]."
+            ]
+          }
+        ],
+        "faq": [
+          [
+            "Ist der Creator-Shop von systeme.io kostenlos?",
+            "Ja. Laut systeme.io ist er im kostenlosen Tarif verfügbar, der 2.000 Kontakte und 1 eigene Domain enthält, mit 0 % Transaktionsgebühr."
+          ],
+          [
+            "Was kann ich in einem Creator-Shop verkaufen?",
+            "systeme.io nennt digitale Produkte, Kurse, physische Produkte, Coaching und Affiliate-Links zu externen Websites."
+          ],
+          [
+            "Kann ich meine eigene Domain verwenden?",
+            "Ja. Ihr Shop kann ihrname.systeme.io oder eine eigene Domain nutzen."
+          ]
+        ],
+        "related": [
+          "online-courses",
+          "physical-products",
+          "website-and-blog",
+          "free-plan"
+        ],
+        "sources": [
+          "https://systeme.io/creator-store",
+          "https://systeme.io/pricing"
+        ]
+      },
+      {
+        "id": "crm-pipelines",
+        "slug": "crm-pipelines",
+        "modified": "2026-10-20",
+        "title": "CRM-Pipelines von systeme.io nutzen | SoloStarter HQ",
+        "desc": "Die CRM-Pipelines von systeme.io für Selbstständige: ein Deal-Board mit eigenen Phasen, Notizen und Automatisierung, mit denselben Kontakten wie Ihre Liste.",
+        "h1": "Deals verfolgen mit den CRM-Pipelines von systeme.io",
+        "card": "Alle Interessenten und Deals auf einem Board, mit den Kontakten, die Sie schon haben.",
+        "lede": "Wenn Sie Dienstleistungen verkaufen, müssen Sie wissen, wer interessiert ist, wer ein Angebot hat und wer zugesagt hat. Die CRM-Pipelines von systeme.io zeigen das auf einem Board, mit denselben Kontakten wie Ihre [[email-marketing|E-Mail-Listen]], sodass nichts synchronisiert werden muss.",
+        "sections": [
+          {
+            "h2": "So funktioniert es",
+            "ul": [
+              "Ein Kanban-Board mit Phasen, die Sie selbst benennen.",
+              "Deals per Drag-and-drop von einer Phase in die nächste ziehen.",
+              "Interne Notizen zu jedem Deal.",
+              "Mehrere Pipelines, jeweils im CRM-Menü über „Pipeline erstellen“ angelegt.",
+              "Zusammenarbeit im Team, damit eingeladene Personen am selben Board arbeiten."
+            ]
+          },
+          {
+            "h2": "Deals automatisch bewegen",
+            "p": [
+              "Laut systeme.io können Automatisierungsregeln Deals hinzufügen oder verschieben, wenn sich jemand einträgt, auf einen Link klickt, kauft oder ein Formular absendet. Ein Formular auf [[first-page|Ihrer ersten Seite]] könnte zum Beispiel jede neue Anfrage auf Ihr Board setzen.",
+              "Regeln gehören zur [[automation|Automatisierung von systeme.io]], und der kostenlose Tarif enthält 1 Automatisierungsregel."
+            ]
+          },
+          {
+            "h2": "Grenzen je Tarif",
+            "p": [
+              "Laut systeme.io sind Pipelines in jedem Tarif enthalten, innerhalb Ihres Kontaktlimits. Die Preisseite nennt 1 Pipeline im kostenlosen Tarif, 5 im Startup-, 20 im Webinar- und 100 im Unlimited-Tarif, bei 2.000, 5.000, 10.000 und unbegrenzt vielen Kontakten. Siehe [[free-plan|die Grenzen des kostenlosen Tarifs]].",
+              "[[go|Eröffnen Sie ein kostenloses systeme.io-Konto]] und richten Sie Ihre erste Pipeline ein."
+            ]
+          },
+          {
+            "h2": "Wofür sich Pipelines eignen",
+            "p": [
+              "Pipelines passen zu Arbeit, die im Gespräch verkauft wird, etwa Beratung oder Dienstleistungen, die Sie für Kunden umsetzen. Laut systeme.io wird, wer über den [[booking-calendar|Buchungskalender]] bucht, zu Ihren Kontakten hinzugefügt und kann so zum Deal werden.",
+              "Agenturen mit mehreren Kunden können jedem ein eigenes [[sub-accounts|Unterkonto]] geben und Nachfassaktionen per Textnachricht mit [[sms-marketing|SMS-Marketing]] senden."
+            ]
+          }
+        ],
+        "faq": [
+          [
+            "Ist das CRM von systeme.io kostenlos?",
+            "Ja. Laut systeme.io sind Pipelines in allen Tarifen enthalten. Der kostenlose Tarif hat 1 Pipeline und bis zu 2.000 Kontakte."
+          ],
+          [
+            "Muss ich Kontakte separat ins CRM importieren?",
+            "Nein. Laut systeme.io nutzen Pipelines dieselben Kontakte wie Ihre E-Mail-Listen, sodass nichts synchronisiert werden muss."
+          ],
+          [
+            "Können Deals automatisch weiterwandern?",
+            "Ja. Laut systeme.io können Automatisierungsregeln Deals hinzufügen oder verschieben, wenn sich jemand einträgt, auf einen Link klickt, kauft oder ein Formular absendet."
+          ]
+        ],
+        "related": [
+          "automation",
+          "booking-calendar",
+          "email-marketing",
+          "sub-accounts"
+        ],
+        "sources": [
+          "https://systeme.io/crm-pipelines",
+          "https://systeme.io/booking-calendar",
+          "https://systeme.io/pricing"
+        ]
+      },
+      {
+        "id": "online-community",
+        "slug": "online-community",
+        "modified": "2026-10-20",
+        "title": "Online-Community mit systeme.io aufbauen | SoloStarter HQ",
+        "desc": "Der Community-Baukasten von systeme.io: private oder öffentliche Räume, Beiträge, Dateien und Sprachnachrichten, verkauft als Einmalzahlung oder Abo.",
+        "h1": "Eine Online-Community mit systeme.io aufbauen",
+        "card": "Ein privater oder öffentlicher Raum für Mitglieder, den Sie wie jedes andere Produkt verkaufen.",
+        "lede": "Eine Community gibt Ihren Kundinnen und Kunden einen Ort, um mit Ihnen und untereinander zu sprechen. Communities bei systeme.io können kostenlos oder kostenpflichtig sein und liegen im selben Konto wie Ihre [[sales-funnels|Funnels]] und [[online-courses|Kurse]].",
+        "sections": [
+          {
+            "h2": "Was Mitglieder tun können",
+            "ul": [
+              "Beiträge und Kommentare schreiben.",
+              "Dateien und Sprachnachrichten hochladen.",
+              "YouTube- und Loom-Videos einbetten."
+            ]
+          },
+          {
+            "h2": "Was Sie steuern",
+            "ul": [
+              "Privaten oder öffentlichen Zugang.",
+              "Themen, angepinnte Beiträge und Suche.",
+              "Geplante Beiträge und Freigabe von Beiträgen.",
+              "Eine eigene Domain, den Namen der Community und ein Titelbild. Das Support-Team von systeme.io bietet an, [[free-migration|eine Domain für Sie zu verbinden]], kostenlos."
+            ]
+          },
+          {
+            "h2": "Zugang verkaufen",
+            "p": [
+              "Laut systeme.io verkaufen Sie eine Community über einen Funnel, indem Sie sie als digitales Produkt in ein Bestellformular aufnehmen, als Einmalzahlung oder Abo. Mitglieder erhalten beim Kauf automatisch Zugang und verlieren ihn, wenn sie kündigen.",
+              "Bauen Sie das Bestellformular in einem [[sales-funnels|Sales Funnel]] und richten Sie den Bezahlvorgang mit [[payments|Ihrem Zahlungsanbieter]] ein. systeme.io berechnet 0 % Transaktionsgebühr und keine Gebühr pro Mitglied."
+            ]
+          },
+          {
+            "h2": "Grenzen je Tarif",
+            "p": [
+              "Communities sind in jedem Tarif enthalten. Die Preisseite von systeme.io nennt 1 Community im kostenlosen Tarif, 5 im Startup-, 20 im Webinar- und unbegrenzt viele im Unlimited-Tarif, mit unbegrenzt vielen Mitgliedern in allen.",
+              "[[go|Eröffnen Sie ein kostenloses systeme.io-Konto]] und starten Sie Ihre erste Community gleich."
+            ]
+          },
+          {
+            "h2": "Ideen für den Einsatz",
+            "ul": [
+              "Geben Sie den Teilnehmenden Ihres [[online-courses|Onlinekurses]] einen Ort für Fragen.",
+              "Schicken Sie jedem neuen Mitglied eine Willkommens-E-Mail mit einer [[automation|Automatisierungsregel]], die der Kauf auslöst.",
+              "Belohnen Sie Mitglieder, die andere mitbringen, über Ihr eigenes [[affiliate-program|Partnerprogramm]]."
+            ]
+          },
+          {
+            "h2": "Gut zu wissen",
+            "p": [
+              "Laut systeme.io gibt es keine mobile App mit Ihrem Branding, und Beiträge aus einer bestehenden Social-Media-Gruppe lassen sich nicht übernehmen."
+            ]
+          }
+        ],
+        "faq": [
+          [
+            "Kann ich für meine Community Geld verlangen?",
+            "Ja. Laut systeme.io können Sie den Zugang als Einmalzahlung oder Abo verkaufen, über ein Bestellformular in einem Funnel."
+          ],
+          [
+            "Gibt es eine Mitgliedergrenze?",
+            "Die Preisseite von systeme.io nennt unbegrenzt viele Community-Mitglieder in jedem Tarif, und laut systeme.io gibt es keine Gebühr pro Mitglied."
+          ],
+          [
+            "Gibt es eine mobile App?",
+            "Laut systeme.io gibt es für Communities keine mobile App mit Ihrem Branding."
+          ]
+        ],
+        "related": [
+          "online-courses",
+          "sales-funnels",
+          "affiliate-program",
+          "payments"
+        ],
+        "sources": [
+          "https://systeme.io/online-communities",
+          "https://systeme.io/pricing"
+        ]
+      },
+      {
+        "id": "physical-products",
+        "slug": "physische-produkte",
+        "modified": "2026-10-20",
+        "title": "Physische Produkte mit systeme.io verkaufen | SoloStarter HQ",
+        "desc": "Physische Produkte über systeme.io-Funnels verkaufen: Varianten mit SKU, Lagerbestand in Echtzeit, automatische Versandkosten und 0 % Transaktionsgebühr.",
+        "h1": "Physische Produkte mit systeme.io verkaufen",
+        "card": "Varianten, Bestand, Versand und Bestellungen, verkauft über Ihre eigenen Funnels.",
+        "lede": "systeme.io ist nicht nur für digitale Produkte da. Sie können physische Artikel über Ihre [[sales-funnels|Funnels]] und Ihre [[website-and-blog|Website]] verkaufen, mit Varianten, Bestandsführung und Versandkosten im selben Konto.",
+        "sections": [
+          {
+            "h2": "Was enthalten ist",
+            "ul": [
+              "Produktvarianten wie Größe, Farbe oder Material, mit einer eigenen SKU für jede Variante.",
+              "Bestandsführung in Echtzeit, damit Sie nicht mehr verkaufen, als Sie haben.",
+              "Versandkosten nach Bestellgewicht, Bestellwert, Menge oder Standort der Kundschaft, mit Lieferzonen und Versandtarifen, die Sie festlegen.",
+              "Ein Element „Physisches Produkt“, das Sie in jedes Bestellformular oder jede Verkaufsseite ziehen.",
+              "Filter für Bestellungen nach Datum, Status oder Produkt."
+            ]
+          },
+          {
+            "h2": "So läuft ein Verkauf",
+            "ol": [
+              "Legen Sie das Produkt unter Produkte an, mit Bildern, Preis, Varianten und Versandtarifen.",
+              "Fügen Sie es einem Funnel-Schritt oder einer Website-Seite mit Kauf-Button hinzu.",
+              "Die Kundschaft bezahlt über Stripe oder PayPal (siehe [[payments|Zahlungen annehmen]]).",
+              "Die Bestellung erscheint in Ihrem Dashboard, damit Sie sie versenden."
+            ],
+            "after": "Laut systeme.io können Sie auf derselben Plattform Zusatzangebote und E-Mail-Sequenzen nach dem Kauf ergänzen, mit [[sales-funnels|Upsells im Funnel]] und [[email-marketing|E-Mail-Sequenzen]]."
+          },
+          {
+            "h2": "Grenzen je Tarif",
+            "p": [
+              "systeme.io berechnet in jedem Tarif 0 % Transaktionsgebühr. Die Preisseite nennt unbegrenzt viele physische Produkte in allen Tarifen, mit 50 Varianten im kostenlosen Tarif, 100 im Startup-, 250 im Webinar- und unbegrenzt vielen im Unlimited-Tarif. Außerdem führt sie Versandverwaltung, Bestandsverwaltung und Zahlung bei Lieferung auf.",
+              "[[go|Testen Sie es mit einem kostenlosen systeme.io-Konto]] und Ihrem ersten Produkt."
+            ]
+          },
+          {
+            "h2": "Für wen es passt",
+            "p": [
+              "Laut systeme.io passt es zu Creators, die ein überschaubares Sortiment über Funnels verkaufen, etwa Merchandise oder gedruckte Bücher neben digitalen Produkten. Für großen Einzelhandel mit umfangreicher Katalogverwaltung oder komplexen Lageranbindungen ist es laut systeme.io nicht gedacht.",
+              "Sie könnten ein gedrucktes Buch neben einem [[online-courses|Onlinekurs]] verkaufen oder Merchandise in Ihrem [[creator-store|Creator-Shop]] anbieten."
+            ]
+          },
+          {
+            "h2": "Einen bestehenden Shop umziehen",
+            "p": [
+              "Laut systeme.io gibt es keinen automatischen Produktimport. Sie exportieren Ihre Kontakte als CSV-Datei und importieren sie, und Ihre Produkte legen Sie von Hand neu an. Das Migrationsteam kann im Unlimited-Tarif oder in einem Jahrestarif helfen: siehe [[free-migration|kostenlose Migration]]."
+            ]
+          }
+        ],
+        "faq": [
+          [
+            "Berechnet systeme.io Transaktionsgebühren für physische Produkte?",
+            "Nein. Laut systeme.io beträgt die Transaktionsgebühr in jedem Tarif 0 %."
+          ],
+          [
+            "Kann systeme.io Versandkosten berechnen?",
+            "Ja. Versandkosten können Pauschalen sein oder nach Bestellgewicht, Bestellwert, Menge oder Standort der Kundschaft berechnet werden."
+          ],
+          [
+            "Kann ich Produkte aus einem anderen Shop importieren?",
+            "Nicht automatisch. Laut systeme.io werden Produkte von Hand neu angelegt, während Kontakte aus einer CSV-Datei importiert werden können."
+          ]
+        ],
+        "related": [
+          "sales-funnels",
+          "payments",
+          "creator-store",
+          "free-migration"
+        ],
+        "sources": [
+          "https://systeme.io/physical-products",
+          "https://systeme.io/pricing"
+        ]
+      },
+      {
+        "id": "sms-marketing",
+        "slug": "sms-marketing",
+        "modified": "2026-10-20",
+        "title": "SMS-Marketing mit systeme.io und Twilio | SoloStarter HQ",
+        "desc": "So verschickt systeme.io SMS über Ihr Twilio-Konto: Vorlagen, Auslöser, E-Mail und SMS in einem Workflow, Zustellberichte und Einwilligung.",
+        "h1": "SMS aus systeme.io versenden",
+        "card": "Fügen Sie Textnachrichten in dieselben Workflows ein wie Ihre E-Mails.",
+        "lede": "Manche Nachrichten wirken besser als SMS, etwa eine Kaufbestätigung oder eine Erinnerung. systeme.io versendet SMS über Ihr eigenes Twilio-Konto, aus denselben [[automation|Automatisierungs-Workflows]], die Sie für E-Mails nutzen.",
+        "sections": [
+          {
+            "h2": "So funktioniert es",
+            "ol": [
+              "Verbinden Sie Twilio, indem Sie Ihre Twilio SID und Ihr Auth Token in die Einstellungen von systeme.io einfügen.",
+              "Schreiben Sie SMS-Vorlagen im Editor, mit Variablen wie {first_name} oder {email}.",
+              "Fügen Sie SMS-Schritte in Ihre Automatisierungsregeln oder Workflows ein.",
+              "Nachrichten gehen raus, wenn ein Auslöser greift, etwa ein Kauf, ein hinzugefügtes Tag oder eine zeitliche Verzögerung.",
+              "Prüfen Sie Zustellraten und fehlgeschlagene Nachrichten in den Berichten."
+            ]
+          },
+          {
+            "h2": "E-Mail und SMS zusammen",
+            "p": [
+              "SMS teilen sich den Workflow-Baukasten und die Kontakte mit dem [[email-marketing|E-Mail-Marketing]], sodass eine Sequenz beides mischen kann. systeme.io nennt als Beispiel eine Willkommens-E-Mail an Tag 0, eine SMS-Erinnerung an Tag 1 und eine Folge-E-Mail an Tag 3.",
+              "Ein weiteres Beispiel von systeme.io: eine Bestätigungs-SMS, wenn jemand einen [[online-courses|Onlinekurs]] kauft. Ein Kauf in einem Ihrer [[sales-funnels|Sales Funnels]] kann der Auslöser sein."
+            ]
+          },
+          {
+            "h2": "Was es kostet",
+            "p": [
+              "Laut systeme.io ist die SMS-Funktion ohne Aufpreis enthalten. Die Nachrichten laufen über Twilio, das pro Nachricht je nach Zielland abrechnet. Sie bezahlen Twilio direkt, und laut systeme.io kommt kein Aufschlag und keine Gebühr hinzu.",
+              "SMS-Schritte liegen in Automatisierungen, daher gelten die Automatisierungsgrenzen Ihres Tarifs: Der kostenlose Tarif enthält 1 Automatisierungsregel und 1 Workflow. Siehe [[when-to-upgrade|wann sich ein bezahlter Tarif lohnt]].",
+              "[[go|Eröffnen Sie ein kostenloses systeme.io-Konto]] und bauen Sie Ihre erste Sequenz aus E-Mail und SMS."
+            ]
+          },
+          {
+            "h2": "Zuerst die Einwilligung",
+            "p": [
+              "Laut systeme.io liegt die Einhaltung der Regeln in Ihrer Verantwortung. Holen Sie eine ausdrückliche Einwilligung ein, bevor Sie Marketing-SMS senden, zum Beispiel mit einem Kontrollkästchen auf [[first-page|Ihrer Anmeldeseite]], und nennen Sie eine Abmeldemöglichkeit wie „Antworten Sie STOP zum Abmelden“, die Twilio in jeder Marketing-SMS verlangt."
+            ]
+          },
+          {
+            "h2": "Gut zu wissen",
+            "p": [
+              "Laut systeme.io kann ein spezielles SMS-Tool besser passen, wenn Sie Zwei-Wege-Unterhaltungen, Kurzwahlnummern oder SMS-zentrierte Kampagnen brauchen. Wenn Sie Interessenten in einer [[crm-pipelines|CRM-Pipeline]] verfolgen, nutzen SMS und Deals dieselben Kontaktdaten."
+            ]
+          }
+        ],
+        "faq": [
+          [
+            "Berechnet systeme.io etwas für SMS?",
+            "Laut systeme.io ist die SMS-Funktion ohne Aufpreis enthalten. Twilio rechnet pro Nachricht ab, je nach Zielland."
+          ],
+          [
+            "Brauche ich ein Twilio-Konto?",
+            "Ja. systeme.io versendet SMS über Ihr eigenes Twilio-Konto, verbunden mit Ihrer Twilio SID und Ihrem Auth Token."
+          ],
+          [
+            "Kann ich SMS und E-Mails in derselben Sequenz senden?",
+            "Ja. SMS-Schritte liegen in denselben Automatisierungs-Workflows wie E-Mail-Schritte."
+          ],
+          [
+            "Wer ist für die Einwilligung bei SMS verantwortlich?",
+            "Sie. Laut systeme.io müssen Sie eine ausdrückliche Einwilligung einholen und eine Abmeldemöglichkeit angeben."
+          ]
+        ],
+        "related": [
+          "automation",
+          "email-marketing",
+          "crm-pipelines",
+          "evergreen-webinars"
+        ],
+        "sources": [
+          "https://systeme.io/sms-marketing",
+          "https://systeme.io/pricing"
+        ]
+      },
+      {
+        "id": "sub-accounts",
+        "slug": "unterkonten",
+        "modified": "2026-10-20",
+        "title": "systeme.io-Unterkonten für Agenturen | SoloStarter HQ",
+        "desc": "So funktionieren Unterkonten bei systeme.io für Agenturen und Selbstständige: ein Bereich pro Kunde, ein Login, Teamrechte und keine Gebühr pro Kunde.",
+        "h1": "Kunden mit Unterkonten von systeme.io verwalten",
+        "card": "Ein eigener Bereich für jeden Kunden oder jede Marke, alles mit einem Login.",
+        "lede": "Wenn Sie Funnels, E-Mails oder Kurse für Kunden bauen oder mehr als eine Marke führen, halten Unterkonten alles getrennt. systeme.io enthält unbegrenzt viele Unterkonten in jedem Tarif, auch im kostenlosen.",
+        "sections": [
+          {
+            "h2": "Was ein Unterkonto ist",
+            "p": [
+              "systeme.io beschreibt Unterkonten als getrennte Arbeitsbereiche in Ihrem Hauptkonto. Jedes hat eigene [[sales-funnels|Funnels]], Kontakte, [[email-marketing|E-Mail-Sequenzen]], Produkte, Einstellungen und [[payments|Zahlungsanbieter]]. Sie wechseln zwischen ihnen in einem Dashboard, ohne separate Logins."
+            ]
+          },
+          {
+            "h2": "Funktionen",
+            "ul": [
+              "Ein Unterkonto mit einem Klick anlegen.",
+              "Zwischen Unterkonten im Haupt-Dashboard wechseln.",
+              "Teammitglieder und Kunden in ein bestimmtes Unterkonto einladen.",
+              "Funnels und E-Mails zwischen Unterkonten teilen, um die Einrichtung zu beschleunigen.",
+              "Ein Dashboard je Unterkonto mit eigenen Verkäufen und Kontakten."
+            ]
+          },
+          {
+            "h2": "Zugang fürs Team",
+            "p": [
+              "Wenn Sie jemanden einladen, wählen Sie volle Administratorrechte oder eingeschränkten Assistenzzugang. Laut systeme.io kann sich ein Kunde einloggen, um Zahlen zu prüfen oder Inhalte zu ändern, ohne Ihre anderen Kunden oder die Einstellungen Ihres Hauptkontos zu sehen. Die Preisseite nennt unbegrenzt viele Assistenzkonten in jedem Tarif."
+            ]
+          },
+          {
+            "h2": "Grenzen und Abrechnung",
+            "p": [
+              "Laut systeme.io können Sie so viele Unterkonten anlegen, wie Sie brauchen, mit denselben Grenzen wie Ihr Hauptkonto, und es gibt keine Gebühren pro Kunde. Prüfen Sie [[free-plan|die Grenzen des kostenlosen Tarifs]] und [[when-to-upgrade|wann sich ein bezahlter Tarif lohnt]], um den passenden Tarif für Ihre Kundenarbeit zu finden.",
+              "[[go|Erstellen Sie ein kostenloses systeme.io-Konto]] und richten Sie ein Unterkonto für Ihren ersten Kunden ein."
+            ]
+          },
+          {
+            "h2": "Weiterdenken",
+            "p": [
+              "Wenn Kunden Sie für die Plattform unter Ihrer eigenen Marke bezahlen sollen, lesen Sie [[white-label|White Label bei systeme.io]]. Um Kundendeals vor dem Abschluss zu verfolgen, nutzen Sie [[crm-pipelines|CRM-Pipelines]].",
+              "Sie ziehen bestehende Kunden um? Laut systeme.io kann der kostenlose Migrationsservice helfen, der im Unlimited-Tarif oder in einem Jahrestarif enthalten ist, und Kundenwebsites bleiben online, bis Sie umstellen. Siehe [[free-migration|kostenlose Migration]]."
+            ]
+          }
+        ],
+        "faq": [
+          [
+            "Sind Unterkonten bei systeme.io kostenlos?",
+            "Ja. Laut systeme.io sind Unterkonten in allen Tarifen unbegrenzt, auch im kostenlosen Tarif, ohne Gebühr pro Kunde."
+          ],
+          [
+            "Können sich Kunden in ihr eigenes Unterkonto einloggen?",
+            "Ja. Sie laden sie mit vollen Administratorrechten oder eingeschränktem Assistenzzugang ein, und sie sehen Ihre anderen Kunden nicht."
+          ],
+          [
+            "Haben Unterkonten eigene Grenzen?",
+            "Laut systeme.io haben Unterkonten dieselben Grenzen wie Ihr Hauptkonto."
+          ]
+        ],
+        "related": [
+          "white-label",
+          "crm-pipelines",
+          "free-migration",
+          "when-to-upgrade"
+        ],
+        "sources": [
+          "https://systeme.io/sub-accounts",
+          "https://systeme.io/pricing"
+        ]
+      },
+      {
+        "id": "white-label",
+        "slug": "white-label",
+        "modified": "2026-10-20",
+        "title": "systeme.io unter eigener Marke verkaufen | SoloStarter HQ",
+        "desc": "White Label bei systeme.io: Ihre Domain, Ihr Logo, Ihre Preise, welche Tarife Sie weiterverkaufen können und für wen es passt. In jedem Tarif enthalten.",
+        "h1": "systeme.io unter Ihrer eigenen Marke weiterverkaufen",
+        "card": "Versehen Sie die Plattform mit Ihrer Marke, legen Sie Ihre Preise fest und behalten Sie die Einnahmen.",
+        "lede": "Mit White Label versehen Sie systeme.io mit Ihrem eigenen Namen, Ihrer Domain und Ihrem Logo und verkaufen es zu Ihren eigenen Preisen an Kunden. Laut systeme.io ist es in jedem Tarif ohne Aufpreis enthalten.",
+        "sections": [
+          {
+            "h2": "Was Sie anpassen können",
+            "p": [
+              "Verbinden Sie Ihre eigene Domain, damit Kunden nur Ihre Marke sehen. Laden Sie Ihr Logo hoch, wählen Sie Ihre Markenfarben mit Live-Vorschau und legen Sie Ihre eigene Absenderadresse fest. Laut systeme.io erscheint Ihr Branding in den Nutzer-Dashboards, auf den Login-Seiten und in Transaktions-E-Mails."
+            ]
+          },
+          {
+            "h2": "Ihre Preise festlegen",
+            "p": [
+              "Sie erstellen eigene Monats- und Jahrestarife, benennen und bündeln sie, in mehreren Sprachen und Währungen. systeme.io setzt eine Regel: Ihre Preise dürfen nicht unter den eigenen Preisen von systeme.io liegen. Es fällt keine Gebühr, keine Provision und keine Transaktionsgebühr an, und Sie behalten 100 % der Einnahmen aus den Tarifen, die Sie verkaufen.",
+              "Welche Tarife Sie weiterverkaufen können, hängt von Ihrem eigenen Tarif ab. Mit Startup verkaufen Sie Startup, mit Webinar Startup und Webinar, mit Unlimited alle Tarife. Im kostenlosen Tarif können Sie kostenlose White-Label-Konten anbieten und dann upgraden, um bezahlte Tarife zu verkaufen. Siehe [[when-to-upgrade|wann sich ein bezahlter Tarif lohnt]].",
+              "[[go|Starten Sie mit einem kostenlosen systeme.io-Konto]], richten Sie Ihre Marke ein und bieten Sie zuerst kostenlose Konten an."
+            ]
+          },
+          {
+            "h2": "Start und Anmeldung neuer Nutzer",
+            "ul": [
+              "Eine fertige Website auf Ihrer White-Label-Domain mit Startseite, Preisseite und Buttons für Login und Registrierung, die Sie im [[website-and-blog|Website-Editor]] ändern können.",
+              "Ein [[sales-funnels|Funnel]] zum Sammeln von Kontakten, mit [[automation|Automatisierungsregeln]], die bei einer Anmeldung kostenlose White-Label-Konten anlegen.",
+              "Eine Bestätigungs-E-Mail für jeden neuen Nutzer, der sich über Ihre Website in sein eigenes Dashboard einloggt."
+            ]
+          },
+          {
+            "h2": "Ihre Nutzer verwalten",
+            "p": [
+              "Das Reseller-Dashboard listet alle White-Label-Nutzer mit Kennzahlen wie aktiven Tarifen, Umsatz und gewonnenen Kontakten. Sie können suchen, filtern und Nutzer sperren oder sich in ihre Konten einloggen, um bei der Einrichtung zu helfen. Um Interessenten vor dem Kauf nachzufassen, hilft eine [[crm-pipelines|CRM-Pipeline]]."
+            ]
+          },
+          {
+            "h2": "Für wen es passt",
+            "p": [
+              "Laut systeme.io eignet sich White Label am besten für Digitalmarketing-Agenturen, Beraterinnen und Berater, die wiederkehrende Software-Einnahmen möchten, und Gründer, die in den Softwaremarkt einsteigen wollen, ohne selbst zu entwickeln.",
+              "Weniger geeignet ist es laut systeme.io, wenn Sie Funktionen oder Oberfläche stark anpassen müssen, eigene Infrastruktur brauchen oder Funktionen benötigen, die systeme.io noch nicht bietet. Den zugrunde liegenden Code können Sie nicht ändern."
+            ]
+          },
+          {
+            "h2": "White Label oder Unterkonten?",
+            "p": [
+              "[[sub-accounts|Unterkonten]] sind Arbeitsbereiche, die Sie für Kunden in Ihrem eigenen Konto führen. Mit White Label haben Kunden eigene Konten auf Ihrer Plattform unter Ihrer Marke und bezahlen Sie. Laut systeme.io können Sie bestehende Kunden einladen, neue Konten auf Ihrer Plattform anzulegen."
+            ]
+          }
+        ],
+        "faq": [
+          [
+            "Was kostet White Label bei systeme.io?",
+            "Laut systeme.io ist es in jedem Tarif ohne Aufpreis enthalten, ohne separate Gebühr, Provision oder Transaktionsgebühren auf Ihre Verkäufe."
+          ],
+          [
+            "Kann ich von Kunden jeden Preis verlangen?",
+            "Jeden Preis, der nicht unter den Preisen von systeme.io liegt."
+          ],
+          [
+            "Kann ich im kostenlosen Tarif weiterverkaufen?",
+            "Im kostenlosen Tarif können Sie kostenlose White-Label-Konten anbieten. Für bezahlte Tarife brauchen Sie selbst einen bezahlten Tarif: Mit Startup verkaufen Sie Startup, mit Webinar Startup und Webinar, mit Unlimited alle Tarife."
+          ]
+        ],
+        "related": [
+          "sub-accounts",
+          "when-to-upgrade",
+          "sales-funnels",
+          "crm-pipelines"
+        ],
+        "sources": [
+          "https://systeme.io/white-label"
+        ]
+      },
+      {
+        "id": "free-migration",
+        "slug": "kostenlose-migration",
+        "modified": "2026-10-20",
+        "title": "Kostenlose Migration und Domain-Einrichtung | SoloStarter HQ",
+        "desc": "Die kostenlose Migration und Domain-Einrichtung von systeme.io: wer sie nutzen kann, was umgezogen wird, wie lange es dauert und wie Ihre Domain verbunden wird.",
+        "h1": "Umzug zu systeme.io: kostenlose Migration und Domain-Einrichtung",
+        "card": "Das Team von systeme.io kann Ihr Business umziehen und Ihre Domain für Sie verbinden.",
+        "lede": "Ein Plattformwechsel macht viel Arbeit. systeme.io bietet zwei Services, die das Team für Sie erledigt: eine kostenlose Migration Ihrer Produkte, Seiten, Funnels und Kunden in den passenden Tarifen und kostenlose Hilfe beim Verbinden Ihrer Domain.",
+        "sections": [
+          {
+            "h2": "Wer die kostenlose Migration nutzen kann",
+            "p": [
+              "Laut systeme.io ist der Migrationsservice ohne Aufpreis im monatlichen Unlimited-Tarif (97 $ im Monat) oder in jedem Jahrestarif enthalten. Siehe [[when-to-upgrade|wann sich ein bezahlter Tarif lohnt]].",
+              "Sie können [[go|zuerst ein kostenloses systeme.io-Konto eröffnen]], alles ausprobieren und upgraden, wenn Sie umziehen möchten."
+            ]
+          },
+          {
+            "h2": "Was umgezogen wird",
+            "ul": [
+              "[[sales-funnels|Sales Funnels]] und Landingpages, im Editor von systeme.io neu aufgebaut.",
+              "Digitale Produkte und Angebote mit Preisen und Bestellseiten.",
+              "E-Mail-Listen, wo möglich mit Tags importiert (siehe [[email-marketing|E-Mail-Marketing]]).",
+              "E-Mail-Sequenzen und Automatisierungen, im [[automation|Automatisierungs-Editor]] neu aufgebaut.",
+              "[[online-courses|Onlinekurse]] und Mitgliederinhalte mit Lektionen, Modulen und Zugängen der Teilnehmenden.",
+              "Kunden- und Teilnehmerdaten, als Kontakte im [[crm-pipelines|CRM]] importiert.",
+              "Die Struktur Ihres [[affiliate-program|Partnerprogramms]].",
+              "Die Verbindung Ihrer eigenen Domain, mit Unterstützung bei der DNS-Einrichtung."
+            ],
+            "after": "Zahlungs- und Transaktionsverlauf bleiben bei Ihrem bisherigen Zahlungsanbieter."
+          },
+          {
+            "h2": "So läuft es ab",
+            "ol": [
+              "Buchen Sie den monatlichen Unlimited-Tarif oder einen Jahrestarif.",
+              "Schreiben Sie dem Support mit Angaben zu Ihrem jetzigen Setup, etwa Screenshots, Exportdateien oder einem Lesezugang, wo verfügbar.",
+              "Das Team nennt Ihnen eine Zeitschätzung und baut dann alles in Ihrem neuen Konto auf."
+            ],
+            "after": "Laut systeme.io dauert eine einfache Migration (ein Funnel, eine E-Mail-Liste und einige Produkte) in der Regel 2 bis 5 Werktage, größere können 1 bis 2 Wochen dauern. Wenn Sie nicht sicher sind, ob Ihre jetzige Plattform umgezogen werden kann, empfiehlt systeme.io, vor der Buchung den Support zu fragen."
+          },
+          {
+            "h2": "Keine Ausfallzeit",
+            "p": [
+              "Die Arbeit findet in Ihrem neuen systeme.io-Konto statt, während Ihre alte Plattform online bleibt, und laut systeme.io werden dort keine Daten gelöscht. Wenn Sie alles geprüft haben, leiten Sie Domain und Links auf systeme.io um und kündigen Ihre alten Tools.",
+              "Agenturen können denselben Service nutzen, um Kunden in [[sub-accounts|Unterkonten]] umzuziehen."
+            ]
+          },
+          {
+            "h2": "Kostenlose Domain-Einrichtung",
+            "p": [
+              "Unabhängig davon bietet das Support-Team von systeme.io an, Ihre Domain kostenlos zu verbinden. Sie kaufen eine Domain bei einem beliebigen Anbieter, schreiben dem Support mit den Zugangsdaten für Ihren Domain-Anbieter, und das Team richtet alles ein und meldet sich, wenn es fertig ist.",
+              "Eine Domain gibt Ihrer [[website-and-blog|Website und Ihrem Blog]], Ihren Funnels und Kursen eine professionelle Adresse statt der Standard-Subdomain von systeme.io. Außerdem können Sie E-Mails von einer Adresse wie info@ihredomain.de senden, was laut systeme.io für eine bessere Zustellbarkeit unerlässlich ist. Der kostenlose Tarif enthält 1 eigene Domain: siehe [[free-plan|was der kostenlose Tarif enthält]]."
+            ]
+          },
+          {
+            "h2": "Gut zu wissen",
+            "p": [
+              "Wenn Sie physische Produkte verkaufen, werden laut systeme.io die Produkte von Hand neu angelegt, weil es keinen automatischen Produktimport gibt. Siehe [[physical-products|physische Produkte verkaufen]]."
+            ]
+          }
+        ],
+        "faq": [
+          [
+            "Ist die Migration zu systeme.io wirklich kostenlos?",
+            "Laut systeme.io fällt für den Service keine zusätzliche Gebühr an. Er ist im monatlichen Unlimited-Tarif oder in jedem Jahrestarif enthalten."
+          ],
+          [
+            "Wie lange dauert eine Migration?",
+            "Laut systeme.io dauert eine einfache Migration in der Regel 2 bis 5 Werktage und größere 1 bis 2 Wochen, mit einer schriftlichen Schätzung, nachdem das Team Ihr Setup geprüft hat."
+          ],
+          [
+            "Geht meine jetzige Website offline?",
+            "Laut systeme.io ist keine Ausfallzeit nötig: Ihre alte Plattform bleibt online, bis Sie Domain und Links umstellen."
+          ],
+          [
+            "Verbindet systeme.io meine Domain für mich?",
+            "Ja. Das Support-Team von systeme.io bietet an, Ihre Domain kostenlos zu verbinden, wenn Sie ihm Zugang zu Ihrem Domain-Anbieter geben."
+          ]
+        ],
+        "related": [
+          "when-to-upgrade",
+          "website-and-blog",
+          "sub-accounts",
+          "physical-products"
+        ],
+        "sources": [
+          "https://systeme.io/free-migration",
+          "https://systeme.io/free-dns-setup",
+          "https://systeme.io/physical-products"
         ]
       }
     ],
