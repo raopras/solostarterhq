@@ -58,3 +58,79 @@ on ours. Where systeme.io's pages contradict each other, the claim is left out.
 - `guides.<lang>.json` translate `guides.json` page for page. Checked before publishing: same sections, FAQs, related pages and sources as the English; every figure matches; only systeme.io links; no affiliate IDs in the text; no competitor names; German uses the formal "Sie".
 - Each language's buttons and copy box go to systeme.io's sign-up page in that language (`/go/<lang>/` → systeme.io/es/, /pt/, /de/), with the same affiliate ID.
 - The facts come from systeme.io's English pages, and each page says so in its sources note.
+
+## Feature guides added 20 October 2026 (read word for word in Chrome on 20 Oct 2026)
+
+Ten English guides: affiliate-program, evergreen-webinars, creator-store, crm-pipelines,
+online-community, physical-products, sms-marketing, sub-accounts, white-label, free-migration.
+Each sentence that states a feature, limit or price is attributed ("systeme.io says") or taken
+from the pricing table. Usage ideas ("you could…") only combine features the pages confirm.
+
+### Affiliate management (systeme.io/affiliate-management)
+- Settings: commission percentage, payout delay, minimum payout amount, second-tier commissions. `{affiliate_id}` email variable.
+- Invoices generated automatically on the 10th of each month; affiliates choose wire transfer or PayPal; connect Wise to pay everyone at once, or pay individually.
+- Included on all plans including free; no per-affiliate fee; setup about 10 minutes.
+- **Not used:** "instantly" (payment is a manual step); the FAQ's "up to 1 product" on free (pricing page says "1 affiliate program": different wording, so no number is given).
+
+### Automated (evergreen) webinars (systeme.io/automated-webinars)
+- Registration, broadcast and replay page templates; drag and drop; reminder emails with unique access links; timed Buy Now buttons, banners, scarcity timers; replay management.
+- Buyer enrolled automatically and removed from the no-purchase sequence. Setup typically 2 to 4 hours. Not suited to live interactive webinars.
+- Pricing table: evergreen webinars 0 / 0 / 10 / Unlimited (Free / Startup / Webinar $47 / Unlimited $97).
+- **Not used (contradiction):** schedule options. The page says "hourly, daily or instantly", the FAQ "every 15 minutes, hourly or daily". Only "hourly or daily" is used.
+
+### Creator store (systeme.io/creator-store)
+- Link-in-bio store selling digital products, courses, physical products, coaching and affiliate links to external sites; templates, custom sections, Subscribe card for leads and lead magnets, SEO settings; yourname.systeme.io or a custom domain; basic store about 20 minutes.
+- Free plan: 2,000 contacts, 1 custom domain; paid plans from $17; 0% transaction fees.
+- Pricing table: mobile-optimized link-in-bio page 1 / 3 / 10 / Unlimited.
+- **Not used:** "up to 3 payment links", "without leaving the page", "no payment processor setup".
+
+### CRM pipelines (systeme.io/crm-pipelines)
+- Kanban board, custom stages, drag and drop, internal notes, multiple pipelines (CRM → "Create a pipeline"), team collaboration.
+- Automation rules add or move deals on subscribe, link click, purchase or form submission. Same contacts as the email lists, no syncing. Included on all plans within the contact limit.
+- Pricing table: CRM pipelines 1 / 5 / 20 / 100; automation rules 1 / 10 / 100 / Unlimited.
+- Booking calendar page: new bookings are added to contacts.
+
+### Online communities (systeme.io/online-communities)
+- Private or public; posts, comments, file uploads, voice memos, YouTube and Loom embeds; topics, pinned posts, search, scheduled posts, post approval; custom domain, name, cover image.
+- Sold through funnels as a digital product on an order form, one-time or subscription; access granted on purchase and removed on cancellation; 0% transaction fees; no per-member fee.
+- No branded mobile app; posts can't be migrated from an existing social media group (the page names the platform; we don't).
+- Pricing table: communities 1 / 5 / 20 / Unlimited; members unlimited on all plans.
+
+### Physical products (systeme.io/physical-products)
+- Variants (size, color, material) with automatic SKUs; real-time inventory; shipping fees by weight, order price, quantity or customer location, with delivery zones and carrier rates; "Physical Product" element for order forms and sales pages; order filtering by date, status or product.
+- Sale flow: create under Products → add to a funnel step or website page → Stripe or PayPal → order dashboard; upsells and post-purchase email sequences on the same platform.
+- Suits a limited product range sold through funnels (merchandise, physical books); not large-scale retail with deep catalogue management or complex warehouse integrations.
+- No automated product import: contacts via CSV, listings recreated by hand; migration team helps on Unlimited or annual plans.
+- Pricing table: physical products unlimited; variants 50 / 100 / 250 / Unlimited; shipping management, inventory management and cash on delivery listed (per-plan ticks not shown in the page text, so no plan claim is made).
+- **Not used:** comparisons with named shop platforms.
+
+### SMS marketing (systeme.io/sms-marketing)
+- Twilio integration (paste SID and Auth Token); templates with {first_name} or {email}; SMS steps in automation rules and workflows; triggers such as a purchase, a tag, a timed delay; email + SMS in one workflow (example: welcome email day 0, SMS day 1, follow-up email day 3); confirmation text when a client buys a course; delivery and failure reports.
+- Feature included at no extra charge; Twilio charges per message by destination country; paid to Twilio directly, no systeme.io mark-up.
+- Compliance is the owner's responsibility: explicit opt-in, opt-out instructions ("Reply STOP to unsubscribe") required by Twilio.
+- Two-way conversations, shortcodes or SMS-first campaigns: a dedicated tool may be more appropriate.
+- **Not used:** the Twilio per-message dollar figure (a third party's price); the FAQ answer saying "All features are available on every plan" (contradicts the pricing table for webinars).
+
+### Sub-accounts (systeme.io/sub-accounts)
+- Separate workspaces with their own funnels, contacts, email sequences, products, settings and payment gateways; one-click creation; switching from the main dashboard without separate logins; invite team members and clients; full admin or restricted assistant access; share funnels and emails between sub-accounts; per-sub-account dashboard.
+- Unlimited on all plans including free; "the same limits as your main account"; no per-client fees. Free migration (Unlimited or annual) can assist; client sites stay live until you switch.
+- Pricing table: sub-accounts unlimited; assistant accounts unlimited on all plans.
+- **Not used:** "one systeme.io Unlimited plan covers all clients" (sits awkwardly with "available on all plans").
+
+### White label (systeme.io/white-label, "Last updated: August 2026")
+- Custom domain, logo, brand colours with live preview, sender email; branding on dashboards, login pages, transactional emails.
+- Own monthly and annual plans, multiple languages and currencies; prices can't be lower than systeme.io's; no fee, commission or transaction fees; keep 100% of revenue.
+- Resale by plan: Startup → Startup; Webinar → Startup and Webinar; Unlimited → all plans; Free → free white-label accounts.
+- Ready-made website (homepage, pricing page, login/sign-up); funnels and automation rules create free white-label accounts on subscribe; reseller dashboard (active plans, revenue, leads; search, filter, block, impersonate).
+- Best for agencies, consultants, entrepreneurs; not ideal for heavy customisation, dedicated infrastructure, missing features; can't modify the underlying code. Existing clients can be invited to create accounts.
+- **Not used:** the "$200,000 / 12 to 24 months" build-cost estimate.
+
+### Free migration and free DNS setup (systeme.io/free-migration, systeme.io/free-dns-setup)
+- Migration included with the Unlimited monthly plan ($97/month) or any annual plan. Three steps: sign up, contact support with setup details (screenshots, export files, read-only login where available), estimate then migration.
+- Table rows used (only those with explicit notes): funnels and landing pages rebuilt; digital products with pricing and checkout pages; email lists with tags where possible; sequences and automations rebuilt; courses and membership content; customer and student records as CRM contacts; affiliate program structure; custom domain with DNS setup support. Payment/transaction history stays with the original processor.
+- Simple migration 2 to 5 business days; larger 1 to 2 weeks; written estimate. No downtime; old platform stays live; no data deleted from it. Unsure platforms: contact support before signing up.
+- DNS: buy a domain from any registrar, contact support with registrar login details, the team configures it and notifies you. A domain replaces the default systeme.io subdomain and lets you send from info@yourdomain.com, "essential for improving your email deliverability".
+- **Not used:** the list of platforms the team migrates from (competitor names); the "Blog posts" row (no clear inclusion in the page text).
+
+### Template library (systeme.io/templates)
+- Checked but not used for a guide: the page is a filterable gallery with no feature text to quote.

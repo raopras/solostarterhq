@@ -67,6 +67,16 @@ for code, gl in G.items():
         need(S[code]["disclosure"].split(":")[0] in html.unescape(s), "affiliate disclosure missing")
         need(html.unescape(s).count(S[code]["cta_note"]) >= 2, "Ad note missing next to the buttons")
         need('id="copy-url"' in s, "copy-link box missing")
+        need("[[" not in s and "]]" not in s, "unconverted link markup ([[...]])")
+        art = s.split("<article>")[1].split("</article>")[0] if "<article>" in s else ""
+        for href in set(re.findall(r'href="(/[^"#]*' + re.escape(gl["dir"]) + r'[^"#]*)"', art)):
+            need(os.path.exists(os.path.join(OUT, href.lstrip("/"), "index.html")), f"broken guide link {href}")
+        page = next((p for p in gl["pages"] if p["slug"] == name), None)
+        if page and re.search(r"\[\[[a-z0-9-]+\|", json.dumps(page, ensure_ascii=False)):
+            body = art.split('<section><h2>')[0]  # article text before the "Read next" cards
+            inline = len(set(re.findall(r'<a href="/[^"]*' + re.escape(gl["dir"]) + r'([^"/]+)/"', body)))
+            need(inline >= 6, f"only {inline} different guides linked in the text (aim for 6+)")
+            need('class="aff" href="/go/' in body, "no inline affiliate link in the text")
         for c in COMPETITORS:
             if re.search(r"\b" + re.escape(c) + r"\b", html.unescape(re.sub(r"<script.*?</script>", "", s, flags=re.S))):
                 errors.append(f"{tag}: names a competitor or misspells the brand ({c})")
