@@ -3,7 +3,7 @@
 One template, every language. To add a language, add a block to
 strings.json and rebuild. To change domain, edit BASE.
 """
-import json, html, os, shutil, sys
+import json, html, os, re, shutil, sys
 
 BASE = os.environ.get("SITE_BASE", "https://solostarterhq.com").rstrip("/")
 from urllib.parse import urlparse
@@ -404,6 +404,7 @@ GUIDE_CSS = """
 #pick-out{margin-top:14px}
 .sticky{position:fixed;left:0;right:0;bottom:0;z-index:5;display:flex;gap:10px;align-items:center;background:var(--ink);color:var(--paper);padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px))}
 .sticky span{flex:1;font-size:.9rem}.sticky .btn{padding:10px 14px;font-size:.9rem}.sticky button{background:none;border:0;color:var(--paper);font-size:1.3rem;cursor:pointer}
+.g-body a.aff{font-weight:700;color:var(--accent)}.adtag{font:700 .62rem/1 var(--body);text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-left:2px;cursor:help}
 [hidden]{display:none!important}
 @media (min-width:900px){.sticky{display:none!important}}
 @media (max-width:900px){.g-body{grid-template-columns:1fr}.toc{display:none}}
@@ -514,16 +515,37 @@ def ctabox(code, where):
     return f"""<aside class="ctabox"><h3>{e(L['cta_box_h'])}</h3><p>{e(L['cta_box_p'])}</p>{guide_cta(code, where)}<p class="note">{e(S[code]['cta_note'])}</p></aside>"""
 
 
-def render_section(sec, i):
+LINK = re.compile(r"\[\[([a-z0-9-]+)\|([^\]]+)\]\]")
+
+
+def plain(s):
+    """Text with link markup removed, for meta tags, JSON-LD and the table of contents."""
+    return LINK.sub(lambda m: m.group(2), s)
+
+
+def rich(code, s):
+    """Escape text, then turn [[slug|words]] into a link to that guide and [[go|words]]
+    into an affiliate link to systeme.io's free sign-up page (marked as an ad)."""
+    def link(m):
+        target, words = m.group(1), m.group(2)
+        if target == "go":
+            return (f'<a class="aff" href="/go/{code}/" rel="sponsored nofollow noopener" {ev(code, "guide-inline")}>{words}</a>'
+                    f'<sup class="adtag" title="{e(G[code]["labels"]["ad_title"])}">{e(G[code]["labels"]["ad_tag"])}</sup>')
+        slug = slug_for(code, target)
+        return f'<a href="{gpath(code, slug)}">{words}</a>' if slug else words
+    return LINK.sub(link, e(s))
+
+
+def render_section(code, sec, i):
     h = f'<section id="s{i}"><h2>{e(sec["h2"])}</h2>'
     for p in sec.get("p", []):
-        h += f"<p>{e(p)}</p>"
+        h += f"<p>{rich(code, p)}</p>"
     if sec.get("ul"):
-        h += "<ul>" + "".join(f"<li>{e(x)}</li>" for x in sec["ul"]) + "</ul>"
+        h += "<ul>" + "".join(f"<li>{rich(code, x)}</li>" for x in sec["ul"]) + "</ul>"
     if sec.get("ol"):
-        h += "<ol>" + "".join(f"<li>{e(x)}</li>" for x in sec["ol"]) + "</ol>"
+        h += "<ol>" + "".join(f"<li>{rich(code, x)}</li>" for x in sec["ol"]) + "</ol>"
     if sec.get("after"):
-        h += f"<p>{e(sec['after'])}</p>"
+        h += f"<p>{rich(code, sec['after'])}</p>"
     return h + "</section>"
 
 
@@ -536,18 +558,18 @@ def guide_page(code, g):
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": i + 1, "name": n, "item": u} for i, (n, u) in enumerate(crumbs)]},
         {"@context": "https://schema.org", "@type": "Article", "headline": g["h1"], "description": g["desc"], "inLanguage": t["htmllang"],
-         "dateModified": "2026-10-13", "author": {"@type": "Organization", "name": "SoloStarter HQ"}, "mainEntityOfPage": canonical},
+         "dateModified": g.get("modified", "2026-10-13"), "author": {"@type": "Organization", "name": "SoloStarter HQ"}, "mainEntityOfPage": canonical},
         {"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": t["htmllang"], "mainEntity": [
-            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in g["faq"]]},
+            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": plain(a)}} for q, a in g["faq"]]},
     ]
     secs = g["sections"]
     body = ""
     for i, sec in enumerate(secs):
-        body += render_section(sec, i)
+        body += render_section(code, sec, i)
         if i == 1:
             body += ctabox(code, "guide-mid")
     toc = "".join(f'<a href="#s{i}">{e(sec["h2"])}</a>' for i, sec in enumerate(secs))
-    faq = "".join(f"<details><summary>{e(q)}</summary><p>{e(a)}</p></details>" for q, a in g["faq"])
+    faq = "".join(f"<details><summary>{e(q)}</summary><p>{rich(code, a)}</p></details>" for q, a in g["faq"])
     related = "".join(f'<li><a href="{gpath(code, pages[r]["slug"])}"><b>{e(pages[r]["h1"])}</b><span>{e(pages[r]["card"])}</span></a></li>' for r in g["related"] if r in pages)
     srcs = "".join(f'<li><a href="{u}" rel="nofollow noopener">{e(u.replace("https://", ""))}</a></li>' for u in g["sources"])
     return guide_head(code, g["title"], g["desc"], canonical, pid(g), ld) + guide_top(code) + f"""
@@ -555,7 +577,7 @@ def guide_page(code, g):
 <p class="crumbs"><a href="/{t['path']}">SoloStarter HQ</a> › <a href="{gpath(code)}">{e(L['guides'])}</a></p>
 <div class="g-hero">
   <h1>{e(g['h1'])}</h1>
-  <p class="lede">{e(g['lede'])}</p>
+  <p class="lede">{rich(code, g['lede'])}</p>
   <div class="g-cta">{guide_cta(code, 'guide-top')}</div>
   <p class="note">{e(t['cta_note'])}</p>
 </div>
@@ -617,12 +639,12 @@ def write_guides(out):
         base_dir = os.path.join(out, S[c]["path"], G[c]["dir"])
         os.makedirs(base_dir, exist_ok=True)
         open(os.path.join(base_dir, "index.html"), "w", encoding="utf-8").write(guide_hub(c))
-        urls.append((gurl(c), "hub"))
+        urls.append((gurl(c), G[c]["hub"].get("modified", "2026-10-13")))
         for g in G[c]["pages"]:
             d = os.path.join(base_dir, g["slug"])
             os.makedirs(d, exist_ok=True)
             open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(guide_page(c, g))
-            urls.append((gurl(c, g["slug"]), pid(g)))
+            urls.append((gurl(c, g["slug"]), g.get("modified", "2026-10-13")))
     return urls
 
 
@@ -648,7 +670,7 @@ def main():
     alts = "".join(f'<xhtml:link rel="alternate" hreflang="{S[c]["hreflang"]}" href="{url(c)}"/>' for c in LANGS)
     alts += f'<xhtml:link rel="alternate" hreflang="x-default" href="{url("en")}"/>'
     urls = "".join(f"<url><loc>{url(c)}</loc><lastmod>2026-10-12</lastmod>{alts}</url>" for c in LANGS)
-    urls += "".join(f"<url><loc>{u}</loc><lastmod>2026-10-13</lastmod></url>" for u, _ in guide_urls)
+    urls += "".join(f"<url><loc>{u}</loc><lastmod>{m}</lastmod></url>" for u, m in guide_urls)
     open(os.path.join(OUT, "sitemap.xml"), "w").write(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">'
         + urls + "</urlset>\n")
