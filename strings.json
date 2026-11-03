@@ -117,7 +117,13 @@
     "independent": "SoloStarter HQ is an independent site. It is not run, sponsored or endorsed by systeme.io.",
     "checked": "Plan details checked on systeme.io in October 2026. Always confirm current limits and prices on systeme.io's pricing page.",
     "lang_label": "Language",
-    "audience": "Built for designers, writers, coaches, virtual assistants, developers and consultants."
+    "audience": "Built for designers, writers, coaches, virtual assistants, developers and consultants.",
+    "hero_proof": [
+      "Free plan never expires",
+      "Up to 2,000 contacts",
+      "Unlimited emails"
+    ],
+    "hero_guides_label": "New to systeme.io? Start with a guide:"
   },
   "es": {
     "path": "es/",
@@ -237,7 +243,13 @@
     "independent": "SoloStarter HQ es una web independiente. No está gestionada, patrocinada ni avalada por systeme.io.",
     "checked": "Datos del plan revisados en systeme.io en octubre de 2026. Confirma siempre los límites y precios actuales en la página de precios de systeme.io.",
     "lang_label": "Idioma",
-    "audience": "Pensado para diseñadores, redactores, coaches, asistentes virtuales, desarrolladores y consultores."
+    "audience": "Pensado para diseñadores, redactores, coaches, asistentes virtuales, desarrolladores y consultores.",
+    "hero_proof": [
+      "El plan gratuito no caduca",
+      "Hasta 2.000 contactos",
+      "Emails ilimitados"
+    ],
+    "hero_guides_label": "¿Nuevo en systeme.io? Empieza con una guía:"
   },
   "pt-br": {
     "path": "pt-br/",
@@ -357,7 +369,13 @@
     "independent": "SoloStarter HQ é um site independente. Não é administrado, patrocinado nem endossado pela systeme.io.",
     "checked": "Dados do plano conferidos na systeme.io em outubro de 2026. Confirme sempre os limites e preços atuais na página de preços da systeme.io.",
     "lang_label": "Idioma",
-    "audience": "Feito para designers, redatores, coaches, assistentes virtuais, desenvolvedores e consultores."
+    "audience": "Feito para designers, redatores, coaches, assistentes virtuais, desenvolvedores e consultores.",
+    "hero_proof": [
+      "O plano gratuito não expira",
+      "Até 2.000 contatos",
+      "Emails ilimitados"
+    ],
+    "hero_guides_label": "Novo na systeme.io? Comece por um guia:"
   },
   "de": {
     "path": "de/",
@@ -477,6 +495,12 @@
     "independent": "SoloStarter HQ ist eine unabhängige Website. Sie wird nicht von systeme.io betrieben, gesponsert oder empfohlen.",
     "checked": "Tarifangaben im Oktober 2026 auf systeme.io geprüft. Bitte prüfen Sie aktuelle Grenzen und Preise immer auf der Preisseite von systeme.io.",
     "lang_label": "Sprache",
-    "audience": "Für Designer, Texter, Coaches, virtuelle Assistenzen, Entwickler und Berater."
+    "audience": "Für Designer, Texter, Coaches, virtuelle Assistenzen, Entwickler und Berater.",
+    "hero_proof": [
+      "Kostenloser Tarif ohne Ablaufdatum",
+      "Bis zu 2.000 Kontakte",
+      "Unbegrenzt E-Mails"
+    ],
+    "hero_guides_label": "Neu bei systeme.io? Starten Sie mit einem Ratgeber:"
   }
 }

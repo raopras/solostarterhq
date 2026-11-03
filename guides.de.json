@@ -1561,10 +1561,10 @@
       {
         "id": "free-migration",
         "slug": "kostenlose-migration",
-        "modified": "2026-10-20",
-        "title": "Kostenlose Migration und Domain-Einrichtung | SoloStarter HQ",
-        "desc": "Die kostenlose Migration und Domain-Einrichtung von systeme.io: wer sie nutzen kann, was umgezogen wird, wie lange es dauert und wie Ihre Domain verbunden wird.",
-        "h1": "Umzug zu systeme.io: kostenlose Migration und Domain-Einrichtung",
+        "modified": "2026-11-03",
+        "title": "Kostenlos umziehen: Migration und Domain | SoloStarter HQ",
+        "desc": "Kostenlos zu systeme.io umziehen: wer die Migration nutzen kann, was umgezogen wird, wie lange es dauert und wie Ihre Domain kostenlos verbunden wird.",
+        "h1": "Kostenlos zu systeme.io umziehen: Migration und Domain-Einrichtung",
         "card": "Das Team von systeme.io kann Ihr Business umziehen und Ihre Domain für Sie verbinden.",
         "lede": "Ein Plattformwechsel macht viel Arbeit. systeme.io bietet zwei Services, die das Team für Sie erledigt: eine kostenlose Migration Ihrer Produkte, Seiten, Funnels und Kunden in den passenden Tarifen und kostenlose Hilfe beim Verbinden Ihrer Domain.",
         "sections": [
@@ -1621,6 +1621,10 @@
         ],
         "faq": [
           [
+            "Kann ich meine Domain kostenlos umziehen?",
+            "Laut systeme.io verbindet das Support-Team eine Domain, die Sie bei einem beliebigen Domain-Anbieter gekauft haben, kostenlos mit Ihrem Konto. Die Domain selbst bleibt bei Ihrem Anbieter: Die Seite von systeme.io beschreibt das Verbinden, nicht den Umzug der Domain-Registrierung. Ihre Inhalte zieht der kostenlose Migrationsservice um, im monatlichen Unlimited-Tarif oder in einem Jahrestarif."
+          ],
+          [
             "Ist die Migration zu systeme.io wirklich kostenlos?",
             "Laut systeme.io fällt für den Service keine zusätzliche Gebühr an. Er ist im monatlichen Unlimited-Tarif oder in jedem Jahrestarif enthalten."
           ],
@@ -1651,10 +1655,15 @@
       }
     ],
     "home_picks": [
+      "free-migration",
       "first-page",
       "free-plan",
-      "booking-calendar",
-      "when-to-upgrade"
+      "booking-calendar"
+    ],
+    "hero_picks": [
+      "free-plan",
+      "free-migration",
+      "first-page"
     ]
   }
 }

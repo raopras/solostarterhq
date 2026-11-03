@@ -185,7 +185,7 @@ def head(code, preview=False):
 {'' if preview else analytics()}
 <script type="application/ld+json">{json.dumps(site_ld, ensure_ascii=False)}</script>
 <script type="application/ld+json">{json.dumps(faq_ld, ensure_ascii=False)}</script>
-<style>{CSS}</style>"""
+<style>{CSS}{HERO_EXTRA_CSS}</style>"""
 
 
 def body(code, preview=False):
@@ -218,6 +218,8 @@ def body(code, preview=False):
     <p class="aud">{e(t['audience'])}</p>
     <a class="btn" href="{go}" {rel} {ev(code, 'hero')}>{e(t['cta'])}</a>
     <p class="note">{e(t['cta_note'])}</p>
+    <ul class="proof">{''.join(f'<li>{e(x)}</li>' for x in t['hero_proof'])}</ul>
+    {hero_guides(code, preview)}
   </div>
   <form class="invoice" id="calc" aria-labelledby="calc-h" onsubmit="return false">
     <div class="inv-head"><b id="calc-h">{e(t['invoice_label'])} · {e(t['calc_h2'])}</b>
@@ -281,6 +283,16 @@ def body(code, preview=False):
   cur.addEventListener('change',function(){{convert(prev,cur.value);calc()}});calc();
 }})();
 </script>"""
+
+
+def hero_guides(code, preview=False):
+    """Three starter guides on the first screen, so visitors who aren't ready to sign up have a next step."""
+    if preview or code not in G:
+        return ""
+    byid = {pid(p): p for p in G[code]["pages"]}
+    picks = G[code].get("hero_picks") or G[code]["home_picks"][:3]
+    links = "".join(f'<li><a href="{gpath(code, byid[i]["slug"])}">{e(byid[i]["h1"])}</a></li>' for i in picks if i in byid)
+    return f'<div class="hguides"><p>{e(S[code]["hero_guides_label"])}</p><ul>{links}</ul></div>'
 
 
 def home_guides(code, preview=False):
@@ -378,6 +390,16 @@ G = json.load(open(os.path.join(HERE, "guides.json"), encoding="utf-8"))
 import glob as _glob
 for _f in sorted(_glob.glob(os.path.join(HERE, "guides.*.json"))):
     G.update(json.load(open(_f, encoding="utf-8")))
+HERO_EXTRA_CSS = """
+.proof{list-style:none;padding:0;margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.proof li{font-size:.88rem;font-weight:700;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 12px}
+.proof li::before{content:"✓ ";color:var(--accent)}
+.hguides{margin-top:20px;border-top:1px solid var(--line);padding-top:14px}
+.hguides p{margin:0 0 6px;font-weight:700;font-size:.92rem}
+.hguides ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+.hguides a{color:var(--accent);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+"""
+
 GUIDE_CSS = """
 .crumbs{font-size:.85rem;color:var(--muted);margin:8px 0 0}.crumbs a{color:inherit}
 .g-hero{padding-block:clamp(20px,4vw,48px) 8px;max-width:46rem}
